@@ -16,7 +16,7 @@
     "titles_wordcloud.png": true,
     "titles_wordcloud.svg": true
   },
-  "processing_tests_passed": 14,
+  "processing_tests_passed": 19,
   "corpus_records": 263,
   "missing_pdf_records_added": 11,
   "original_csv_preserved": true,

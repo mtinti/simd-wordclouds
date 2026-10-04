@@ -6,6 +6,20 @@ The current vocabulary uses refined phrase pairings: **deprivation**, **socioeco
 
 This uses the free, MIT-licensed [Python wordcloud package](https://github.com/amueller/word_cloud), with a bundled, openly licensed DejaVu Sans font. No paid software or online word-cloud service is required. The CSV rules can be edited in a text editor or a spreadsheet application. Rendering runs locally.
 
+## Phrase mode (this branch)
+
+On the `multiword-phrases` branch the clouds show **multi-word phrases only** (`"phrases": {"enabled": true}` in settings.json). The aim is to show deprivation in the context it was studied: **socioeconomic deprivation**, **area deprivation**, **deprived areas** and **affluent areas** stay separate instead of collapsing into a single "deprivation".
+
+- A phrase is a run of 2–3 adjacent units (words or listed phrases such as **type 2 diabetes**) within one sentence. Listed phrases of two or more words also count on their own.
+- Runs end at punctuation, numbers, fragments and any word in the `break_categories` exclusion categories (grammar, comparatives such as *higher*, statistical and study-design wording, sample and time wording, geography, deprivation-index naming and named data sources). So "mortality and deprivation" is not a phrase, and "most deprived SIMD quintile" yields nothing.
+- Other excluded words (for example *area*, *based*, *level*) may appear inside a phrase to give it context, but a phrase made only of excluded words is dropped.
+- The deprivation concept-family rules are switched off (`skip_group_canonicals`), so qualifiers are not merged away. Spelling, plural and abbreviation rules still apply, so **SES** counts as **socioeconomic status**.
+- A shorter phrase found mostly inside one longer phrase (at least `fold_into_longer` = 75% of its papers) is counted only as the longer phrase. `term_frequencies.csv` records each fold as its exclusion reason.
+- Each phrase is labelled with its most frequent wording. `displayed_as` in `term_frequencies.csv` gives the label for every phrase key.
+- A phrase must occur in at least 2 titles or 5 abstracts. Ties at the display limit are never split, so the title cloud shows only phrases in 3 or more titles: the 55 phrases found in exactly 2 titles exceed the limit together. The maximum font size is 100 so that every selected abstract phrase fits.
+
+Set `"enabled": false` to return to the single-word clouds described below.
+
 ## The data correction matters
 
 The supplied `simd_252_papers_year_pmid_abstract.csv` contains 252 unique PMIDs, but all 252 abstract fields are the same sentence template filled with each title. Some titles are also truncated. They are not the indexed article abstracts. Making an abstract cloud from those sentences would mainly measure the template.
@@ -85,7 +99,7 @@ To verify the term-processing safeguards:
 .venv-wordcloud/bin/python wordclouds/test_processing.py
 ```
 
-`reproducibility_check.json` records the comparison between two complete runs with different Python hash seeds. Both cloud formats, the frequency tables and HTML review pages are compared by SHA-256. Fourteen processing checks cover phrase boundaries, ambiguous qualifiers, subtype preservation, grouping, once-per-paper counting, plural merging, hyphenated compounds and tie handling at the display limit. The indexed data and original CSV preservation were checked separately.
+`reproducibility_check.json` records the comparison between two complete runs with different Python hash seeds. Both cloud formats, the frequency tables and HTML review pages are compared by SHA-256. Nineteen processing checks, including five for phrase mode, cover phrase boundaries, ambiguous qualifiers, subtype preservation, grouping, once-per-paper counting, plural merging, hyphenated compounds and tie handling at the display limit. The indexed data and original CSV preservation were checked separately.
 
 ## Files to share
 
