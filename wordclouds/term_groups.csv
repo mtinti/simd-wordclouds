@@ -126,3 +126,5 @@ self-rated health,self rated health,phrase,1,Preserve the hyphenated measure; se
 self-efficacy,self efficacy,phrase,1,Preserve the hyphenated construct
 self-harm,self harm,phrase,1,Preserve the hyphenated construct
 non-smoker,non smoker|non smokers|nonsmoker|nonsmokers,inflection,1,Preserve the hyphenated group; standalone 'non' is excluded
+all-cause mortality,all cause mortality,phrase,1,Preserve the qualifier; otherwise read as "cause mortality" after the grammar word "all"
+chronic obstructive pulmonary disease,chronic obstructive pulmonary diseases|copd,abbreviation,1,Full clinical phrase and conventional abbreviation

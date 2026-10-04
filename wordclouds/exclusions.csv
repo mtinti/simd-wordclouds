@@ -82,15 +82,40 @@ two,comparative or generic qualifier,1,Comparative or generic qualifier; named p
 SIMD,corpus geography or index,1,Known collection context; disable this exclusion if geographic or index emphasis is wanted
 UK,corpus geography or index,1,Known collection context; disable this exclusion if geographic or index emphasis is wanted
 aberdeen,corpus geography or index,1,Known collection context; disable this exclusion if geographic or index emphasis is wanted
+data zone,corpus geography or index,1,"Deprivation index naming or its geography; describes the measure, not the topic"
+datazone,corpus geography or index,1,"Deprivation index naming or its geography; describes the measure, not the topic"
+deprivation index,corpus geography or index,1,"Deprivation index naming or its geography; describes the measure, not the topic"
+deprivation indices,corpus geography or index,1,"Deprivation index naming or its geography; describes the measure, not the topic"
 dundee,corpus geography or index,1,Known collection context; disable this exclusion if geographic or index emphasis is wanted
 edinburgh,corpus geography or index,1,Known collection context; disable this exclusion if geographic or index emphasis is wanted
 fife,corpus geography or index,1,Known collection context; disable this exclusion if geographic or index emphasis is wanted
 glasgow,corpus geography or index,1,Known collection context; disable this exclusion if geographic or index emphasis is wanted
 grampian,corpus geography or index,1,Known collection context; disable this exclusion if geographic or index emphasis is wanted
+index of multiple deprivation,corpus geography or index,1,"Deprivation index naming or its geography; describes the measure, not the topic"
+indices of multiple deprivation,corpus geography or index,1,"Deprivation index naming or its geography; describes the measure, not the topic"
 lothian,corpus geography or index,1,Known collection context; disable this exclusion if geographic or index emphasis is wanted
+multiple deprivation,corpus geography or index,1,"Deprivation index naming or its geography; describes the measure, not the topic"
 scotland,corpus geography or index,1,Known collection context; disable this exclusion if geographic or index emphasis is wanted
 scottish,corpus geography or index,1,Known collection context; disable this exclusion if geographic or index emphasis is wanted
 united kingdom,corpus geography or index,1,Known collection context; disable this exclusion if geographic or index emphasis is wanted
+urban rural classification,corpus geography or index,1,"Deprivation index naming or its geography; describes the measure, not the topic"
+urban rural classifications,corpus geography or index,1,"Deprivation index naming or its geography; describes the measure, not the topic"
+administrative data,data source,1,"Named data source or register; describes where data came from, not the topic"
+administrative health data,data source,1,"Named data source or register; describes where data came from, not the topic"
+death record,data source,1,"Named data source or register; describes where data came from, not the topic"
+death records,data source,1,"Named data source or register; describes where data came from, not the topic"
+health survey,data source,1,"Named data source or register; describes where data came from, not the topic"
+information service division,data source,1,"Named data source or register; describes where data came from, not the topic"
+information services division,data source,1,"Named data source or register; describes where data came from, not the topic"
+isd,data source,1,"Named data source or register; describes where data came from, not the topic"
+morbidity record,data source,1,"Named data source or register; describes where data came from, not the topic"
+national records of scotland,data source,1,"Named data source or register; describes where data came from, not the topic"
+public health scotland,data source,1,"Named data source or register; describes where data came from, not the topic"
+royal hospital,data source,1,"Named data source or register; describes where data came from, not the topic"
+scottish health survey,data source,1,"Named data source or register; describes where data came from, not the topic"
+scottish morbidity record,data source,1,"Named data source or register; describes where data came from, not the topic"
+smr,data source,1,"Named data source or register; describes where data came from, not the topic"
+university hospital,data source,1,"Named data source or register; describes where data came from, not the topic"
 additional,generic qualifier or method wording,1,Non-specific wording in this topic view; protected clinical phrases are retained
 address,generic qualifier or method wording,1,Non-specific wording in this topic view; protected clinical phrases are retained
 classification,generic qualifier or method wording,1,Non-specific wording in this topic view; protected clinical phrases are retained
@@ -383,6 +408,10 @@ year,generic time wording,1,Generic time wording; remove from topic-focused clou
 years,generic time wording,1,Generic time wording; remove from topic-focused clouds
 east,geographic qualifier,1,Geographic context; disable if regional emphasis is wanted
 east of scotland,geographic qualifier,1,Geographic context; disable if regional emphasis is wanted
+health board,geographic qualifier,1,"Administrative geography; describes where, not the topic"
+health boards,geographic qualifier,1,"Administrative geography; describes where, not the topic"
+local authorities,geographic qualifier,1,"Administrative geography; describes where, not the topic"
+local authority,geographic qualifier,1,"Administrative geography; describes where, not the topic"
 north,geographic qualifier,1,Geographic context; disable if regional emphasis is wanted
 north east,geographic qualifier,1,Geographic context; disable if regional emphasis is wanted
 north east of scotland,geographic qualifier,1,Geographic context; disable if regional emphasis is wanted
@@ -647,23 +676,45 @@ socioeconomic,incomplete phrase,1,Standalone adjective has no explicit construct
 status,incomplete phrase,1,Ambiguous without a qualifier; health and smoking status are protected phrases
 all rights reserved,method or boilerplate phrase,1,Match the whole phrase before counting
 case control,method or boilerplate phrase,1,Match the whole phrase before counting
+case note,method or boilerplate phrase,1,Match the whole phrase before counting
+case notes,method or boilerplate phrase,1,Match the whole phrase before counting
 confidence interval,method or boilerplate phrase,1,Match the whole phrase before counting
 confidence intervals,method or boilerplate phrase,1,Match the whole phrase before counting
+controlled trial,method or boilerplate phrase,1,Match the whole phrase before counting
+controlled trials,method or boilerplate phrase,1,Match the whole phrase before counting
+cox proportional hazard,method or boilerplate phrase,1,Match the whole phrase before counting
+cox proportional hazards,method or boilerplate phrase,1,Match the whole phrase before counting
 cross sectional,method or boilerplate phrase,1,Match the whole phrase before counting
+feasibility study,method or boilerplate phrase,1,Match the whole phrase before counting
 follow up,method or boilerplate phrase,1,Match the whole phrase before counting
 hazard ratio,method or boilerplate phrase,1,Match the whole phrase before counting
 hazard ratios,method or boilerplate phrase,1,Match the whole phrase before counting
+health record,method or boilerplate phrase,1,Match the whole phrase before counting
+health records,method or boilerplate phrase,1,Match the whole phrase before counting
+incident case,method or boilerplate phrase,1,Match the whole phrase before counting
+incident cases,method or boilerplate phrase,1,Match the whole phrase before counting
+independent predictor,method or boilerplate phrase,1,Match the whole phrase before counting
+independent predictors,method or boilerplate phrase,1,Match the whole phrase before counting
+kaplan meier,method or boilerplate phrase,1,Match the whole phrase before counting
+linkage study,method or boilerplate phrase,1,Match the whole phrase before counting
 odds ratio,method or boilerplate phrase,1,Match the whole phrase before counting
 odds ratios,method or boilerplate phrase,1,Match the whole phrase before counting
 population based,method or boilerplate phrase,1,Match the whole phrase before counting
+relative index of inequality,method or boilerplate phrase,1,Match the whole phrase before counting
+routinely collected,method or boilerplate phrase,1,Match the whole phrase before counting
 self report,method or boilerplate phrase,1,Match the whole phrase before counting
 self reported,method or boilerplate phrase,1,Match the whole phrase before counting
 self reporting,method or boilerplate phrase,1,Match the whole phrase before counting
+slope index,method or boilerplate phrase,1,Match the whole phrase before counting
+slope index of inequality,method or boilerplate phrase,1,Match the whole phrase before counting
 standard deviation,method or boilerplate phrase,1,Match the whole phrase before counting
 standard deviations,method or boilerplate phrase,1,Match the whole phrase before counting
+strong association,method or boilerplate phrase,1,Match the whole phrase before counting
+strongly associated,method or boilerplate phrase,1,Match the whole phrase before counting
 study participants,method or boilerplate phrase,1,Match the whole phrase before counting
 study patients,method or boilerplate phrase,1,Match the whole phrase before counting
 study population,method or boilerplate phrase,1,Match the whole phrase before counting
+trial registration,method or boilerplate phrase,1,Match the whole phrase before counting
 article,publication boilerplate,1,Publication boilerplate; remove from topic-focused clouds
 articles,publication boilerplate,1,Publication boilerplate; remove from topic-focused clouds
 author,publication boilerplate,1,Publication boilerplate; remove from topic-focused clouds
