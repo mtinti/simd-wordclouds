@@ -279,8 +279,8 @@ def render_cloud(field, frequencies, rows, settings, out):
     def text(x, y, value, size, fill):
         draw.text((x * scale, y * scale), value, font=ImageFont.truetype(str(font), size * scale), fill=fill)
 
-    text(72, 30, "SIMD LITERATURE", 16, "#176B73")
-    text(72, 58, title, 43, "#153F4A")
+    text(72, 30, "SIMD LITERATURE", 16, "#184F95")
+    text(72, 58, title, 43, "#0D366B")
     text(72, 119, subtitle, 17, "#52646A")
     if shaped:
         for cx, cy, rx, ry in shape["ellipses"]:
@@ -314,8 +314,8 @@ def render_cloud(field, frequencies, rows, settings, out):
         element = ET.SubElement(svg, tag("text"), x=str(x), y=str(y), fill=fill, **{"font-size": str(size)})
         element.text = value
 
-    svg_text(72, 46, "SIMD LITERATURE", 16, "#176B73")
-    svg_text(72, 99, title, 43, "#153F4A")
+    svg_text(72, 46, "SIMD LITERATURE", 16, "#184F95")
+    svg_text(72, 99, title, 43, "#0D366B")
     svg_text(72, 135, subtitle, 17, "#52646A")
     if shaped:
         for cx, cy, rx, ry in shape["ellipses"]:

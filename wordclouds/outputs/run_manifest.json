@@ -4,21 +4,21 @@
     "assets/AtkinsonHyperlegible-Regular.ttf": "7fb917c89019896d0b52ee84b7cbb3304c18cb90b19a62f5e32712bd23e97669",
     "corpus": "62d2fe78ab7479bb886d59a82c49de9b2a43b76c0c76b0f41e97ec69a4568766",
     "exclusions.csv": "2bc01890494d4cbdcbbd6e43c4d3b7df858f470e14170bc59353a01a8637fd21",
-    "generate.py": "78f152b126295fbfc4bbf5afc1f1ddd51486b29c4e238b67ba2c773b58f6f838",
+    "generate.py": "0b9fac4ef920361774a871c6344da6dd0b7b4e485e5740f720c51a320b0e3f01",
     "settings.json": "e859a89341b69173079dd72fb6b56624ee7322c56ad3077701020bde45bd1d07",
     "term_groups.csv": "958935b8aac1108028b2229e9b6b3ff140e3659f5acec4aabe18730f49126d58"
   },
   "output_sha256": {
-    "abstracts_wordcloud.png": "9c06754e99c96d3bcf50c6f325a5e8ecf56f58f4880c48c53a405720fcab69d2",
-    "abstracts_wordcloud.svg": "a421a72913f89916c3f98fe56b4585445809728b80a1bae7425a033c579a98b8",
+    "abstracts_wordcloud.png": "c72acef162a7b65b203b641e1acbc014acab44e1e771294e8f46cd413bc40945",
+    "abstracts_wordcloud.svg": "f68b99239a63fb931730beb9e2ea85e8f180ec70ebb9e912f9f2f5e4df14fa77",
     "index.html": "97cf844858117c55e5d63418cb23869accdf9e5fee6a4dfaf72906c5d9603c5b",
     "observed_term_variants.csv": "5b3437aa80f12dadd51684750e8795a021b1823bc41b2da863d534f8bf491ea7",
     "plural_merges.csv": "ed4d9409715b8dc1f064236a621a54bd27e0f4cefe04f77ab885f22f42113c50",
     "review_terms.html": "fa6665a5b8672d8b739d63a4c14bf6e557f0aa97092d3323977029f64ea5cad2",
     "term_frequencies.csv": "f323670171592e421591c1dd0d229382649c65d1f1d78f2fe391f0a9911c0b41",
     "terms_by_paper.csv": "e792e10bb6a64a3b80957837ee70b3bbf855b1886a2855cc2e8035d4c0b06924",
-    "titles_wordcloud.png": "1606af0774c18a2a1ca8201857d886bca7f6d608543aa208bba348ad0aca1245",
-    "titles_wordcloud.svg": "0c15ba74fdd997021b32c22f6a8a29ae94199c0f409cd2c69168f1c36d594886"
+    "titles_wordcloud.png": "3c85a5d20dcd5f1de592438420673567b45d218dc22b68945258df9025de5618",
+    "titles_wordcloud.svg": "43ebd29661777c0e828964cff2998828aec18f804ab3ae89a5f66669974f240b"
   },
   "packages": {
     "Pillow": "12.2.0",
