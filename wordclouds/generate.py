@@ -51,12 +51,17 @@ def tokens(text, keep_boundaries=False):
 
 
 class Rules:
-    def __init__(self, groups, exclusions):
+    """Term rules. With `phrases` settings, process() counts multi-word phrases instead of words."""
+
+    def __init__(self, groups, exclusions, phrases=None):
+        self.phrases = phrases
         self.aliases = {}
         self.exclusions = {}
+        self.categories = {}
         self.exclusion_phrases = {}
+        skip = set(phrases["skip_group_canonicals"]) if phrases else set()
         for row in groups:
-            if row["enabled"] != "1":
+            if row["enabled"] != "1" or row["canonical"] in skip:
                 continue
             canonical = row["canonical"]
             for alias in [canonical, *row["variants"].split("|")]:
@@ -70,14 +75,16 @@ class Rules:
             key = tuple(tokens(row["term"]))
             canonical = self.aliases.get(key, row["term"])
             self.exclusions[canonical.lower()] = row["reason"]
-            self.exclusion_phrases[key] = canonical
+            self.categories[canonical.lower()] = row["category"]
+            if len(key) > 1:  # single words need no matching, so plural merging still applies to them
+                self.exclusion_phrases[key] = canonical
         self.max_length = max(map(len, [*self.aliases, *self.exclusion_phrases]), default=1)
         self.plurals = {}
 
     def fold_plurals(self, vocabulary, exceptions=()):
         """Map regular plurals of unmapped words to a singular form observed in the corpus."""
         for word in vocabulary:
-            if (word,) in self.aliases or word in self.exclusions or word in exceptions or len(word) < 4:
+            if (word,) in self.aliases or word in exceptions or len(word) < 4:
                 continue
             if word.endswith("ies") and word[:-3] + "y" in vocabulary:
                 singular = word[:-3] + "y"
@@ -85,14 +92,18 @@ class Rules:
                 singular = word[:-1]
             else:
                 continue
-            self.plurals[word] = self.aliases.get((singular,), singular)
+            singular = self.aliases.get((singular,), singular)
+            # Never let an excluded plural reappear under a retained singular.
+            if word not in self.exclusions or singular.lower() in self.exclusions:
+                self.plurals[word] = singular
 
-    def process(self, text):
+    def units(self, text):
+        """Yield (canonical, surface, mapped) for each matched unit, or None at a boundary or dropped fragment."""
         words = tokens(text, keep_boundaries=True)
-        counts, variants = Counter(), Counter()
         i = 0
         while i < len(words):
             if words[i] == "|":
+                yield None
                 i += 1
                 continue
             # Match before stopword removal so no artificial phrases bridge removed words.
@@ -100,16 +111,59 @@ class Rules:
                 key = tuple(words[i:i + length])
                 canonical = self.aliases.get(key, self.exclusion_phrases.get(key))
                 if canonical is not None:
+                    mapped = True
                     break
             else:
-                length, canonical = 1, self.plurals.get(words[i], words[i])
+                length, canonical, mapped = 1, self.plurals.get(words[i], words[i]), False
             surface = " ".join(words[i:i + length])
             i += length
             # Numbers and one/two-character unmapped fragments have no useful cloud meaning.
             if (length == 1 and surface not in ("uk",) and len(canonical) < 3) or canonical.isdigit():
+                yield None
                 continue
-            counts[canonical] += 1
-            variants[(surface, canonical)] += 1
+            yield canonical, surface, mapped
+
+    def process(self, text):
+        """Return term counts and (observed form, term) counts for one text."""
+        if self.phrases:
+            return self.process_phrases(text)
+        counts, variants = Counter(), Counter()
+        for unit in self.units(text):
+            if unit:
+                canonical, surface, _ = unit
+                counts[canonical] += 1
+                variants[(surface, canonical)] += 1
+        return counts, variants
+
+    def process_phrases(self, text):
+        """Count runs of adjacent units with at least two words and at least one non-excluded unit.
+
+        Grammar and other `break_categories` end a run, as do punctuation, numbers and fragments,
+        so phrases never bridge removed words. Other excluded units (e.g. 'area', 'quintile') may
+        appear inside a phrase to give context but cannot form a phrase alone.
+        """
+        breaks = set(self.phrases["break_categories"])
+        counts, variants = Counter(), Counter()
+        runs, run = [], []
+        for unit in [*self.units(text), None]:
+            if unit is None or self.categories.get(unit[0].lower()) in breaks:
+                runs.append(run)
+                run = []
+            else:
+                run.append(unit)
+        for run in runs:
+            for n in range(1, self.phrases["max_units"] + 1):
+                for start in range(len(run) - n + 1):
+                    window = run[start:start + n]
+                    if sum(len(c.split()) for c, _, _ in window) < 2:
+                        continue
+                    if all(c.lower() in self.exclusions for c, _, _ in window):
+                        continue
+                    key = " ".join(c for c, _, _ in window)
+                    # Show mapped units by their canonical name and everything else as written.
+                    shown = " ".join(c if mapped else s for c, s, mapped in window)
+                    counts[key] += 1
+                    variants[(shown, key)] += 1
         return counts, variants
 
 
@@ -132,6 +186,27 @@ def select_terms(weight, eligible, limit):
         boundary = weight[ordered[limit]]
         ordered = [t for t in ordered[:limit] if weight[t] > boundary]
     return ordered
+
+
+def fold_subphrases(papers, eligible, ratio):
+    """Map a phrase to a longer eligible phrase containing it that covers at least `ratio` of its papers."""
+    folded = {}
+    for short in eligible:
+        padded = f" {short} "
+        longer = [t for t in eligible if len(t) > len(short) and padded in f" {t} " and papers[t] >= ratio * papers[short]]
+        if longer:
+            folded[short] = min(longer, key=lambda t: (-papers[t], t))
+    return folded
+
+
+def display_labels(variants):
+    """Label each phrase with its most frequent displayed form (ties: alphabetical)."""
+    labels = {}
+    for (shown, key), count in sorted(variants.items(), key=lambda item: (-item[1], item[0])):
+        labels.setdefault(key, shown)
+    if len(set(labels.values())) != len(labels):
+        labels = {key: key for key in labels}
+    return labels
 
 
 def colour_for(term, palette):
@@ -161,13 +236,15 @@ def render_cloud(field, frequencies, rows, settings, out):
         collocations=False, normalize_plurals=False, repeat=False,
     ).generate_from_frequencies(frequencies)
     label = "titles" if field == "Title" else "abstracts"
-    title = f"Themes in paper {label}"
+    unit = "phrases" if settings["phrases"]["enabled"] else "terms"
+    title = f"{'Phrases' if unit == 'phrases' else 'Themes'} in paper {label}"
     years = [int(r["Year"]) for r in rows]
     count = sum(bool(r[field].strip()) for r in rows)
     subtitle = f"{count} papers  /  {min(years)}–{max(years)}  /  Scottish Index of Multiple Deprivation literature"
     metric = "paper prevalence" if settings["frequency"] == "papers" else "total term mentions"
-    footer = f"Size reflects {metric}. Reviewed term groups; common wording excluded."
-    footer2 = f"{len(cloud.layout_)} terms shown  /  Full counts and editable rules accompany these images"
+    footer = (f"Size reflects {metric}. Adjacent multi-word phrases; phrases do not cross grammar words or punctuation."
+              if unit == "phrases" else f"Size reflects {metric}. Reviewed term groups; common wording excluded.")
+    footer2 = f"{len(cloud.layout_)} {unit} shown  /  Full counts and editable rules accompany these images"
     width, height = settings["width"] + 144, settings["height"] + 260
     scale = settings["scale"]
     canvas = Image.new("RGB", (width * scale, height * scale), settings["background"])
@@ -236,7 +313,8 @@ def main():
     if any(r["Abstract"].startswith("Study examining ") and "evaluating health data linkage" in r["Abstract"] for r in rows):
         raise ValueError("Template abstracts detected. Use the corrected indexed corpus.")
     groups, excluded = read_csv(HERE / "term_groups.csv"), read_csv(HERE / "exclusions.csv")
-    rules = Rules(groups, excluded)
+    phrase_mode = settings["phrases"]["enabled"]
+    rules = Rules(groups, excluded, settings["phrases"] if phrase_mode else None)
     vocabulary = Counter(w for row in rows for field in ["Title", "Abstract"] for w in tokens(row[field]))
     if settings["merge_plurals"]:
         rules.fold_plurals(vocabulary, set(settings["plural_exceptions"]))
@@ -247,24 +325,33 @@ def main():
             retained = sorted(t for t in counts if t.lower() not in rules.exclusions)
             per_paper.append({"PMID": row["PMID"], "source": field, "retained_terms": " | ".join(retained)})
         eligible = [t for t in papers if papers[t] >= settings["minimum_papers"][field] and t.lower() not in rules.exclusions]
+        folded = fold_subphrases(papers, eligible, settings["phrases"]["fold_into_longer"]) if phrase_mode else {}
+        eligible = [t for t in eligible if t not in folded]
+        labels = display_labels(variants) if phrase_mode else {t: t for t in papers}
         weight = papers if settings["frequency"] == "papers" else mentions
         ordered = select_terms(weight, eligible, settings["maximum_terms"][field])
-        frequencies = {t: weight[t] for t in ordered}
+        frequencies = {labels[t]: weight[t] for t in ordered}
         if not frequencies:
             raise ValueError(f"No terms remaining in {field}; review the exclusions and thresholds")
-        shown = render_cloud(field, frequencies, rows, settings, out)
+        shown_labels = render_cloud(field, frequencies, rows, settings, out)
+        shown = {t for t in ordered if labels[t] in shown_labels}
         if len(shown) < len(frequencies):
             print(f"Warning: {field} cloud fits only {len(shown)} of {len(frequencies)} terms; enlarge the canvas or reduce the limit.")
         for term in sorted(papers, key=lambda t: (-papers[t], t.casefold(), t)):
             reason = rules.exclusions.get(term.lower(), "")
-            audit.append({"source": field, "term": term, "paper_count": papers[term], "mention_count": mentions[term],
-                          "paper_percent": f"{100 * papers[term] / len(rows):.2f}", "excluded": "yes" if reason else "no",
-                          "exclusion_reason": reason, "shown": "yes" if term in shown else "no"})
+            if term in folded:
+                reason = f"Mostly within the longer phrase '{folded[term]}'"
+            record = {"source": field, "term": term, "paper_count": papers[term], "mention_count": mentions[term],
+                      "paper_percent": f"{100 * papers[term] / len(rows):.2f}", "excluded": "yes" if reason else "no",
+                      "exclusion_reason": reason, "shown": "yes" if term in shown else "no"}
+            if phrase_mode:
+                record["displayed_as"] = labels[term]
+            audit.append(record)
         for (surface, canonical), count in sorted(variants.items()):
             usages.append({"source": field, "observed_form": surface, "canonical_term": canonical, "mentions": count})
         summary[field] = {"papers_with_text": sum(bool(r[field].strip()) for r in rows), "eligible_terms": len(eligible),
                           "displayed_terms": len(shown),
-                          "lowest_displayed_count": min(frequencies.values()), "top_terms": [{"term": t, "papers": papers[t]} for t in ordered[:15]]}
+                          "lowest_displayed_count": min(frequencies.values()), "top_terms": [{"term": labels[t], "papers": papers[t]} for t in ordered[:15]]}
     write_csv(out / "term_frequencies.csv", audit, list(audit[0]))
     write_csv(out / "observed_term_variants.csv", usages, list(usages[0]))
     write_csv(out / "terms_by_paper.csv", per_paper, list(per_paper[0]))

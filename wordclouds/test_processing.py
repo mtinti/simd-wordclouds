@@ -1,7 +1,8 @@
 """Focused safeguards for the scientific term processing, not pixel snapshots."""
 import unittest
 from collections import Counter
-from generate import HERE, Rules, count_terms, read_csv, select_terms
+import json
+from generate import HERE, Rules, count_terms, display_labels, fold_subphrases, read_csv, select_terms
 
 
 class ProcessingChecks(unittest.TestCase):
@@ -99,6 +100,42 @@ class ProcessingChecks(unittest.TestCase):
         self.assertEqual(counts["cigarettes"], 1)
         for fragment in ["self", "pre"]:
             self.assertIn(fragment, self.rules.exclusions)
+
+
+
+class PhraseChecks(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        phrases = json.loads((HERE / "settings.json").read_text())["phrases"]
+        cls.rules = Rules(read_csv(HERE / "term_groups.csv"), read_csv(HERE / "exclusions.csv"), phrases)
+
+    def test_deprivation_keeps_its_context(self):
+        counts, _ = self.rules.process("Socio-economic deprivation and area deprivation differ from deprived areas.")
+        for phrase in ["socioeconomic deprivation", "area deprivation", "deprived areas"]:
+            self.assertEqual(counts[phrase], 1)
+        self.assertNotIn("deprivation", counts)
+
+    def test_single_words_and_grammar_bridges_are_not_phrases(self):
+        counts, _ = self.rules.process("Mortality and deprivation; deprivation, mortality.")
+        self.assertEqual(counts, Counter())
+
+    def test_method_wording_breaks_phrases(self):
+        counts, _ = self.rules.process("The mean age by SIMD quintile in the most deprived quintile.")
+        self.assertEqual(counts, Counter())
+
+    def test_multiword_units_count_alone_and_display_canonically(self):
+        counts, variants = self.rules.process("SES and type 2 diabetes")
+        self.assertEqual(counts["socioeconomic status"], 1)
+        self.assertEqual(counts["type 2 diabetes"], 1)
+        self.assertEqual(display_labels(variants)["socioeconomic status"], "socioeconomic status")
+
+    def test_short_phrase_folds_into_longer_one_only_when_mostly_inside_it(self):
+        papers = Counter({"deprived areas": 10, "socioeconomically deprived areas": 7, "area deprivation": 10, "area based deprivation": 5})
+        folded = fold_subphrases(papers, list(papers), 0.75)
+        self.assertNotIn("deprived areas", folded)
+        self.assertNotIn("area deprivation", folded)
+        papers["socioeconomically deprived areas"] = 8
+        self.assertEqual(fold_subphrases(papers, list(papers), 0.75)["deprived areas"], "socioeconomically deprived areas")
 
 
 if __name__ == "__main__":
