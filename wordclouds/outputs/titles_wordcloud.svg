@@ -3,77 +3,60 @@
 <rect width="100%" height="100%" style="fill:#FAF9F6" />
 <text transform="translate(48,1480)" font-size="300" style="fill:#176B73">deprivation</text>
 <text transform="translate(452,694)" font-size="190" style="fill:#6E566D">mortality</text>
-<text transform="translate(2236,1622)" font-size="174" style="fill:#176B73">child</text>
-<text transform="translate(2222,388)" font-size="174" style="fill:#153F4A">health</text>
-<text transform="translate(2210,1318)" font-size="174" style="fill:#6E566D">risk</text>
-<text transform="translate(118,872)" font-size="174" style="fill:#153F4A">socioeconomic status</text>
-<text transform="translate(1370,339)" font-size="156" style="fill:#176B73">inequality</text>
-<text transform="translate(590,534)" font-size="150" style="fill:#9A573D">disease</text>
-<text transform="translate(1996,686)" font-size="150" style="fill:#176B73">incidence</text>
-<text transform="translate(48,217)" font-size="144" style="fill:#365D79">cancer</text>
-<text transform="translate(384,1005)" font-size="144" style="fill:#317F80">socioeconomic inequality</text>
-<text transform="translate(1664,171)" font-size="138" style="fill:#9A573D">social</text>
-<text transform="translate(668,1574)" font-size="132" style="fill:#6E566D">care</text>
-<text transform="translate(588,1138)" font-size="132" style="fill:#153F4A">COVID-19</text>
-<text transform="translate(1652,496)" font-size="132" style="fill:#153F4A">screening</text>
-<text transform="translate(2328,816)" font-size="132" style="fill:#317F80">service</text>
-<text transform="translate(490,122)" font-size="132" style="fill:#317F80">survival</text>
-<text transform="translate(966,1604)" font-size="126" style="fill:#176B73">childhood</text>
-<text transform="translate(154,466)" font-size="120" style="fill:#317F80">age</text>
-<text transform="translate(2116,1135)" font-size="120" style="fill:#176B73">hospital</text>
-<text transform="translate(1228,1173)" font-size="120" style="fill:#317F80">prevalence</text>
-<text transform="translate(656,227)" font-size="114" style="fill:#317F80">intervention</text>
-<text transform="translate(444,1295)" font-size="114" style="fill:#153F4A">NHS</text>
-<text transform="translate(1334,685)" font-size="114" style="fill:#6E566D">paediatric</text>
-<text transform="translate(1754,1334)" font-size="114" style="fill:#365D79">woman</text>
-<text transform="translate(1230,96)" font-size="106" style="fill:#317F80">access</text>
-<text transform="translate(2360,939)" font-size="106" style="fill:#6E566D">admission</text>
-<text transform="translate(146,655)" font-size="106" style="fill:#153F4A">adult</text>
-<text transform="translate(2302,1031)" font-size="106" style="fill:#6E566D">rural</text>
-<text transform="translate(2386,1451)" font-size="106" style="fill:#6E566D">urban</text>
-<text transform="translate(2010,1478)" font-size="98" style="fill:#365D79">cause</text>
-<text transform="translate(512,352)" font-size="98" style="fill:#176B73">colorectal cancer</text>
-<text transform="translate(2632,568)" font-size="98" style="fill:#176B73">death</text>
-<text transform="translate(276,1680)" font-size="98" style="fill:#6E566D">determinant</text>
-<text transform="translate(2054,178)" font-size="98" style="fill:#176B73">hospital admission</text>
-<text transform="translate(188,308)" font-size="98" style="fill:#317F80">illness</text>
-<text transform="translate(2302,464)" font-size="90" style="fill:#9A573D">multimorbidity</text>
-<text transform="translate(1764,1556)" font-size="90" style="fill:#176B73">predictor</text>
-<text transform="translate(1614,1656)" font-size="90" style="fill:#9A573D">primary care</text>
-<text transform="translate(40,90)" font-size="90" style="fill:#9A573D">severity</text>
-<text transform="translate(100,1156)" font-size="90" style="fill:#6E566D">surgery</text>
-<text transform="translate(2752,1038)" font-size="90" style="fill:#317F80">trial</text>
-<text transform="translate(2202,75)" font-size="88" style="fill:#365D79">type 1 diabetes</text>
-<text transform="translate(864,1209)" font-size="80" style="fill:#6E566D">alcohol</text>
-<text transform="translate(36,1003)" font-size="80" style="fill:#9A573D">asthma</text>
-<text transform="translate(1136,1673)" font-size="80" style="fill:#176B73">community</text>
-<text transform="translate(144,1077)" font-size="80" style="fill:#365D79">feasibility</text>
-<text transform="translate(1596,1247)" font-size="80" style="fill:#6E566D">health care</text>
-<text transform="translate(1022,421)" font-size="80" style="fill:#317F80">hospitalisation</text>
-<text transform="translate(1376,565)" font-size="80" style="fill:#153F4A">infection</text>
-<text transform="translate(2648,1573)" font-size="80" style="fill:#6E566D">obesity</text>
-<text transform="translate(1784,1393)" font-size="80" style="fill:#153F4A">programme</text>
-<text transform="translate(186,387)" font-size="80" style="fill:#9A573D">referral</text>
-<text transform="translate(722,758)" font-size="80" style="fill:#6E566D">treatment</text>
-<text transform="translate(1876,1081)" font-size="72" style="fill:#176B73">birth</text>
-<text transform="translate(2010,779)" font-size="72" style="fill:#317F80">dental</text>
-<text transform="translate(2552,1317)" font-size="72" style="fill:#365D79">diagnosis</text>
-<text transform="translate(136,538)" font-size="72" style="fill:#9A573D">emergency</text>
-<text transform="translate(104,759)" font-size="72" style="fill:#6E566D">food</text>
-<text transform="translate(2460,1193)" font-size="64" style="fill:#365D79">general practice</text>
-<text transform="translate(2590,1109)" font-size="64" style="fill:#317F80">hip fracture</text>
-<text transform="translate(1358,153)" font-size="64" style="fill:#6E566D">home</text>
-<text transform="translate(2592,243)" font-size="64" style="fill:#9A573D">income</text>
-<text transform="translate(1232,1083)" font-size="64" style="fill:#9A573D">indicators</text>
-<text transform="translate(2244,1676)" font-size="60" style="fill:#9A573D">intellectual disability</text>
-<text transform="translate(1416,224)" font-size="60" style="fill:#317F80">life expectancy</text>
-<text transform="translate(38,320)" font-size="60" style="fill:#6E566D">neck</text>
-<text transform="translate(110,1534)" font-size="60" style="fill:#176B73">pregnancy</text>
-<text transform="translate(846,1274)" font-size="60" style="fill:#176B73">prescribing</text>
-<text transform="translate(1246,478)" font-size="60" style="fill:#6E566D">preterm birth</text>
-<text transform="translate(1280,1228)" font-size="60" style="fill:#176B73">repeated</text>
-<text transform="translate(2732,670)" font-size="60" style="fill:#176B73">rurality</text>
-<text transform="translate(244,1278)" font-size="60" style="fill:#9A573D">self</text>
-<text transform="translate(916,1674)" font-size="60" style="fill:#153F4A">survey</text>
-<text transform="translate(532,1556)" font-size="60" style="fill:#9A573D">test</text>
-</svg><line x1="72" y1="1029" x2="1572" y2="1029" stroke="#D6DEDB" /><text x="72" y="1063" fill="#52646A" font-size="16">Size reflects paper prevalence. Reviewed term groups; common wording excluded.</text><text x="72" y="1088" fill="#52646A" font-size="14">75 terms shown  /  Full counts and editable rules accompany these images</text></svg>
+<text transform="translate(2636,1683)" font-size="178" style="fill:#6E566D">risk</text>
+<text transform="translate(1104,346)" font-size="174" style="fill:#176B73">child</text>
+<text transform="translate(514,1088)" font-size="174" style="fill:#153F4A">health</text>
+<text transform="translate(698,188)" font-size="174" style="fill:#153F4A">socioeconomic status</text>
+<text transform="translate(1656,805)" font-size="156" style="fill:#176B73">inequality</text>
+<text transform="translate(1426,650)" font-size="150" style="fill:#9A573D">disease</text>
+<text transform="translate(26,856)" font-size="150" style="fill:#176B73">incidence</text>
+<text transform="translate(2492,525)" font-size="144" style="fill:#365D79">cancer</text>
+<text transform="translate(584,491)" font-size="144" style="fill:#317F80">socioeconomic inequality</text>
+<text transform="translate(1544,985)" font-size="138" style="fill:#9A573D">social</text>
+<text transform="translate(2410,282)" font-size="132" style="fill:#6E566D">care</text>
+<text transform="translate(1988,1664)" font-size="132" style="fill:#153F4A">COVID-19</text>
+<text transform="translate(1894,1306)" font-size="132" style="fill:#153F4A">screening</text>
+<text transform="translate(2460,1016)" font-size="132" style="fill:#317F80">service</text>
+<text transform="translate(1628,1200)" font-size="132" style="fill:#317F80">survival</text>
+<text transform="translate(8,266)" font-size="126" style="fill:#176B73">childhood</text>
+<text transform="translate(2192,1444)" font-size="126" style="fill:#176B73">hospital</text>
+<text transform="translate(2022,600)" font-size="120" style="fill:#317F80">age</text>
+<text transform="translate(912,1625)" font-size="120" style="fill:#317F80">prevalence</text>
+<text transform="translate(966,847)" font-size="114" style="fill:#317F80">intervention</text>
+<text transform="translate(756,1205)" font-size="114" style="fill:#153F4A">NHS</text>
+<text transform="translate(2350,1151)" font-size="114" style="fill:#6E566D">paediatric</text>
+<text transform="translate(1008,1168)" font-size="114" style="fill:#365D79">woman</text>
+<text transform="translate(166,122)" font-size="106" style="fill:#317F80">access</text>
+<text transform="translate(2428,839)" font-size="106" style="fill:#6E566D">admission</text>
+<text transform="translate(1000,967)" font-size="106" style="fill:#153F4A">adult</text>
+<text transform="translate(78,958)" font-size="106" style="fill:#365D79">cause</text>
+<text transform="translate(62,1159)" font-size="106" style="fill:#6E566D">rural</text>
+<text transform="translate(1170,1057)" font-size="106" style="fill:#6E566D">urban</text>
+<text transform="translate(1556,364)" font-size="98" style="fill:#176B73">colorectal cancer</text>
+<text transform="translate(2416,664)" font-size="98" style="fill:#176B73">community</text>
+<text transform="translate(1774,1404)" font-size="98" style="fill:#176B73">death</text>
+<text transform="translate(1516,1086)" font-size="98" style="fill:#6E566D">determinant</text>
+<text transform="translate(36,348)" font-size="98" style="fill:#176B73">hospital admission</text>
+<text transform="translate(2008,976)" font-size="98" style="fill:#317F80">illness</text>
+<text transform="translate(64,1648)" font-size="98" style="fill:#9A573D">multimorbidity</text>
+<text transform="translate(112,472)" font-size="98" style="fill:#176B73">predictor</text>
+<text transform="translate(1740,1526)" font-size="98" style="fill:#9A573D">primary care</text>
+<text transform="translate(2594,1312)" font-size="98" style="fill:#9A573D">referral</text>
+<text transform="translate(2476,410)" font-size="98" style="fill:#9A573D">severity</text>
+<text transform="translate(310,1212)" font-size="98" style="fill:#6E566D">surgery</text>
+<text transform="translate(182,668)" font-size="98" style="fill:#317F80">trial</text>
+<text transform="translate(1614,260)" font-size="84" style="fill:#365D79">type 1 diabetes</text>
+<text transform="translate(2416,922)" font-size="76" style="fill:#6E566D">alcohol</text>
+<text transform="translate(2590,1530)" font-size="76" style="fill:#9A573D">asthma</text>
+<text transform="translate(2480,730)" font-size="76" style="fill:#365D79">feasibility</text>
+<text transform="translate(2470,1218)" font-size="76" style="fill:#6E566D">health care</text>
+<text transform="translate(2580,178)" font-size="76" style="fill:#6E566D">home</text>
+<text transform="translate(38,558)" font-size="76" style="fill:#317F80">hospitalisation</text>
+<text transform="translate(1600,1670)" font-size="76" style="fill:#6E566D">indicator</text>
+<text transform="translate(546,1552)" font-size="76" style="fill:#153F4A">infection</text>
+<text transform="translate(1416,1278)" font-size="76" style="fill:#6E566D">obesity</text>
+<text transform="translate(2548,59)" font-size="76" style="fill:#176B73">pregnancy</text>
+<text transform="translate(54,1021)" font-size="76" style="fill:#153F4A">programme</text>
+<text transform="translate(540,76)" font-size="76" style="fill:#6E566D">treatment</text>
+<text transform="translate(492,760)" font-size="76" style="fill:#9A573D">variation</text>
+</svg><line x1="72" y1="1029" x2="1572" y2="1029" stroke="#D6DEDB" /><text x="72" y="1063" fill="#52646A" font-size="16">Size reflects paper prevalence. Reviewed term groups; common wording excluded.</text><text x="72" y="1088" fill="#52646A" font-size="14">58 terms shown  /  Full counts and editable rules accompany these images</text></svg>

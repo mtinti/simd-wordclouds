@@ -8,6 +8,7 @@
     "abstracts_wordcloud.svg": true,
     "index.html": true,
     "observed_term_variants.csv": true,
+    "plural_merges.csv": true,
     "review_terms.html": true,
     "run_manifest.json": true,
     "term_frequencies.csv": true,
@@ -15,7 +16,7 @@
     "titles_wordcloud.png": true,
     "titles_wordcloud.svg": true
   },
-  "processing_tests_passed": 11,
+  "processing_tests_passed": 14,
   "corpus_records": 263,
   "missing_pdf_records_added": 11,
   "original_csv_preserved": true,

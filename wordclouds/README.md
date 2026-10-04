@@ -12,16 +12,16 @@ The supplied `simd_252_papers_year_pmid_abstract.csv` contains 252 unique PMIDs,
 
 The original file is preserved byte-for-byte. The corrected **[263-paper CSV](../simd_263_papers_year_pmid_abstract.csv)** uses the full indexed titles and abstracts from the archived Europe PMC MED records, matched by exact PMID. It includes the 11 records in the missing-PDF list. The **[11-paper CSV](../simd_missing_fulltext_abstracts.csv)** contains just those added records and their actual abstracts.
 
-Source links, PDF status and a flag identifying the 11 additions accompany each row. Publication years follow the indexed metadata. `PDF_Status=in_user_downloaded_list` reflects your supplied 252-paper list, rather than a new inspection of the original 123 PDFs. All 263 rows have nonempty indexed titles and abstracts. The two references without PMIDs are outside this corpus. The metadata snapshot is dated 4 October 2026; `data_audit.json` records input hashes and provenance.
+Source links, PDF status and a flag identifying the 11 additions accompany each row. Publication years follow the indexed metadata. `PDF_Status=in_user_downloaded_list` reflects your supplied 252-paper list, rather than a new inspection of the original 123 PDFs. All 263 rows have nonempty indexed titles and abstracts. The two references without PMIDs are outside this corpus. The metadata snapshot is dated 4 October 2026; `data_audit.json` records input hashes and provenance. `prepare_corpus.py` rebuilds `corpus.json`, `data_audit.json` and both corrected CSVs from the archived records in `research/`.
 
 ## How terms are counted
 
 1. Analyse titles and abstracts separately, using all 263 PMIDs in both.
-2. Normalize case, HTML entities, accents, possessives and punctuation. Hyphens and spaces are treated consistently. Numbers are retained while matching named phrases such as **type 1 diabetes**, then standalone numbers and unmapped one/two-character fragments are discarded.
-3. Match the longest enabled phrase or alias against the original token sequence, without crossing sentence or section punctuation. A phrase consumes its words once: **colorectal cancer** does not also contribute a separate **cancer** occurrence. Do not interpret the count for “cancer” as the number of papers about all cancers. Explicitly labelled concept-family mappings may combine related terms; they are not assertions that different measures are interchangeable.
-4. Apply the explicit exclusions to the resulting terms. Phrase matching precedes stopword removal, so **quality of life** is preserved and removing intervening words never creates a new phrase. No automatic stemming, hidden stopword library, automatic collocations or inferred synonym model is used.
+2. Normalize case, HTML entities, accents, possessives and punctuation. Hyphens and spaces are treated consistently, so meaningful hyphenated compounds (**e-cigarette**, **wellbeing**, **self-rated health**, **non-smoker**) are listed as phrases, and bare prefixes left by splitting (self, pre, post, non, sub, multi, inter, mid) are excluded. Numbers are retained while matching named phrases such as **type 1 diabetes**, then standalone numbers and unmapped one/two-character fragments are discarded.
+3. Match the longest enabled phrase or alias against the original token sequence, without crossing sentence, section, comma or bracket punctuation. A phrase consumes its words once: **colorectal cancer** does not also contribute a separate **cancer** occurrence. Do not interpret the count for “cancer” as the number of papers about all cancers. Explicitly labelled concept-family mappings may combine related terms; they are not assertions that different measures are interchangeable.
+4. Apply the explicit exclusions to the resulting terms. Phrase matching precedes stopword removal, so **quality of life** is preserved and removing intervening words never creates a new phrase. Regular plurals of otherwise unmapped words (**hospitals**, **policies**) are counted under their singular, but only when that singular also occurs in the corpus; `settings.json` lists exceptions where the plural has a different meaning (**falls**, **HADS**), and `outputs/plural_merges.csv` lists every merge. No other stemming, hidden stopword library, automatic collocations or inferred synonym model is used.
 5. By default, count **papers mentioning a term**, once per paper. This reduces the influence of repeated wording within a long abstract. Total mention counts are also exported. Longer abstracts can still mention more different concepts; paper frequency does not eliminate every length effect.
-6. Keep terms occurring in at least 2 titles or 5 abstracts. Display up to 75 title terms and 95 abstract terms. Resolve equal counts alphabetically. Font sizes reflect frequency and layout fitting; use the frequency table for exact comparisons. Font scales are fitted independently for each cloud, so do not compare physical sizes across clouds.
+6. Keep terms occurring in at least 2 titles or 5 abstracts. Display up to 75 title terms and 95 abstract terms. A tie is never split at that limit: if the terms at the cut-off share a count, all of them are left out, so alphabetical order never decides which topics appear. Fewer terms than the limit may therefore be shown; `run_manifest.json` records the lowest displayed count. Within the image, equal counts are ordered alphabetically. Font sizes reflect frequency and layout fitting; use the frequency table for exact comparisons. Font scales are fitted independently for each cloud, so do not compare physical sizes across clouds.
 
 Colours are decorative, chosen by a stable hash of each term so the same term has the same colour in both images. They do not encode a clinical category, effect direction or significance.
 
@@ -35,9 +35,10 @@ Use **[the searchable rules page](outputs/review_terms.html)** for review. It is
 | --- | --- |
 | [term_groups.csv](term_groups.csv) | Canonical display term; variants separated by `|`; kind of mapping; enabled flag; reason. `1` enables a rule and `0` disables it. |
 | [exclusions.csv](exclusions.csv) | Excluded term or phrase; category; enabled flag; reason. `1` excludes it and `0` retains it unless another active rule excludes the same canonical term. |
-| [settings.json](settings.json) | Seed, count method, colours, minimum paper counts, term limits, canvas and font sizes. |
+| [settings.json](settings.json) | Seed, count method, plural merging and its exceptions, colours, minimum paper counts, term limits, canvas and font sizes. |
 | [term_frequencies.csv](outputs/term_frequencies.csv) | Paper counts, mention counts, percentage, exclusion reason and whether each term appears in the image. |
 | [observed_term_variants.csv](outputs/observed_term_variants.csv) | Observed token forms, their mapped terms and occurrence counts, separately by title/abstract. |
+| [plural_merges.csv](outputs/plural_merges.csv) | Every plural counted under its singular, with token counts. Add a plural to `plural_exceptions` in settings.json to keep it separate. |
 | [terms_by_paper.csv](outputs/terms_by_paper.csv) | Retained terms for every PMID, allowing checks against individual papers. |
 
 The current choices distinguish exact variants, concept families and ambiguous fragments:
@@ -84,7 +85,7 @@ To verify the term-processing safeguards:
 .venv-wordcloud/bin/python wordclouds/test_processing.py
 ```
 
-`reproducibility_check.json` records the comparison between two complete runs with different Python hash seeds. Both cloud formats, the frequency tables and HTML review pages are compared by SHA-256. Eleven processing checks cover phrase boundaries, ambiguous qualifiers, subtype preservation and grouping behaviour. The indexed data and original CSV preservation were checked separately.
+`reproducibility_check.json` records the comparison between two complete runs with different Python hash seeds. Both cloud formats, the frequency tables and HTML review pages are compared by SHA-256. Fourteen processing checks cover phrase boundaries, ambiguous qualifiers, subtype preservation, grouping, once-per-paper counting, plural merging, hyphenated compounds and tie handling at the display limit. The indexed data and original CSV preservation were checked separately.
 
 ## Files to share
 
