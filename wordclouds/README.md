@@ -20,6 +20,10 @@ On the `multiword-phrases` branch the clouds show **multi-word phrases only** (`
 
 Set `"enabled": false` to return to the single-word clouds described below.
 
+### Cloud shape
+
+The title cloud is drawn inside a cloud outline (`"shape"` in settings.json): five overlapping ellipses, in pixels of the 1500 × 850 drawing area, used both as the placement mask and as the soft background fill in the PNG and SVG. `"fields": ["Title"]` controls which clouds use it. The abstract cloud keeps the rectangle, because only 43 of its 77 phrases fit inside the outline. The script prints a warning whenever a layout cannot fit every selected phrase; add `"Abstract"` to `fields` only if no warning appears. Edit or add ellipses to change the outline.
+
 ## The data correction matters
 
 The supplied `simd_252_papers_year_pmid_abstract.csv` contains 252 unique PMIDs, but all 252 abstract fields are the same sentence template filled with each title. Some titles are also truncated. They are not the indexed article abstracts. Making an abstract cloud from those sentences would mainly measure the template.

@@ -21,6 +21,7 @@ import xml.etree.ElementTree as ET
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 os.environ.setdefault("MPLCONFIGDIR", str(HERE / ".cache"))
+import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 from wordcloud import WordCloud
 
@@ -224,12 +225,28 @@ def write_review(groups, exclusions, out):
     (out / "review_terms.html").write_text(document)
 
 
+def shape_mask(settings, field):
+    """Mask for word placement: 0 inside the union of the shape's ellipses (inset by padding), 255 outside."""
+    shape = settings["shape"]
+    if field not in shape["fields"]:
+        return None
+    image = Image.new("L", (settings["width"], settings["height"]), 255)
+    draw = ImageDraw.Draw(image)
+    pad = shape["padding"]
+    for cx, cy, rx, ry in shape["ellipses"]:
+        draw.ellipse((cx - rx + pad, cy - ry + pad, cx + rx - pad, cy + ry - pad), fill=0)
+    return np.array(image)
+
+
 def render_cloud(field, frequencies, rows, settings, out):
     font = HERE / settings["font_file"]
     colour = lambda word, **kwargs: colour_for(word, settings["palette"])
+    shape = settings["shape"]
+    shaped = field in shape["fields"]
     cloud = WordCloud(
-        width=settings["width"], height=settings["height"], scale=settings["scale"],
-        font_path=str(font), random_state=settings["seed"], background_color=settings["background"],
+        width=settings["width"], height=settings["height"], scale=settings["scale"], mask=shape_mask(settings, field),
+        font_path=str(font), random_state=settings["seed"],
+        background_color=None if shaped else settings["background"], mode="RGBA" if shaped else "RGB",
         color_func=colour, max_words=len(frequencies), margin=9,
         prefer_horizontal=1.0, min_font_size=settings["min_font_size"],
         max_font_size=settings["max_font_size"], relative_scaling=settings["relative_scaling"],
@@ -256,7 +273,13 @@ def render_cloud(field, frequencies, rows, settings, out):
     text(72, 30, "SIMD LITERATURE", 16, "#176B73")
     text(72, 58, title, 43, "#153F4A")
     text(72, 119, subtitle, 17, "#52646A")
-    canvas.paste(cloud.to_image(), (72 * scale, 161 * scale))
+    if shaped:
+        for cx, cy, rx, ry in shape["ellipses"]:
+            draw.ellipse(((72 + cx - rx) * scale, (161 + cy - ry) * scale, (72 + cx + rx) * scale, (161 + cy + ry) * scale), fill=shape["fill"])
+        words = cloud.to_image()
+        canvas.paste(words, (72 * scale, 161 * scale), words)
+    else:
+        canvas.paste(cloud.to_image(), (72 * scale, 161 * scale))
     line_y = height - 81
     draw.line((72 * scale, line_y * scale, (width - 72) * scale, line_y * scale), fill="#D6DEDB", width=scale)
     text(72, height - 62, footer, 16, "#52646A")
@@ -282,6 +305,9 @@ def render_cloud(field, frequencies, rows, settings, out):
     svg_text(72, 46, "SIMD LITERATURE", 16, "#176B73")
     svg_text(72, 99, title, 43, "#153F4A")
     svg_text(72, 135, subtitle, 17, "#52646A")
+    if shaped:
+        for cx, cy, rx, ry in shape["ellipses"]:
+            ET.SubElement(svg, tag("ellipse"), cx=str(72 + cx), cy=str(161 + cy), rx=str(rx), ry=str(ry), fill=shape["fill"])
     nested = ET.fromstring(cloud.to_svg(embed_font=False))
     # to_svg honours scale; use its viewBox to place it at the same logical dimensions.
     nested.set("viewBox", f"0 0 {settings['width'] * scale} {settings['height'] * scale}")

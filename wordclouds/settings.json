@@ -13,6 +13,12 @@
                          "geographic qualifier", "data source"],
     "fold_into_longer": 0.75
   },
+  "shape": {
+    "fields": ["Title"],
+    "fill": "#EDF1EE",
+    "padding": 22,
+    "ellipses": [[750, 585, 700, 215], [330, 455, 255, 225], [640, 330, 305, 290], [985, 345, 280, 265], [1225, 470, 235, 205]]
+  },
   "plural_exceptions": ["falls", "hads", "highlands", "spectacles"],
   "minimum_papers": {"Title": 2, "Abstract": 5},
   "maximum_terms": {"Title": 75, "Abstract": 95},
