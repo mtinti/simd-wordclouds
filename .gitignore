@@ -1,6 +1,7 @@
 # Allowlist: only word-cloud inputs and the wordclouds/ pipeline are tracked for now.
 /*
 !/.gitignore
+!/README.md
 !/simd_252_papers_year_pmid_abstract.csv
 !/simd_263_papers_year_pmid_abstract.csv
 !/simd_missing_fulltext_abstracts.csv

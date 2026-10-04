@@ -6,9 +6,9 @@ The current vocabulary uses refined phrase pairings: **deprivation**, **socioeco
 
 This uses the free, MIT-licensed [Python wordcloud package](https://github.com/amueller/word_cloud), with the bundled [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/) font (SIL Open Font License, in `assets/` with its licence). It was designed by the Braille Institute for low-vision readers and gives easily confused characters distinct shapes (I/l/1, b/d, O/0), which also helps readers with dyslexia. No paid software or online word-cloud service is required. The CSV rules can be edited in a text editor or a spreadsheet application. Rendering runs locally.
 
-## Phrase mode (this branch)
+## Phrase mode (default)
 
-On the `multiword-phrases` branch the clouds show **multi-word phrases only** (`"phrases": {"enabled": true}` in settings.json). The aim is to show deprivation in the context it was studied: **socioeconomic deprivation**, **area deprivation**, **deprived areas** and **affluent areas** stay separate instead of collapsing into a single "deprivation".
+By default the clouds show **multi-word phrases only** (`"phrases": {"enabled": true}` in settings.json). The aim is to show deprivation in the context it was studied: **socioeconomic deprivation**, **area deprivation**, **deprived areas** and **affluent areas** stay separate instead of collapsing into a single "deprivation".
 
 - A phrase is a run of 2–3 adjacent units (words or listed phrases such as **type 2 diabetes**) within one sentence. Listed phrases of two or more words also count on their own.
 - Runs end at punctuation, numbers, fragments and any word in the `break_categories` exclusion categories (grammar, comparatives such as *higher*, statistical and study-design wording, sample and time wording, geography, deprivation-index naming and named data sources). So "mortality and deprivation" is not a phrase, and "most deprived SIMD quintile" yields nothing.
