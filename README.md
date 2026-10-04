@@ -4,9 +4,11 @@ What do studies that use the **Scottish Index of Multiple Deprivation (SIMD)** w
 
 ![Phrases in the titles of 263 SIMD papers, drawn inside a cloud outline. The largest are socioeconomic deprivation, socioeconomic status and socioeconomic inequality, followed by area deprivation, social deprivation, risk factor and hospital admission.](wordclouds/outputs/titles_wordcloud.png)
 
-The cloud counts **multi-word phrases**, so deprivation appears in the context it was studied: *socioeconomic*, *area* and *social* deprivation stay separate rather than collapsing into one word. Phrase size and shade both show how many papers use the phrase in their title. Each paper counts once, however often it repeats the phrase.
+The cloud counts **multi-word phrases**, so deprivation appears in the context it was studied: *socioeconomic*, *area* and *social* deprivation stay separate rather than collapsing into one word. In the title cloud above, phrase size and shade both show how many papers use the phrase in their title. Each paper counts once, however often it repeats the phrase.
 
-The [abstract cloud](wordclouds/outputs/abstracts_wordcloud.png) uses the same method on the full abstracts.
+The same method applied to the full abstracts gives a richer picture: 77 phrases, each found in at least 5 abstracts. It keeps a rectangular layout because that many phrases do not fit inside the cloud outline at a readable size.
+
+![Phrases in the abstracts of 263 SIMD papers. The largest are deprived areas, socioeconomic deprivation and socioeconomic status, followed by health care, risk factors, health inequality, hospital admission and primary care.](wordclouds/outputs/abstracts_wordcloud.png)
 
 ## Reading the cloud
 
