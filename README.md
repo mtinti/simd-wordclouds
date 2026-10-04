@@ -26,22 +26,24 @@ Requires Python 3.12. From the repository root:
 ```sh
 python3.12 -m venv .venv-wordcloud
 .venv-wordcloud/bin/python -m pip install -r wordclouds/requirements.txt
+.venv-wordcloud/bin/python wordclouds/fetch_corpus.py       # downloads the 263 records from Europe PMC
+.venv-wordcloud/bin/python wordclouds/prepare_corpus.py     # checks them and builds data/ corpus
 .venv-wordcloud/bin/python wordclouds/generate.py           # writes wordclouds/outputs/
 .venv-wordcloud/bin/python wordclouds/test_processing.py    # 19 processing checks
 ```
 
 Runs are deterministic: two runs with different Python hash seeds produce byte-identical images and tables ([reproducibility_check.json](wordclouds/reproducibility_check.json)). Package versions are pinned, and the font is bundled.
 
-To rebuild the corpus CSVs from the archived metadata, run `.venv-wordcloud/bin/python wordclouds/prepare_corpus.py`.
+The abstracts are not stored in this repository (see [Data and licences](#data-and-licences)). `prepare_corpus.py` checks every downloaded title and abstract against a SHA-256 fingerprint of the 4 October 2026 snapshot used for the published images, so a successful build reproduces them exactly. If Europe PMC has since corrected a record, the script names it and stops; `--allow-changes` builds from the current records instead.
 
 ## Repository contents
 
 | Path | Contents |
 | --- | --- |
-| [`simd_263_papers_year_pmid_abstract.csv`](simd_263_papers_year_pmid_abstract.csv) | The corpus: year, PMID, indexed title and abstract, PDF status and source link for each paper |
+| [`simd_papers.csv`](simd_papers.csv) | The 263 papers: year, PMID, DOI, title, PDF status, Europe PMC link, and fingerprints of the title and abstract |
 | [`simd_252_papers_year_pmid_abstract.csv`](simd_252_papers_year_pmid_abstract.csv) | The original paper list, kept unchanged. Its abstracts are title-based template sentences, so it is not used for counting |
-| [`simd_missing_fulltext_abstracts.csv`](simd_missing_fulltext_abstracts.csv), [`simd_pmids_not_downloaded.txt`](simd_pmids_not_downloaded.txt) | The 11 papers without a PDF, which are included in the corpus |
-| [`research/`](research/) | Europe PMC metadata snapshots (4 October 2026) that the corpus is built from |
+| [`simd_pmids_not_downloaded.txt`](simd_pmids_not_downloaded.txt) | The 11 papers without a PDF, which are included in the corpus (`Added_from_missing_list` in simd_papers.csv) |
+| [`wordclouds/fetch_corpus.py`](wordclouds/fetch_corpus.py), [`prepare_corpus.py`](wordclouds/prepare_corpus.py) | Download the records by PMID and build the checked corpus |
 | [`wordclouds/generate.py`](wordclouds/generate.py) | Counting and rendering |
 | [`wordclouds/term_groups.csv`](wordclouds/term_groups.csv), [`exclusions.csv`](wordclouds/exclusions.csv), [`settings.json`](wordclouds/settings.json) | Editable rules: phrases and spelling variants, excluded wording, thresholds, cloud shape, font and colours |
 | [`wordclouds/outputs/`](wordclouds/outputs/) | PNG (300 dpi) and SVG clouds, exact frequencies, per-paper terms and a run manifest with input and output hashes |
@@ -50,7 +52,8 @@ To switch back to single-word clouds or a rectangular layout, change `phrases.en
 
 ## Data and licences
 
-- **Paper metadata:** titles and abstracts come from the [Europe PMC](https://europepmc.org/) records for each PMID. The abstracts remain the copyright of their publishers and authors, and are included here only so the analysis can be reproduced.
+- **Paper metadata:** titles and abstracts come from the [Europe PMC](https://europepmc.org/) records for each PMID. Abstracts remain the copyright of their publishers and authors, so this repository does not include them: it shares bibliographic data (PMID, DOI, year, title) and one-way fingerprints, and `fetch_corpus.py` downloads the text from Europe PMC. The images and tables contain only phrases of at most three words.
 - **Font:** Atkinson Hyperlegible © Braille Institute of America, under the [SIL Open Font License 1.1](wordclouds/assets/AtkinsonHyperlegible-OFL.txt).
 - **Rendering:** uses the MIT-licensed [wordcloud](https://github.com/amueller/word_cloud) package.
-- **Code licence:** not yet chosen.
+- **Code:** [MIT licence](LICENSE).
+- **Images, rules and frequency tables** (`wordclouds/outputs/`, `term_groups.csv`, `exclusions.csv`, `settings.json`): [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/). Please credit "SIMD literature word clouds, Michele Tinti".

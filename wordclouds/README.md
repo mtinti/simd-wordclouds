@@ -28,9 +28,9 @@ The title cloud is drawn inside a cloud outline (`"shape"` in settings.json): a 
 
 The supplied `simd_252_papers_year_pmid_abstract.csv` contains 252 unique PMIDs, but all 252 abstract fields are the same sentence template filled with each title. Some titles are also truncated. They are not the indexed article abstracts. Making an abstract cloud from those sentences would mainly measure the template.
 
-The original file is preserved byte-for-byte. The corrected **[263-paper CSV](../simd_263_papers_year_pmid_abstract.csv)** uses the full indexed titles and abstracts from the archived Europe PMC MED records, matched by exact PMID. It includes the 11 records in the missing-PDF list. The **[11-paper CSV](../simd_missing_fulltext_abstracts.csv)** contains just those added records and their actual abstracts.
+The original file is preserved byte-for-byte. The corrected corpus uses the full indexed titles and abstracts from the Europe PMC MED records, matched by exact PMID, and includes the 11 records in the missing-PDF list. The abstracts are not redistributed in this repository: **[simd_papers.csv](../simd_papers.csv)** lists every paper's year, PMID, DOI and title, with SHA-256 fingerprints of the title and abstract. `fetch_corpus.py` downloads the records from Europe PMC into the git-ignored `data/` folder, and `prepare_corpus.py` checks each one against its fingerprints before writing `data/simd_263_papers_year_pmid_abstract.csv`.
 
-Source links, PDF status and a flag identifying the 11 additions accompany each row. Publication years follow the indexed metadata. `PDF_Status=in_user_downloaded_list` reflects your supplied 252-paper list, rather than a new inspection of the original 123 PDFs. All 263 rows have nonempty indexed titles and abstracts. The two references without PMIDs are outside this corpus. The metadata snapshot is dated 4 October 2026; `data_audit.json` records input hashes and provenance. `prepare_corpus.py` rebuilds `corpus.json`, `data_audit.json` and both corrected CSVs from the archived records in `research/`.
+Source links, PDF status and a flag identifying the 11 additions accompany each row. Publication years follow the indexed metadata. `PDF_Status=in_user_downloaded_list` reflects your supplied 252-paper list, rather than a new inspection of the original 123 PDFs. All 263 rows have nonempty indexed titles and abstracts. The two references without PMIDs are outside this corpus. The fingerprints come from the 4 October 2026 snapshot used for the published images. If a record has changed since (for example after a published correction), `prepare_corpus.py` stops and names it; `--allow-changes` builds from the current records and lists the differences in `data_audit.json`.
 
 ## How terms are counted
 
@@ -81,6 +81,13 @@ python3.12 -m venv .venv-wordcloud
 .venv-wordcloud/bin/python -m pip install -r wordclouds/requirements.txt
 ```
 
+Download the titles and abstracts and build the corpus once:
+
+```sh
+.venv-wordcloud/bin/python wordclouds/fetch_corpus.py
+.venv-wordcloud/bin/python wordclouds/prepare_corpus.py
+```
+
 Then regenerate after any rule or setting change:
 
 ```sh
@@ -89,7 +96,7 @@ Then regenerate after any rule or setting change:
 
 This workspace already has the environment configured. On Windows, use `.venv-wordcloud\Scripts\python.exe` instead of `.venv-wordcloud/bin/python`.
 
-The input defaults to the corrected 263-paper CSV. To use a different CSV with `Year`, `PMID`, `Title` and `Abstract` columns:
+The input defaults to the corpus that `prepare_corpus.py` writes in `data/`. To use a different CSV with `Year`, `PMID`, `Title` and `Abstract` columns:
 
 ```sh
 .venv-wordcloud/bin/python wordclouds/generate.py --input my_papers.csv --output-dir wordclouds/my_outputs

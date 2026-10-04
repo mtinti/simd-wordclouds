@@ -339,7 +339,7 @@ def render_cloud(field, frequencies, rows, settings, out):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input", type=Path, default=ROOT / "simd_263_papers_year_pmid_abstract.csv")
+    parser.add_argument("--input", type=Path, default=ROOT / "data" / "simd_263_papers_year_pmid_abstract.csv")
     parser.add_argument("--output-dir", type=Path, default=HERE / "outputs")
     args = parser.parse_args()
     out = args.output_dir
