@@ -1,6 +1,7 @@
 """Prepare indexed bibliographic text from the archived Europe PMC records.
 
-Preserves the user's original CSV. The output JSON is the input to export_corpus.mjs.
+Preserves the user's original CSV. Writes corpus.json, data_audit.json and the
+corrected 263-paper and 11-paper CSVs in the project root.
 """
 import csv
 import hashlib
@@ -65,6 +66,12 @@ def main():
         ],
     }
     (HERE / "corpus.json").write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n")
+    for filename, selected in [("simd_263_papers_year_pmid_abstract.csv", rows),
+                               ("simd_missing_fulltext_abstracts.csv", [r for r in rows if r["PDF_Status"] == "missing"])]:
+        with (ROOT / filename).open("w", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=list(rows[0]), quoting=csv.QUOTE_ALL, lineterminator="\n")
+            writer.writeheader()
+            writer.writerows(selected)
     (HERE / "data_audit.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps({k: v for k, v in audit.items() if not isinstance(v, (dict, list))}, indent=2))
 
