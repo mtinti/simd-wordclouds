@@ -226,7 +226,7 @@ def write_review(groups, exclusions, out):
 
 
 def shape_mask(settings, field):
-    """Mask for word placement: 0 inside the union of the shape's ellipses (inset by padding), 255 outside."""
+    """Mask for word placement: 0 inside the shape (inset by padding), 255 outside."""
     shape = settings["shape"]
     if field not in shape["fields"]:
         return None
@@ -235,6 +235,8 @@ def shape_mask(settings, field):
     pad = shape["padding"]
     for cx, cy, rx, ry in shape["ellipses"]:
         draw.ellipse((cx - rx + pad, cy - ry + pad, cx + rx - pad, cy + ry - pad), fill=0)
+    for x, y, w, h, r in shape["rounded_rects"]:
+        draw.rounded_rectangle((x + pad, y + pad, x + w - pad, y + h - pad), radius=r - pad, fill=0)
     return np.array(image)
 
 
@@ -276,6 +278,8 @@ def render_cloud(field, frequencies, rows, settings, out):
     if shaped:
         for cx, cy, rx, ry in shape["ellipses"]:
             draw.ellipse(((72 + cx - rx) * scale, (161 + cy - ry) * scale, (72 + cx + rx) * scale, (161 + cy + ry) * scale), fill=shape["fill"])
+        for x, y, w, h, r in shape["rounded_rects"]:
+            draw.rounded_rectangle(((72 + x) * scale, (161 + y) * scale, (72 + x + w) * scale, (161 + y + h) * scale), radius=r * scale, fill=shape["fill"])
         words = cloud.to_image()
         canvas.paste(words, (72 * scale, 161 * scale), words)
     else:
@@ -308,6 +312,8 @@ def render_cloud(field, frequencies, rows, settings, out):
     if shaped:
         for cx, cy, rx, ry in shape["ellipses"]:
             ET.SubElement(svg, tag("ellipse"), cx=str(72 + cx), cy=str(161 + cy), rx=str(rx), ry=str(ry), fill=shape["fill"])
+        for x, y, w, h, r in shape["rounded_rects"]:
+            ET.SubElement(svg, tag("rect"), x=str(72 + x), y=str(161 + y), width=str(w), height=str(h), rx=str(r), fill=shape["fill"])
     nested = ET.fromstring(cloud.to_svg(embed_font=False))
     # to_svg honours scale; use its viewBox to place it at the same logical dimensions.
     nested.set("viewBox", f"0 0 {settings['width'] * scale} {settings['height'] * scale}")

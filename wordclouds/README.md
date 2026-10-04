@@ -22,7 +22,7 @@ Set `"enabled": false` to return to the single-word clouds described below.
 
 ### Cloud shape
 
-The title cloud is drawn inside a cloud outline (`"shape"` in settings.json): five overlapping ellipses, in pixels of the 1500 × 850 drawing area, used both as the placement mask and as the soft background fill in the PNG and SVG. `"fields": ["Title"]` controls which clouds use it. The abstract cloud keeps the rectangle, because only 43 of its 77 phrases fit inside the outline. The script prints a warning whenever a layout cannot fit every selected phrase; add `"Abstract"` to `fields` only if no warning appears. Edit or add ellipses to change the outline.
+The title cloud is drawn inside a cloud outline (`"shape"` in settings.json): a rounded-rectangle base (`rounded_rects`: x, y, width, height, corner radius) with four round bumps along the top (`ellipses`: centre x, centre y, x radius, y radius), in pixels of the 1500 × 850 drawing area, used both as the placement mask and as the soft background fill in the PNG and SVG. `"fields": ["Title"]` controls which clouds use it. The abstract cloud keeps the rectangle, because only 43 of its 77 phrases fit inside the outline. The script prints a warning whenever a layout cannot fit every selected phrase; add `"Abstract"` to `fields` only if no warning appears. Edit or add ellipses and rectangles to change the outline.
 
 ## The data correction matters
 

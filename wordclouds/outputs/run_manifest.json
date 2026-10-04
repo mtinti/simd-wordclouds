@@ -4,8 +4,8 @@
     "assets/DejaVuSans.ttf": "7da195a74c55bef988d0d48f9508bd5d849425c1770dba5d7bfc6ce9ed848954",
     "corpus": "62d2fe78ab7479bb886d59a82c49de9b2a43b76c0c76b0f41e97ec69a4568766",
     "exclusions.csv": "2bc01890494d4cbdcbbd6e43c4d3b7df858f470e14170bc59353a01a8637fd21",
-    "generate.py": "4cd842ef9464ccb85146af1f0c1169d01d00ac42d183ea03521a59af5b86e3fd",
-    "settings.json": "047a3d3e6ec201e3415f6b3d28d3b6971485c6eb9603b7299da6316abd8f46b3",
+    "generate.py": "1c689e88dd61d34f9bcc18e2e0926bf14ec04a38e6ea5c6d557c036bde911f64",
+    "settings.json": "6790cc738e5bc5eabcd6c8a565ca4475813476c013aca8d94205d79a1e8c2e86",
     "term_groups.csv": "958935b8aac1108028b2229e9b6b3ff140e3659f5acec4aabe18730f49126d58"
   },
   "output_sha256": {
@@ -17,8 +17,8 @@
     "review_terms.html": "fa6665a5b8672d8b739d63a4c14bf6e557f0aa97092d3323977029f64ea5cad2",
     "term_frequencies.csv": "f323670171592e421591c1dd0d229382649c65d1f1d78f2fe391f0a9911c0b41",
     "terms_by_paper.csv": "e792e10bb6a64a3b80957837ee70b3bbf855b1886a2855cc2e8035d4c0b06924",
-    "titles_wordcloud.png": "8203b4c2faae7106386d7e342166739b8b2abbf7c7adaa84310030f7aa17f862",
-    "titles_wordcloud.svg": "bc1606627afade4459230297b9c3ce9c1bd8e83d7c8fa2996bff94779c49f153"
+    "titles_wordcloud.png": "a8eb053403e8b91ae900da10cc4e2322c1bf7bc11d608f783efb697528927091",
+    "titles_wordcloud.svg": "97d293931bd230eac402799b995a637bb3185127b428d0d036ed7bdc924c0576"
   },
   "packages": {
     "Pillow": "12.2.0",

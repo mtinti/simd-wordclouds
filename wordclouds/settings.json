@@ -17,7 +17,8 @@
     "fields": ["Title"],
     "fill": "#EDF1EE",
     "padding": 22,
-    "ellipses": [[750, 585, 700, 215], [330, 455, 255, 225], [640, 330, 305, 290], [985, 345, 280, 265], [1225, 470, 235, 205]]
+    "ellipses": [[340, 465, 200, 200], [610, 330, 255, 255], [935, 345, 235, 235], [1165, 470, 195, 195]],
+    "rounded_rects": [[120, 430, 1260, 370, 185]]
   },
   "plural_exceptions": ["falls", "hads", "highlands", "spectacles"],
   "minimum_papers": {"Title": 2, "Abstract": 5},
