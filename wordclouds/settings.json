@@ -30,6 +30,7 @@
   "max_font_size": 100,
   "relative_scaling": 0.5,
   "background": "#FAF9F6",
-  "palette": ["#153F4A", "#176B73", "#317F80", "#9A573D", "#6E566D", "#365D79"],
-  "font_file": "assets/DejaVuSans.ttf"
+  "palette": ["#256ABF", "#184F95", "#0D366B"],
+  "font_file": "assets/AtkinsonHyperlegible-Regular.ttf",
+  "font_name": "Atkinson Hyperlegible"
 }

@@ -210,8 +210,14 @@ def display_labels(variants):
     return labels
 
 
-def colour_for(term, palette):
-    return palette[int(hashlib.sha256(term.encode()).hexdigest()[:8], 16) % len(palette)]
+def colour_bands(frequencies, palette):
+    """Shade by frequency: split displayed terms into len(palette) bands, light (rarer) to dark (commoner).
+
+    A term's band depends on how many displayed terms have a strictly lower count, so ties share a shade.
+    """
+    weights = sorted(frequencies.values())
+    n, k = len(weights), len(palette)
+    return {term: palette[min(k - 1, k * sum(w < weight for w in weights) // n)] for term, weight in frequencies.items()}
 
 
 def write_review(groups, exclusions, out):
@@ -242,7 +248,8 @@ def shape_mask(settings, field):
 
 def render_cloud(field, frequencies, rows, settings, out):
     font = HERE / settings["font_file"]
-    colour = lambda word, **kwargs: colour_for(word, settings["palette"])
+    shades = colour_bands(frequencies, settings["palette"])
+    colour = lambda word, **kwargs: shades[word]
     shape = settings["shape"]
     shaped = field in shape["fields"]
     cloud = WordCloud(
@@ -261,8 +268,8 @@ def render_cloud(field, frequencies, rows, settings, out):
     count = sum(bool(r[field].strip()) for r in rows)
     subtitle = f"{count} papers  /  {min(years)}–{max(years)}  /  Scottish Index of Multiple Deprivation literature"
     metric = "paper prevalence" if settings["frequency"] == "papers" else "total term mentions"
-    footer = (f"Size reflects {metric}. Adjacent multi-word phrases; phrases do not cross grammar words or punctuation."
-              if unit == "phrases" else f"Size reflects {metric}. Reviewed term groups; common wording excluded.")
+    footer = (f"Size and shade reflect {metric}. Adjacent multi-word phrases; phrases do not cross grammar words or punctuation."
+              if unit == "phrases" else f"Size and shade reflect {metric}. Reviewed term groups; common wording excluded.")
     footer2 = f"{len(cloud.layout_)} {unit} shown  /  Full counts and editable rules accompany these images"
     width, height = settings["width"] + 144, settings["height"] + 260
     scale = settings["scale"]
@@ -299,7 +306,8 @@ def render_cloud(field, frequencies, rows, settings, out):
     ET.SubElement(svg, tag("desc")).text = subtitle + ". " + footer
     style = ET.SubElement(svg, tag("style"))
     encoded = base64.b64encode(font.read_bytes()).decode()
-    style.text = f"@font-face{{font-family:'DejaVu Sans';src:url(data:font/ttf;base64,{encoded}) format('truetype');}}text{{font-family:'DejaVu Sans';}}"
+    family = settings["font_name"]
+    style.text = f"@font-face{{font-family:'{family}';src:url(data:font/ttf;base64,{encoded}) format('truetype');}}text{{font-family:'{family}';}}"
     ET.SubElement(svg, tag("rect"), width="100%", height="100%", fill=settings["background"])
 
     def svg_text(x, y, value, size, fill):
@@ -391,7 +399,7 @@ def main():
                    for p, s in sorted(rules.plurals.items())]
     write_csv(out / "plural_merges.csv", plural_rows, ["plural", "merged_into", "plural_tokens", "singular_tokens"])
     images = "\n".join(f'<section><h2>{name.title()}</h2><a href="{name}_wordcloud.svg"><img src="{name}_wordcloud.png" alt="Word cloud from paper {name}"></a><p><a href="{name}_wordcloud.png">PNG, 300 dpi</a> · <a href="{name}_wordcloud.svg">Scalable SVG</a></p></section>' for name in ["titles", "abstracts"])
-    (out / "index.html").write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>SIMD word clouds</title><style>body{max-width:1200px;margin:40px auto;padding:0 24px;background:#faf9f6;color:#153f4a;font:18px/1.55 system-ui}h1{font-size:40px}img{width:100%;height:auto}a{color:#176b73}section{margin:40px 0;border-top:1px solid #d6dedb}p{max-width:950px}</style><h1>SIMD literature word clouds</h1><p>' + str(len(rows)) + ' indexed titles and abstracts, including papers with missing PDFs. Term size reflects ' + ('the number of papers mentioning the term' if settings['frequency'] == 'papers' else 'the total number of term mentions') + '. Colours are decorative and consistent between the clouds.</p><p><a href="review_terms.html">Browse and search all term rules</a> · <a href="../exclusions.csv">Review exclusions</a> · <a href="term_frequencies.csv">Review exact frequencies</a> · <a href="../README.md">Method and rerun instructions</a></p>' + images + '</html>\n')
+    (out / "index.html").write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>SIMD word clouds</title><style>body{max-width:1200px;margin:40px auto;padding:0 24px;background:#faf9f6;color:#153f4a;font:18px/1.55 system-ui}h1{font-size:40px}img{width:100%;height:auto}a{color:#176b73}section{margin:40px 0;border-top:1px solid #d6dedb}p{max-width:950px}</style><h1>SIMD literature word clouds</h1><p>' + str(len(rows)) + ' indexed titles and abstracts, including papers with missing PDFs. Term size reflects ' + ('the number of papers mentioning the term' if settings['frequency'] == 'papers' else 'the total number of term mentions') + '. Darker blue marks more frequent terms, repeating the size encoding; colour is never the only cue.</p><p><a href="review_terms.html">Browse and search all term rules</a> · <a href="../exclusions.csv">Review exclusions</a> · <a href="term_frequencies.csv">Review exact frequencies</a> · <a href="../README.md">Method and rerun instructions</a></p>' + images + '</html>\n')
     write_review(groups, excluded, out)
     inputs = {"corpus": digest(args.input)}
     for name in ["settings.json", "term_groups.csv", "exclusions.csv", "generate.py", settings["font_file"]]:

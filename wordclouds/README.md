@@ -4,7 +4,7 @@ Open **[outputs/index.html](outputs/index.html)** in your browser to see both cl
 
 The current vocabulary uses refined phrase pairings: **deprivation**, **socioeconomic status** and **inequality** remain distinct families. Read the [pairing review](pairing_refinement_report.md) for the decisions and resulting paper counts. Previous rules and images are preserved in `versions/before_pairing_refinement/`.
 
-This uses the free, MIT-licensed [Python wordcloud package](https://github.com/amueller/word_cloud), with a bundled, openly licensed DejaVu Sans font. No paid software or online word-cloud service is required. The CSV rules can be edited in a text editor or a spreadsheet application. Rendering runs locally.
+This uses the free, MIT-licensed [Python wordcloud package](https://github.com/amueller/word_cloud), with the bundled [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/) font (SIL Open Font License, in `assets/` with its licence). It was designed by the Braille Institute for low-vision readers and gives easily confused characters distinct shapes (I/l/1, b/d, O/0), which also helps readers with dyslexia. No paid software or online word-cloud service is required. The CSV rules can be edited in a text editor or a spreadsheet application. Rendering runs locally.
 
 ## Phrase mode (this branch)
 
@@ -41,7 +41,7 @@ Source links, PDF status and a flag identifying the 11 additions accompany each 
 5. By default, count **papers mentioning a term**, once per paper. This reduces the influence of repeated wording within a long abstract. Total mention counts are also exported. Longer abstracts can still mention more different concepts; paper frequency does not eliminate every length effect.
 6. Keep terms occurring in at least 2 titles or 5 abstracts. Display up to 75 title terms and 95 abstract terms. A tie is never split at that limit: if the terms at the cut-off share a count, all of them are left out, so alphabetical order never decides which topics appear. Fewer terms than the limit may therefore be shown; `run_manifest.json` records the lowest displayed count. Within the image, equal counts are ordered alphabetically. Font sizes reflect frequency and layout fitting; use the frequency table for exact comparisons. Font scales are fitted independently for each cloud, so do not compare physical sizes across clouds.
 
-Colours are decorative, chosen by a stable hash of each term so the same term has the same colour in both images. They do not encode a clinical category, effect direction or significance.
+Colour repeats the size encoding: displayed terms are split into three frequency bands, shaded from lighter to darker blue (`#256ABF`, `#184F95`, `#0D366B`), and tied counts share a shade. Only lightness varies, so the bands read the same with any type of colour vision deficiency, and colour is never the only cue. Every shade has at least 4.7:1 contrast against the cloud fill and the page background. Colour does not encode a clinical category, effect direction or significance. Bands are relative to each cloud, so do not compare shades across clouds.
 
 These clouds describe vocabulary. They do not measure study quality, effect sizes, whether deprivation increases or decreases an outcome, or the absence of a topic from the full texts. Generic comparison words are excluded, so the images must not be used to infer the direction of findings. Titles and abstracts can emphasize different aspects of the same paper.
 
@@ -53,7 +53,7 @@ Use **[the searchable rules page](outputs/review_terms.html)** for review. It is
 | --- | --- |
 | [term_groups.csv](term_groups.csv) | Canonical display term; variants separated by `|`; kind of mapping; enabled flag; reason. `1` enables a rule and `0` disables it. |
 | [exclusions.csv](exclusions.csv) | Excluded term or phrase; category; enabled flag; reason. `1` excludes it and `0` retains it unless another active rule excludes the same canonical term. |
-| [settings.json](settings.json) | Seed, count method, plural merging and its exceptions, colours, minimum paper counts, term limits, canvas and font sizes. |
+| [settings.json](settings.json) | Seed, count method, plural merging and its exceptions, font, colour bands, cloud shape, minimum paper counts, term limits, canvas and font sizes. |
 | [term_frequencies.csv](outputs/term_frequencies.csv) | Paper counts, mention counts, percentage, exclusion reason and whether each term appears in the image. |
 | [observed_term_variants.csv](outputs/observed_term_variants.csv) | Observed token forms, their mapped terms and occurrence counts, separately by title/abstract. |
 | [plural_merges.csv](outputs/plural_merges.csv) | Every plural counted under its singular, with token counts. Add a plural to `plural_exceptions` in settings.json to keep it separate. |
