@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "seed": 20261004,
+  "different_python_hash_seeds": true,
+  "comparison": "SHA-256 byte equality across two complete runs",
+  "files": {
+    "abstracts_wordcloud.png": true,
+    "abstracts_wordcloud.svg": true,
+    "index.html": true,
+    "observed_term_variants.csv": true,
+    "review_terms.html": true,
+    "run_manifest.json": true,
+    "term_frequencies.csv": true,
+    "terms_by_paper.csv": true,
+    "titles_wordcloud.png": true,
+    "titles_wordcloud.svg": true
+  },
+  "processing_tests_passed": 6,
+  "corpus_records": 263,
+  "missing_pdf_records_added": 11,
+  "original_csv_preserved": true
+}

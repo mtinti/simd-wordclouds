@@ -1,0 +1,103 @@
+canonical,variants,kind,enabled,reason
+SIMD,scottish index of multiple deprivation|scottish indices of multiple deprivation|scottish multiple deprivation index|simd,abbreviation,1,Name and abbreviation of the same index; excluded by default in exclusions.csv
+socioeconomic,socio economic|socioeconomic,spelling,1,Hyphenation variants; do not equate socioeconomic status with deprivation
+socioeconomic deprivation,socioeconomic deprivation|socio economic deprivation,phrase,1,Keep this specific concept separate from generic deprivation
+social deprivation,social deprivation,phrase,1,Keep this specific concept separate from generic deprivation
+area deprivation,area deprivation|area level deprivation,phrase,1,Area-level wording
+socioeconomic status,socioeconomic status|socio economic status|ses,abbreviation,1,Status and its conventional abbreviation; not a synonym for deprivation
+socioeconomic inequality,socioeconomic inequality|socioeconomic inequalities|socio economic inequality|socio economic inequalities,inflection,1,Singular and plural plus hyphenation
+health inequality,health inequality|health inequalities,inflection,1,Singular and plural
+inequality,inequality|inequalities,inflection,1,Keep inequality separate from deprivation
+deprivation,deprivation|deprivations,inflection,1,Singular and plural; deprived is retained separately because comparisons have direction
+cancer,cancer|cancers,inflection,1,Singular and plural; named cancers remain separate phrases
+colorectal cancer,colorectal cancer|colorectal cancers,phrase,1,Preserve the cancer site
+lung cancer,lung cancer|lung cancers,phrase,1,Preserve the cancer site
+breast cancer,breast cancer|breast cancers,phrase,1,Preserve the cancer site
+prostate cancer,prostate cancer|prostate cancers,phrase,1,Preserve the cancer site
+hepatocellular carcinoma,hepatocellular carcinoma|hcc,abbreviation,1,Exact clinical abbreviation in this corpus
+oesophageal cancer,oesophageal cancer|esophageal cancer,spelling,1,British and American spelling
+oesophagogastric cancer,oesophagogastric cancer|esophagogastric cancer,spelling,1,British and American spelling
+tumour,tumour|tumours|tumor|tumors,spelling,1,Spelling and number; not merged with cancer
+diabetes,diabetes|diabetes mellitus,terminology,1,Generic disease name; diabetes subtypes remain separate phrases
+type 1 diabetes,type 1 diabetes|type i diabetes|type 1 diabetes mellitus|t1d|t1dm,abbreviation,1,Type-specific abbreviation; never merge with type 2
+type 2 diabetes,type 2 diabetes|type ii diabetes|type 2 diabetes mellitus|t2d|t2dm,abbreviation,1,Type-specific abbreviation; never merge with type 1
+cardiovascular disease,cardiovascular disease|cardiovascular diseases|cvd,abbreviation,1,Conventional abbreviation
+coronary heart disease,coronary heart disease|chd,abbreviation,0,CHD is ambiguous here: coronary disease or congenital hand differences
+mental health,mental health,phrase,1,Preserve the phrase
+public health,public health,phrase,1,Preserve the phrase
+primary care,primary care,phrase,1,Preserve the phrase
+health care,healthcare|health care,spelling,1,Spacing variants
+health service,health service|health services,inflection,1,Singular and plural
+quality of life,quality of life,phrase,1,Preserve words normally removed as stopwords inside this phrase
+life expectancy,life expectancy,phrase,1,Preserve the phrase
+life satisfaction,life satisfaction,phrase,1,Preserve the phrase
+body mass index,body mass index|bmi,abbreviation,1,Conventional abbreviation
+blood pressure,blood pressure,phrase,1,Preserve the phrase
+physical activity,physical activity,phrase,1,Preserve the phrase
+physical function,physical function,phrase,1,Preserve the phrase
+birth weight,birth weight|birthweight,spelling,1,Spacing variants
+low birth weight,low birth weight|low birthweight,spelling,1,Preserve the low-weight qualifier
+preterm birth,preterm birth|preterm births,inflection,1,Singular and plural
+stillbirth,stillbirth|stillbirths,inflection,1,Singular and plural
+food outlet,food outlet|food outlets,inflection,1,Singular and plural
+food insecurity,food insecurity,phrase,1,Preserve the phrase
+alcohol misuse,alcohol misuse,phrase,1,Do not merge all alcohol consumption with misuse
+alcohol consumption,alcohol consumption,phrase,1,Preserve the phrase
+smoking,smoking|tobacco smoking,terminology,1,Smoking wording
+emergency department,emergency department|emergency departments|accident and emergency,terminology,1,Alternative service terminology
+hospital admission,hospital admission|hospital admissions,inflection,1,Singular and plural
+hospitalisation,hospitalisation|hospitalisations|hospitalization|hospitalizations,spelling,1,British and American spelling plus number
+length of stay,length of stay,phrase,1,Preserve the phrase
+hip fracture,hip fracture|hip fractures,inflection,1,Preserve the anatomical site
+hip replacement,hip replacement|hip replacements|total hip replacement|total hip replacements|total hip arthroplasty,terminology,0,Optional broader grouping; total procedures should not silently absorb all replacements
+total hip arthroplasty,total hip arthroplasty|total hip replacement|total hip replacements,terminology,1,Equivalent names for the total procedure
+total knee arthroplasty,total knee arthroplasty|total knee replacement|total knee replacements,terminology,1,Equivalent names for the total procedure
+joint replacement,joint replacement|joint replacements,inflection,1,Singular and plural
+fracture,fracture|fractures,inflection,1,Singular and plural
+injury,injury|injuries,inflection,1,Singular and plural
+LARC,long acting reversible contraception|long acting reversible contraceptive|long acting reversible contraceptives|larc,abbreviation,1,Full clinical phrase and conventional abbreviation
+abdominal aortic aneurysm,abdominal aortic aneurysm|abdominal aortic aneurysms|aaa,abbreviation,1,Full clinical phrase and abbreviation
+COVID-19,covid 19|covid19,spelling,1,Hyphenation and spacing variants
+NHS,national health service|nhs,abbreviation,1,Institution name and abbreviation
+UK,united kingdom|uk,abbreviation,1,Country and abbreviation; excluded as geographic context by default
+child,child|children,inflection,1,Singular and plural; not merged with infants or adolescents
+adolescent,adolescent|adolescents,inflection,1,Singular and plural
+infant,infant|infants,inflection,1,Singular and plural
+adult,adult|adults,inflection,1,Singular and plural
+older adult,older adult|older adults,inflection,1,Preserve the age qualifier
+woman,woman|women,inflection,1,Singular and plural
+man,man|men,inflection,1,Singular and plural
+female,female|females,inflection,1,Singular and plural; sex and gender labels are not forced into one group
+male,male|males,inflection,1,Singular and plural
+patient,patient|patients,inflection,1,Singular and plural; generic population noun excluded by default
+participant,participant|participants,inflection,1,Singular and plural; generic population noun excluded by default
+person,person|persons|people,inflection,1,Singular and plural; generic population noun excluded by default
+death,death|deaths,inflection,1,Singular and plural; not automatically merged with mortality
+disease,disease|diseases,inflection,1,Singular and plural
+outcome,outcome|outcomes,inflection,1,Singular and plural; generic research term excluded by default
+intervention,intervention|interventions,inflection,1,Singular and plural
+screening,screening|screenings,inflection,1,Singular and plural
+prescription,prescription|prescriptions,inflection,1,Singular and plural
+treatment,treatment|treatments,inflection,1,Singular and plural
+diagnosis,diagnosis|diagnoses,inflection,1,Singular and plural
+comorbidity,comorbidity|comorbidities,inflection,1,Singular and plural
+multimorbidity,multimorbidity|multi morbidity,spelling,1,Hyphenation variants
+behaviour,behaviour|behaviours|behavior|behaviors,spelling,1,British and American spelling plus number
+neighbourhood,neighbourhood|neighbourhoods|neighborhood|neighborhoods,spelling,1,British and American spelling plus number
+deprivation,social deprivation|socioeconomic deprivation|area deprivation,proposed broader merge,0,Optional topic grouping rather than strict equivalence; keep disabled for the initial clouds
+head injury,head injury|head injuries,inflection,1,Preserve the anatomical phrase
+primary hyperparathyroidism,primary hyperparathyroidism,phrase,1,Preserve the disease qualifier
+oral health,oral health,phrase,1,Preserve the phrase
+general practice,general practice|general practices,inflection,1,Preserve the service phrase
+dental care,dental care,phrase,1,Preserve the service phrase
+secondary care,secondary care,phrase,1,Preserve the service phrase
+glycaemic control,glycaemic control|glycemic control,spelling,1,Preserve the clinical phrase before excluding generic control
+admission,admission|admissions,inflection,1,Singular and plural; qualified hospital admissions remain separate
+service,service|services,inflection,1,Singular and plural; specific health-service phrases remain separate
+determinant,determinant|determinants,inflection,1,Singular and plural
+predictor,predictor|predictors,inflection,1,Singular and plural
+infection,infection|infections,inflection,1,Singular and plural
+paediatric,paediatric|pediatric,spelling,1,British and American spelling
+intellectual disability,intellectual disability|intellectual disabilities,inflection,1,Preserve the clinical phrase
+dental caries,dental caries,phrase,1,Preserve the clinical phrase
+long term condition,long term condition|long term conditions,inflection,1,Preserve the clinical phrase before excluding generic time wording

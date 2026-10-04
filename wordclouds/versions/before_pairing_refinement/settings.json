@@ -1,0 +1,15 @@
+{
+  "seed": 20261004,
+  "frequency": "papers",
+  "minimum_papers": {"Title": 2, "Abstract": 5},
+  "maximum_terms": {"Title": 75, "Abstract": 95},
+  "width": 1500,
+  "height": 850,
+  "scale": 2,
+  "min_font_size": 17,
+  "max_font_size": 150,
+  "relative_scaling": 0.5,
+  "background": "#FAF9F6",
+  "palette": ["#153F4A", "#176B73", "#317F80", "#9A573D", "#6E566D", "#365D79"],
+  "font_file": "assets/DejaVuSans.ttf"
+}

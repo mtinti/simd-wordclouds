@@ -1,0 +1,16 @@
+# Allowlist: only word-cloud inputs and the wordclouds/ pipeline are tracked for now.
+/*
+!/.gitignore
+!/simd_252_papers_year_pmid_abstract.csv
+!/simd_263_papers_year_pmid_abstract.csv
+!/simd_missing_fulltext_abstracts.csv
+!/simd_pmids_not_downloaded.txt
+!/wordclouds/
+
+/research/*
+!/research/
+!/research/europe_pmc_search_2026-10-04.json
+!/research/supplemental_2026-10-04.json
+!/research/original_other_metadata_2026-10-04.json
+
+.DS_Store

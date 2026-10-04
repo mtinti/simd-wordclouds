@@ -1,0 +1,167 @@
+{
+  "frequency": "papers",
+  "input_sha256": {
+    "assets/DejaVuSans.ttf": "7da195a74c55bef988d0d48f9508bd5d849425c1770dba5d7bfc6ce9ed848954",
+    "corpus": "62d2fe78ab7479bb886d59a82c49de9b2a43b76c0c76b0f41e97ec69a4568766",
+    "exclusions.csv": "73d991925f1ab12e2f7d536f589e768460546c069a1e55cfe0a32c8d49d8f1e7",
+    "generate.py": "a4f9970fdee8f0d4b1d1f5682eb2fab9249f9f022ad8d9a7f6882f6e7fdc9f47",
+    "settings.json": "29103be50fa84e134d6e31e5dca9752b3df49e3f0b1c6d9f1d85f4e61067b6e4",
+    "term_groups.csv": "d7cd3f35cdf9947871c70b6e336f96b10e923ef2098e0884a197e91d5a03c643"
+  },
+  "output_sha256": {
+    "abstracts_wordcloud.png": "2e65b1d0c51701ca6d653cf0f1acb7e57f8d413e578c469d95cf7638f26dbff6",
+    "abstracts_wordcloud.svg": "a4fd2835307b255a71cee81bfaa6a415ab101b1feb87141690ddcc0289da0da7",
+    "index.html": "a8ae689b39840daf7af244b7a60d8d3dadf5407b2a65e4a65bb2297f49063260",
+    "observed_term_variants.csv": "41d96ca629325430faac21e75bc2fcc348cd00616db623c0ea8a2b3253ed4eaa",
+    "review_terms.html": "def9dfecff2d6069a959df90bb035788b7df3e0ad8f97fb2ced950219146e11c",
+    "term_frequencies.csv": "1ae3731610cbbbc6dfe1c99a7ab264f330bb13476736b9a733bfd8a14c06fe13",
+    "terms_by_paper.csv": "3140cea6c6d86d5fb0121cc1cbf43efd660e40447effcaaf405c2bd478b259b5",
+    "titles_wordcloud.png": "0f192249d2f22631454bcb0558d6bcb1276f11e137c90f205d6cc3bf8e7fd977",
+    "titles_wordcloud.svg": "983bb8a32adf48810d90326b0fbd033aef172bbd0f5582e9cd36db3639e16242"
+  },
+  "packages": {
+    "Pillow": "12.2.0",
+    "matplotlib": "3.11.0",
+    "numpy": "2.4.6",
+    "wordcloud": "1.9.6"
+  },
+  "papers": 263,
+  "python": "3.12.11",
+  "seed": 20261004,
+  "summary": {
+    "Abstract": {
+      "displayed_terms": 95,
+      "eligible_terms": 746,
+      "papers_with_text": 263,
+      "top_terms": [
+        {
+          "papers": 146,
+          "term": "age"
+        },
+        {
+          "papers": 142,
+          "term": "deprived"
+        },
+        {
+          "papers": 119,
+          "term": "deprivation"
+        },
+        {
+          "papers": 108,
+          "term": "health"
+        },
+        {
+          "papers": 84,
+          "term": "risk"
+        },
+        {
+          "papers": 70,
+          "term": "socioeconomic"
+        },
+        {
+          "papers": 69,
+          "term": "socioeconomic deprivation"
+        },
+        {
+          "papers": 66,
+          "term": "disease"
+        },
+        {
+          "papers": 61,
+          "term": "sex"
+        },
+        {
+          "papers": 58,
+          "term": "mortality"
+        },
+        {
+          "papers": 56,
+          "term": "socioeconomic status"
+        },
+        {
+          "papers": 51,
+          "term": "child"
+        },
+        {
+          "papers": 50,
+          "term": "hospital"
+        },
+        {
+          "papers": 50,
+          "term": "service"
+        },
+        {
+          "papers": 49,
+          "term": "intervention"
+        }
+      ]
+    },
+    "Title": {
+      "displayed_terms": 75,
+      "eligible_terms": 278,
+      "papers_with_text": 263,
+      "top_terms": [
+        {
+          "papers": 35,
+          "term": "deprivation"
+        },
+        {
+          "papers": 33,
+          "term": "socioeconomic deprivation"
+        },
+        {
+          "papers": 23,
+          "term": "mortality"
+        },
+        {
+          "papers": 20,
+          "term": "health"
+        },
+        {
+          "papers": 20,
+          "term": "socioeconomic"
+        },
+        {
+          "papers": 19,
+          "term": "child"
+        },
+        {
+          "papers": 19,
+          "term": "risk"
+        },
+        {
+          "papers": 18,
+          "term": "socioeconomic status"
+        },
+        {
+          "papers": 15,
+          "term": "inequality"
+        },
+        {
+          "papers": 14,
+          "term": "disease"
+        },
+        {
+          "papers": 14,
+          "term": "incidence"
+        },
+        {
+          "papers": 13,
+          "term": "cancer"
+        },
+        {
+          "papers": 13,
+          "term": "socioeconomic inequality"
+        },
+        {
+          "papers": 12,
+          "term": "social"
+        },
+        {
+          "papers": 11,
+          "term": "care"
+        }
+      ]
+    }
+  }
+}
