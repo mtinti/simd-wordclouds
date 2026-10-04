@@ -1,6 +1,7 @@
 """Focused safeguards for the scientific term processing, not pixel snapshots."""
 import unittest
-from generate import HERE, Rules, read_csv
+from collections import Counter
+from generate import HERE, Rules, count_terms, read_csv, select_terms
 
 
 class ProcessingChecks(unittest.TestCase):
@@ -34,7 +35,7 @@ class ProcessingChecks(unittest.TestCase):
         self.assertNotIn("mental health", counts)
 
     def test_no_pairs_across_sentence_or_section_boundaries(self):
-        for text in ["mental. Health", "mental; health", "mental: health", "mental\nhealth"]:
+        for text in ["mental. Health", "mental; health", "mental: health", "mental\nhealth", "mental, health", "mental (health)"]:
             counts, _ = self.rules.process(text)
             self.assertNotIn("mental health", counts)
 
@@ -55,10 +56,11 @@ class ProcessingChecks(unittest.TestCase):
         self.assertIn("status", self.rules.exclusions)
 
     def test_deprivation_family_is_one_document_term(self):
-        counts, _ = self.rules.process("Deprivation and social deprivation and area-based deprivation in socioeconomically deprived groups.")
-        self.assertEqual(counts["deprivation"], 4)
-        self.assertEqual(list(counts).count("deprivation"), 1)
-        self.assertNotIn("deprived", counts)
+        texts = ["Deprivation and social deprivation and area-based deprivation in socioeconomically deprived groups.", "Deprived areas."]
+        mentions, papers, _, _ = count_terms(self.rules, texts)
+        self.assertEqual(mentions["deprivation"], 5)
+        self.assertEqual(papers["deprivation"], 2)
+        self.assertNotIn("deprived", papers)
 
     def test_named_index_does_not_inflate_deprivation_topic(self):
         counts, _ = self.rules.process("Scottish Index of Multiple Deprivation (SIMD)")
@@ -71,9 +73,32 @@ class ProcessingChecks(unittest.TestCase):
         self.assertIn("chd", self.rules.exclusions)
 
     def test_paper_frequency_counts_each_term_once_per_document(self):
-        counts, _ = self.rules.process("mortality mortality mortality")
-        self.assertEqual(counts["mortality"], 3)
-        self.assertEqual(len([term for term in counts if term == "mortality"]), 1)
+        mentions, papers, _, _ = count_terms(self.rules, ["mortality mortality mortality", "Mortality.", "survival"])
+        self.assertEqual(mentions["mortality"], 4)
+        self.assertEqual(papers["mortality"], 2)
+
+    def test_ties_at_display_limit_are_not_split(self):
+        weight = Counter({"a": 9, "b": 5, "c": 5, "d": 5, "e": 1})
+        self.assertEqual(select_terms(weight, list(weight), 2), ["a"])
+        self.assertEqual(select_terms(weight, list(weight), 4), ["a", "b", "c", "d"])
+        self.assertEqual(select_terms(weight, list(weight), 10), ["a", "b", "c", "d", "e"])
+
+    def test_plurals_merge_only_into_observed_singulars(self):
+        rules = Rules(read_csv(HERE / "term_groups.csv"), read_csv(HERE / "exclusions.csv"))
+        rules.fold_plurals({"hospital", "hospitals", "policy", "policies", "falls", "fall", "diabetes", "status"}, {"falls"})
+        counts, _ = rules.process("Hospitals and hospital policies; falls; diabetes")
+        self.assertEqual(counts["hospital"], 2)
+        self.assertEqual(counts["policy"], 1)
+        self.assertEqual(counts["falls"], 1)
+        self.assertEqual(counts["diabetes"], 1)
+
+    def test_hyphenated_compounds_are_kept_and_fragments_dropped(self):
+        counts, _ = self.rules.process("E-cigarettes and cigarettes; well-being; self-reported pre-existing disease")
+        self.assertEqual(counts["e-cigarette"], 1)
+        self.assertEqual(counts["wellbeing"], 1)
+        self.assertEqual(counts["cigarettes"], 1)
+        for fragment in ["self", "pre"]:
+            self.assertIn(fragment, self.rules.exclusions)
 
 
 if __name__ == "__main__":

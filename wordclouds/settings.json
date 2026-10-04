@@ -1,6 +1,8 @@
 {
   "seed": 20261004,
   "frequency": "papers",
+  "merge_plurals": true,
+  "plural_exceptions": ["falls", "hads", "highlands", "spectacles"],
   "minimum_papers": {"Title": 2, "Abstract": 5},
   "maximum_terms": {"Title": 75, "Abstract": 95},
   "width": 1500,

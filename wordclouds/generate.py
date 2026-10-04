@@ -46,7 +46,7 @@ def tokens(text, keep_boundaries=False):
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().lower()
     text = re.sub(r"\b([a-z]+)'s\b", r"\1", text)
     if keep_boundaries:
-        text = re.sub(r"[.!?;:\r\n]+", " | ", text)
+        text = re.sub(r"[.!?;:,()\[\]\r\n]+", " | ", text)
     return re.findall(r"[a-z]+[a-z0-9]*|[0-9]+" + (r"|\|" if keep_boundaries else ""), text)
 
 
@@ -72,6 +72,20 @@ class Rules:
             self.exclusions[canonical.lower()] = row["reason"]
             self.exclusion_phrases[key] = canonical
         self.max_length = max(map(len, [*self.aliases, *self.exclusion_phrases]), default=1)
+        self.plurals = {}
+
+    def fold_plurals(self, vocabulary, exceptions=()):
+        """Map regular plurals of unmapped words to a singular form observed in the corpus."""
+        for word in vocabulary:
+            if (word,) in self.aliases or word in self.exclusions or word in exceptions or len(word) < 4:
+                continue
+            if word.endswith("ies") and word[:-3] + "y" in vocabulary:
+                singular = word[:-3] + "y"
+            elif word.endswith("s") and not word.endswith(("ss", "us", "is")) and word[:-1] in vocabulary:
+                singular = word[:-1]
+            else:
+                continue
+            self.plurals[word] = self.aliases.get((singular,), singular)
 
     def process(self, text):
         words = tokens(text, keep_boundaries=True)
@@ -88,7 +102,7 @@ class Rules:
                 if canonical is not None:
                     break
             else:
-                length, canonical = 1, words[i]
+                length, canonical = 1, self.plurals.get(words[i], words[i])
             surface = " ".join(words[i:i + length])
             i += length
             # Numbers and one/two-character unmapped fragments have no useful cloud meaning.
@@ -97,6 +111,27 @@ class Rules:
             counts[canonical] += 1
             variants[(surface, canonical)] += 1
         return counts, variants
+
+
+def count_terms(rules, texts):
+    """Total mentions, and papers mentioning each term (once per paper however often repeated)."""
+    mentions, papers, variants, by_paper = Counter(), Counter(), Counter(), []
+    for text in texts:
+        counts, seen = rules.process(text)
+        mentions.update(counts)
+        papers.update(counts.keys())
+        variants.update(seen)
+        by_paper.append(counts)
+    return mentions, papers, variants, by_paper
+
+
+def select_terms(weight, eligible, limit):
+    """Order terms by weight, then name; never split a tie at the display limit."""
+    ordered = sorted(eligible, key=lambda t: (-weight[t], t.casefold(), t))
+    if len(ordered) > limit:
+        boundary = weight[ordered[limit]]
+        ordered = [t for t in ordered[:limit] if weight[t] > boundary]
+    return ordered
 
 
 def colour_for(term, palette):
@@ -120,7 +155,7 @@ def render_cloud(field, frequencies, rows, settings, out):
     cloud = WordCloud(
         width=settings["width"], height=settings["height"], scale=settings["scale"],
         font_path=str(font), random_state=settings["seed"], background_color=settings["background"],
-        color_func=colour, max_words=settings["maximum_terms"][field], margin=9,
+        color_func=colour, max_words=len(frequencies), margin=9,
         prefer_horizontal=1.0, min_font_size=settings["min_font_size"],
         max_font_size=settings["max_font_size"], relative_scaling=settings["relative_scaling"],
         collocations=False, normalize_plurals=False, repeat=False,
@@ -202,23 +237,24 @@ def main():
         raise ValueError("Template abstracts detected. Use the corrected indexed corpus.")
     groups, excluded = read_csv(HERE / "term_groups.csv"), read_csv(HERE / "exclusions.csv")
     rules = Rules(groups, excluded)
+    vocabulary = Counter(w for row in rows for field in ["Title", "Abstract"] for w in tokens(row[field]))
+    if settings["merge_plurals"]:
+        rules.fold_plurals(vocabulary, set(settings["plural_exceptions"]))
     audit, usages, per_paper, summary = [], [], [], {}
     for field in ["Title", "Abstract"]:
-        mentions, papers, variants = Counter(), Counter(), Counter()
-        for row in rows:
-            counts, seen = rules.process(row[field])
-            mentions.update(counts)
-            papers.update(counts.keys())
-            variants.update(seen)
+        mentions, papers, variants, by_paper = count_terms(rules, [row[field] for row in rows])
+        for row, counts in zip(rows, by_paper):
             retained = sorted(t for t in counts if t.lower() not in rules.exclusions)
             per_paper.append({"PMID": row["PMID"], "source": field, "retained_terms": " | ".join(retained)})
         eligible = [t for t in papers if papers[t] >= settings["minimum_papers"][field] and t.lower() not in rules.exclusions]
         weight = papers if settings["frequency"] == "papers" else mentions
-        ordered = sorted(eligible, key=lambda t: (-weight[t], t.casefold(), t))
+        ordered = select_terms(weight, eligible, settings["maximum_terms"][field])
         frequencies = {t: weight[t] for t in ordered}
         if not frequencies:
             raise ValueError(f"No terms remaining in {field}; review the exclusions and thresholds")
         shown = render_cloud(field, frequencies, rows, settings, out)
+        if len(shown) < len(frequencies):
+            print(f"Warning: {field} cloud fits only {len(shown)} of {len(frequencies)} terms; enlarge the canvas or reduce the limit.")
         for term in sorted(papers, key=lambda t: (-papers[t], t.casefold(), t)):
             reason = rules.exclusions.get(term.lower(), "")
             audit.append({"source": field, "term": term, "paper_count": papers[term], "mention_count": mentions[term],
@@ -227,14 +263,16 @@ def main():
         for (surface, canonical), count in sorted(variants.items()):
             usages.append({"source": field, "observed_form": surface, "canonical_term": canonical, "mentions": count})
         summary[field] = {"papers_with_text": sum(bool(r[field].strip()) for r in rows), "eligible_terms": len(eligible),
-                          "displayed_terms": len(shown), "top_terms": [{"term": t, "papers": papers[t]} for t in ordered[:15]]}
+                          "displayed_terms": len(shown),
+                          "lowest_displayed_count": min(frequencies.values()), "top_terms": [{"term": t, "papers": papers[t]} for t in ordered[:15]]}
     write_csv(out / "term_frequencies.csv", audit, list(audit[0]))
     write_csv(out / "observed_term_variants.csv", usages, list(usages[0]))
     write_csv(out / "terms_by_paper.csv", per_paper, list(per_paper[0]))
+    plural_rows = [{"plural": p, "merged_into": s, "plural_tokens": vocabulary[p], "singular_tokens": vocabulary.get(s, 0)}
+                   for p, s in sorted(rules.plurals.items())]
+    write_csv(out / "plural_merges.csv", plural_rows, ["plural", "merged_into", "plural_tokens", "singular_tokens"])
     images = "\n".join(f'<section><h2>{name.title()}</h2><a href="{name}_wordcloud.svg"><img src="{name}_wordcloud.png" alt="Word cloud from paper {name}"></a><p><a href="{name}_wordcloud.png">PNG, 300 dpi</a> · <a href="{name}_wordcloud.svg">Scalable SVG</a></p></section>' for name in ["titles", "abstracts"])
-    (out / "index.html").write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>SIMD word clouds</title><style>body{max-width:1200px;margin:40px auto;padding:0 24px;background:#faf9f6;color:#153f4a;font:18px/1.55 system-ui}h1{font-size:40px}img{width:100%;height:auto}a{color:#176b73}section{margin:40px 0;border-top:1px solid #d6dedb}p{max-width:950px}</style><h1>SIMD literature word clouds</h1><p>' + str(len(rows)) + ' indexed titles and abstracts, including papers with missing PDFs. Term size reflects ' + ('the number of papers mentioning the term' if settings['frequency'] == 'papers' else 'the total number of term mentions') + '. Colours are decorative and consistent between the clouds.</p><p><a href="../term_groups.csv">Review term groups</a> · <a href="../exclusions.csv">Review exclusions</a> · <a href="term_frequencies.csv">Review exact frequencies</a> · <a href="../README.md">Method and rerun instructions</a></p>' + images + '</html>\n')
-    index = out / "index.html"
-    index.write_text(index.read_text().replace('<a href="../term_groups.csv">Review term groups</a>', '<a href="review_terms.html">Browse and search all term rules</a>'))
+    (out / "index.html").write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>SIMD word clouds</title><style>body{max-width:1200px;margin:40px auto;padding:0 24px;background:#faf9f6;color:#153f4a;font:18px/1.55 system-ui}h1{font-size:40px}img{width:100%;height:auto}a{color:#176b73}section{margin:40px 0;border-top:1px solid #d6dedb}p{max-width:950px}</style><h1>SIMD literature word clouds</h1><p>' + str(len(rows)) + ' indexed titles and abstracts, including papers with missing PDFs. Term size reflects ' + ('the number of papers mentioning the term' if settings['frequency'] == 'papers' else 'the total number of term mentions') + '. Colours are decorative and consistent between the clouds.</p><p><a href="review_terms.html">Browse and search all term rules</a> · <a href="../exclusions.csv">Review exclusions</a> · <a href="term_frequencies.csv">Review exact frequencies</a> · <a href="../README.md">Method and rerun instructions</a></p>' + images + '</html>\n')
     write_review(groups, excluded, out)
     inputs = {"corpus": digest(args.input)}
     for name in ["settings.json", "term_groups.csv", "exclusions.csv", "generate.py", settings["font_file"]]:
