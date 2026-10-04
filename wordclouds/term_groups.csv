@@ -80,7 +80,7 @@ screening,screening|screenings,inflection,1,Singular and plural
 prescription,prescription|prescriptions,inflection,1,Singular and plural
 treatment,treatment|treatments,inflection,1,Singular and plural
 diagnosis,diagnosis|diagnoses,inflection,1,Singular and plural
-comorbidity,comorbidity|comorbidities,inflection,1,Singular and plural
+comorbidity,comorbidity|comorbidities|co morbidity|co morbidities,inflection,1,Singular and plural; hyphenation variants
 multimorbidity,multimorbidity|multi morbidity,spelling,1,Hyphenation variants
 behaviour,behaviour|behaviours|behavior|behaviors,spelling,1,British and American spelling plus number
 neighbourhood,neighbourhood|neighbourhoods|neighborhood|neighborhoods,spelling,1,British and American spelling plus number
@@ -120,3 +120,9 @@ relationship status,relationship status,phrase,1,Relationship characteristic; ke
 education status,education status|educational status,spelling,1,Explicit education characteristic; not the whole socioeconomic construct
 nutritional status,nutritional status,phrase,1,Nutrition assessment; not socioeconomic status
 triage status,triage status,phrase,1,Clinical triage classification; not socioeconomic status
+e-cigarette,e cigarette|e cigarettes|ecigarette|ecigarettes,phrase,1,Keep e-cigarettes distinct from cigarettes; the bare 'e' is otherwise dropped as a fragment
+wellbeing,wellbeing|well being,spelling,1,Hyphenation variants; 'well' and 'being' alone are grammar exclusions
+self-rated health,self rated health,phrase,1,Preserve the hyphenated measure; self rated health status remains health status
+self-efficacy,self efficacy,phrase,1,Preserve the hyphenated construct
+self-harm,self harm,phrase,1,Preserve the hyphenated construct
+non-smoker,non smoker|non smokers|nonsmoker|nonsmokers,inflection,1,Preserve the hyphenated group; standalone 'non' is excluded

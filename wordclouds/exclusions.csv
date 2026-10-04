@@ -30,17 +30,24 @@ march,calendar wording,1,Calendar wording; named phrases are matched first and r
 november,calendar wording,1,Calendar wording; named phrases are matched first and retained
 october,calendar wording,1,Calendar wording; named phrases are matched first and retained
 september,calendar wording,1,Calendar wording; named phrases are matched first and retained
+approximately,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
+average,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
+common,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
+consecutive,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 decrease,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 decreased,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 decreasing,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 difference,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 differences,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 different,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
+early,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 eight,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
+fewer,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 fifth,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 five,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 four,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 fourth,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
+future,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 greater,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 high,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 higher,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
@@ -50,7 +57,13 @@ increases,comparative or generic qualifier,1,Comparative or generic qualifier; n
 increasing,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 low,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 lower,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
+major,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
+majority,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
+moderate,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
+negative,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 nine,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
+poorer,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
+positive,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 reduce,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 reduced,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
 reducing,comparative or generic qualifier,1,Comparative or generic qualifier; named phrases are matched first and retained
@@ -101,6 +114,7 @@ single,generic qualifier or method wording,1,Non-specific wording in this topic 
 small,generic qualifier or method wording,1,Non-specific wording in this topic view; protected clinical phrases are retained
 specific,generic qualifier or method wording,1,Non-specific wording in this topic view; protected clinical phrases are retained
 type,generic qualifier or method wording,1,Non-specific wording in this topic view; protected clinical phrases are retained
+according,generic research wording,1,Generic research wording; named phrases are matched first and retained
 administrative,generic research wording,1,Generic research wording; named phrases are matched first and retained
 aimed,generic research wording,1,Generic research wording; remove from topic-focused clouds
 aiming,generic research wording,1,Generic research wording; remove from topic-focused clouds
@@ -111,6 +125,7 @@ analysis,generic research wording,1,Generic research wording; remove from topic-
 analytical,generic research wording,1,Generic research wording; remove from topic-focused clouds
 analyze,generic research wording,1,Generic research wording; remove from topic-focused clouds
 analyzed,generic research wording,1,Generic research wording; remove from topic-focused clouds
+appear,generic research wording,1,Generic research wording; named phrases are matched first and retained
 area,generic research wording,1,Generic research wording; named phrases are matched first and retained
 areas,generic research wording,1,Generic research wording; named phrases are matched first and retained
 ascertain,generic research wording,1,Generic research wording; remove from topic-focused clouds
@@ -120,6 +135,7 @@ assessed,generic research wording,1,Generic research wording; remove from topic-
 assessing,generic research wording,1,Generic research wording; remove from topic-focused clouds
 assessment,generic research wording,1,Generic research wording; remove from topic-focused clouds
 assessments,generic research wording,1,Generic research wording; remove from topic-focused clouds
+assigned,generic research wording,1,Generic research wording; named phrases are matched first and retained
 associated,generic research wording,1,Generic research wording; remove from topic-focused clouds
 association,generic research wording,1,Generic research wording; remove from topic-focused clouds
 associations,generic research wording,1,Generic research wording; remove from topic-focused clouds
@@ -130,6 +146,7 @@ based,generic research wording,1,Generic research wording; remove from topic-foc
 calculated,generic research wording,1,Generic research wording; named phrases are matched first and retained
 case,generic research wording,1,Generic research wording; named phrases are matched first and retained
 cases,generic research wording,1,Generic research wording; named phrases are matched first and retained
+change,generic research wording,1,Generic research wording; named phrases are matched first and retained
 characteristic,generic research wording,1,Generic research wording; named phrases are matched first and retained
 characteristics,generic research wording,1,Generic research wording; named phrases are matched first and retained
 collect,generic research wording,1,Generic research wording; named phrases are matched first and retained
@@ -141,6 +158,7 @@ comparison,generic research wording,1,Generic research wording; remove from topi
 comparisons,generic research wording,1,Generic research wording; remove from topic-focused clouds
 conclude,generic research wording,1,Generic research wording; remove from topic-focused clouds
 concluded,generic research wording,1,Generic research wording; remove from topic-focused clouds
+condition,generic research wording,1,Generic research wording; named phrases are matched first and retained
 conducted,generic research wording,1,Generic research wording; named phrases are matched first and retained
 consider,generic research wording,1,Generic research wording; remove from topic-focused clouds
 considered,generic research wording,1,Generic research wording; remove from topic-focused clouds
@@ -149,6 +167,7 @@ controlled,generic research wording,1,Generic research wording; named phrases ar
 correlated,generic research wording,1,Generic research wording; remove from topic-focused clouds
 correlation,generic research wording,1,Generic research wording; remove from topic-focused clouds
 correlations,generic research wording,1,Generic research wording; remove from topic-focused clouds
+current,generic research wording,1,Generic research wording; named phrases are matched first and retained
 data,generic research wording,1,Generic research wording; remove from topic-focused clouds
 database,generic research wording,1,Generic research wording; named phrases are matched first and retained
 databases,generic research wording,1,Generic research wording; named phrases are matched first and retained
@@ -160,6 +179,7 @@ demographics,generic research wording,1,Generic research wording; named phrases 
 demonstrate,generic research wording,1,Generic research wording; remove from topic-focused clouds
 demonstrated,generic research wording,1,Generic research wording; remove from topic-focused clouds
 demonstrates,generic research wording,1,Generic research wording; remove from topic-focused clouds
+derived,generic research wording,1,Generic research wording; named phrases are matched first and retained
 describe,generic research wording,1,Generic research wording; remove from topic-focused clouds
 described,generic research wording,1,Generic research wording; remove from topic-focused clouds
 description,generic research wording,1,Generic research wording; remove from topic-focused clouds
@@ -169,8 +189,11 @@ designs,generic research wording,1,Generic research wording; named phrases are m
 determine,generic research wording,1,Generic research wording; remove from topic-focused clouds
 determined,generic research wording,1,Generic research wording; remove from topic-focused clouds
 determining,generic research wording,1,Generic research wording; remove from topic-focused clouds
+developed,generic research wording,1,Generic research wording; named phrases are matched first and retained
+development,generic research wording,1,Generic research wording; named phrases are matched first and retained
 effect,generic research wording,1,Generic research wording; remove from topic-focused clouds
 effects,generic research wording,1,Generic research wording; remove from topic-focused clouds
+epidemiological,generic research wording,1,Generic research wording; named phrases are matched first and retained
 establish,generic research wording,1,Generic research wording; remove from topic-focused clouds
 established,generic research wording,1,Generic research wording; remove from topic-focused clouds
 evaluate,generic research wording,1,Generic research wording; remove from topic-focused clouds
@@ -186,6 +209,7 @@ examining,generic research wording,1,Generic research wording; remove from topic
 exclude,generic research wording,1,Generic research wording; remove from topic-focused clouds
 excluded,generic research wording,1,Generic research wording; remove from topic-focused clouds
 excluding,generic research wording,1,Generic research wording; remove from topic-focused clouds
+exist,generic research wording,1,Generic research wording; named phrases are matched first and retained
 experience,generic research wording,1,Generic research wording; named phrases are matched first and retained
 experiences,generic research wording,1,Generic research wording; named phrases are matched first and retained
 explore,generic research wording,1,Generic research wording; remove from topic-focused clouds
@@ -203,12 +227,18 @@ identify,generic research wording,1,Generic research wording; remove from topic-
 identifying,generic research wording,1,Generic research wording; remove from topic-focused clouds
 impact,generic research wording,1,Generic research wording; remove from topic-focused clouds
 impacts,generic research wording,1,Generic research wording; remove from topic-focused clouds
+implication,generic research wording,1,Generic research wording; named phrases are matched first and retained
 importance,generic research wording,1,Generic research wording; remove from topic-focused clouds
 important,generic research wording,1,Generic research wording; remove from topic-focused clouds
+improve,generic research wording,1,Generic research wording; named phrases are matched first and retained
+improved,generic research wording,1,Generic research wording; named phrases are matched first and retained
+improvement,generic research wording,1,Generic research wording; named phrases are matched first and retained
 include,generic research wording,1,Generic research wording; remove from topic-focused clouds
 included,generic research wording,1,Generic research wording; remove from topic-focused clouds
 includes,generic research wording,1,Generic research wording; remove from topic-focused clouds
 including,generic research wording,1,Generic research wording; remove from topic-focused clouds
+independent,generic research wording,1,Generic research wording; named phrases are matched first and retained
+independently,generic research wording,1,Generic research wording; named phrases are matched first and retained
 index,generic research wording,1,Generic research wording; named phrases are matched first and retained
 indicate,generic research wording,1,Generic research wording; remove from topic-focused clouds
 indicated,generic research wording,1,Generic research wording; remove from topic-focused clouds
@@ -218,36 +248,49 @@ individual,generic research wording,1,Generic research wording; named phrases ar
 individuals,generic research wording,1,Generic research wording; named phrases are matched first and retained
 influence,generic research wording,1,Generic research wording; remove from topic-focused clouds
 influences,generic research wording,1,Generic research wording; remove from topic-focused clouds
+inform,generic research wording,1,Generic research wording; named phrases are matched first and retained
 information,generic research wording,1,Generic research wording; remove from topic-focused clouds
+informed,generic research wording,1,Generic research wording; named phrases are matched first and retained
+interpretation,generic research wording,1,Generic research wording; named phrases are matched first and retained
 investigate,generic research wording,1,Generic research wording; remove from topic-focused clouds
 investigated,generic research wording,1,Generic research wording; remove from topic-focused clouds
 investigating,generic research wording,1,Generic research wording; remove from topic-focused clouds
 investigation,generic research wording,1,Generic research wording; remove from topic-focused clouds
 investigations,generic research wording,1,Generic research wording; remove from topic-focused clouds
+key,generic research wording,1,Generic research wording; named phrases are matched first and retained
 linkage,generic research wording,1,Generic research wording; named phrases are matched first and retained
 linked,generic research wording,1,Generic research wording; named phrases are matched first and retained
+local,generic research wording,1,Generic research wording; named phrases are matched first and retained
+location,generic research wording,1,Generic research wording; named phrases are matched first and retained
 measure,generic research wording,1,Generic research wording; remove from topic-focused clouds
 measured,generic research wording,1,Generic research wording; remove from topic-focused clouds
 measurement,generic research wording,1,Generic research wording; remove from topic-focused clouds
 measurements,generic research wording,1,Generic research wording; remove from topic-focused clouds
 measures,generic research wording,1,Generic research wording; remove from topic-focused clouds
+million,generic research wording,1,Generic research wording; named phrases are matched first and retained
 multiple,generic research wording,1,Generic research wording; named phrases are matched first and retained
 national,generic research wording,1,Generic research wording; named phrases are matched first and retained
+need,generic research wording,1,Generic research wording; named phrases are matched first and retained
+needed,generic research wording,1,Generic research wording; named phrases are matched first and retained
+new,generic research wording,1,Generic research wording; named phrases are matched first and retained
 observed,generic research wording,1,Generic research wording; named phrases are matched first and retained
 obtained,generic research wording,1,Generic research wording; named phrases are matched first and retained
 outcome,generic research wording,1,Generic research wording; named phrases are matched first and retained
 outcomes,generic research wording,1,Generic research wording; named phrases are matched first and retained
 overall,generic research wording,1,Generic research wording; remove from topic-focused clouds
 particularly,generic research wording,1,Generic research wording; remove from topic-focused clouds
+pattern,generic research wording,1,Generic research wording; named phrases are matched first and retained
 performed,generic research wording,1,Generic research wording; named phrases are matched first and retained
 possible,generic research wording,1,Generic research wording; named phrases are matched first and retained
 potential,generic research wording,1,Generic research wording; named phrases are matched first and retained
 practice,generic research wording,1,Generic research wording; named phrases are matched first and retained
+predicting,generic research wording,1,Generic research wording; named phrases are matched first and retained
 present,generic research wording,1,Generic research wording; remove from topic-focused clouds
 presentation,generic research wording,1,Generic research wording; named phrases are matched first and retained
 presented,generic research wording,1,Generic research wording; remove from topic-focused clouds
 presenting,generic research wording,1,Generic research wording; remove from topic-focused clouds
 primary,generic research wording,1,Generic research wording; named phrases are matched first and retained
+problem,generic research wording,1,Generic research wording; named phrases are matched first and retained
 provide,generic research wording,1,Generic research wording; remove from topic-focused clouds
 provided,generic research wording,1,Generic research wording; remove from topic-focused clouds
 provides,generic research wording,1,Generic research wording; remove from topic-focused clouds
@@ -257,14 +300,19 @@ records,generic research wording,1,Generic research wording; named phrases are m
 related,generic research wording,1,Generic research wording; remove from topic-focused clouds
 relationship,generic research wording,1,Generic research wording; remove from topic-focused clouds
 relationships,generic research wording,1,Generic research wording; remove from topic-focused clouds
+remain,generic research wording,1,Generic research wording; named phrases are matched first and retained
+repeated,generic research wording,1,Generic research wording; named phrases are matched first and retained
 report,generic research wording,1,Generic research wording; remove from topic-focused clouds
 reported,generic research wording,1,Generic research wording; remove from topic-focused clouds
 reporting,generic research wording,1,Generic research wording; remove from topic-focused clouds
 reports,generic research wording,1,Generic research wording; remove from topic-focused clouds
+required,generic research wording,1,Generic research wording; named phrases are matched first and retained
 research,generic research wording,1,Generic research wording; remove from topic-focused clouds
 researches,generic research wording,1,Generic research wording; remove from topic-focused clouds
 respective,generic research wording,1,Generic research wording; remove from topic-focused clouds
 respectively,generic research wording,1,Generic research wording; remove from topic-focused clouds
+review,generic research wording,1,Generic research wording; named phrases are matched first and retained
+scale,generic research wording,1,Generic research wording; named phrases are matched first and retained
 secondary,generic research wording,1,Generic research wording; named phrases are matched first and retained
 setting,generic research wording,1,Generic research wording; named phrases are matched first and retained
 settings,generic research wording,1,Generic research wording; named phrases are matched first and retained
@@ -273,6 +321,7 @@ showed,generic research wording,1,Generic research wording; named phrases are ma
 showing,generic research wording,1,Generic research wording; remove from topic-focused clouds
 shown,generic research wording,1,Generic research wording; remove from topic-focused clouds
 shows,generic research wording,1,Generic research wording; remove from topic-focused clouds
+size,generic research wording,1,Generic research wording; named phrases are matched first and retained
 specifically,generic research wording,1,Generic research wording; remove from topic-focused clouds
 studied,generic research wording,1,Generic research wording; remove from topic-focused clouds
 studies,generic research wording,1,Generic research wording; remove from topic-focused clouds
@@ -281,12 +330,15 @@ studying,generic research wording,1,Generic research wording; remove from topic-
 suggest,generic research wording,1,Generic research wording; remove from topic-focused clouds
 suggested,generic research wording,1,Generic research wording; remove from topic-focused clouds
 suggests,generic research wording,1,Generic research wording; remove from topic-focused clouds
+system,generic research wording,1,Generic research wording; named phrases are matched first and retained
 term,generic research wording,1,Generic research wording; named phrases are matched first and retained
 terms,generic research wording,1,Generic research wording; named phrases are matched first and retained
+undergoing,generic research wording,1,Generic research wording; named phrases are matched first and retained
 use,generic research wording,1,Generic research wording; remove from topic-focused clouds
 used,generic research wording,1,Generic research wording; remove from topic-focused clouds
 uses,generic research wording,1,Generic research wording; remove from topic-focused clouds
 using,generic research wording,1,Generic research wording; remove from topic-focused clouds
+variable,generic research wording,1,Generic research wording; named phrases are matched first and retained
 cohort,generic sample wording,1,Generic sample wording; remove from topic-focused clouds
 cohorts,generic sample wording,1,Generic sample wording; remove from topic-focused clouds
 control,generic sample wording,1,Generic sample wording; remove from topic-focused clouds
@@ -584,6 +636,13 @@ your,grammar,1,Grammar; remove from topic-focused clouds
 yours,grammar,1,Grammar; remove from topic-focused clouds
 yourself,grammar,1,Grammar; remove from topic-focused clouds
 yourselves,grammar,1,Grammar; remove from topic-focused clouds
+inter,hyphen prefix fragment,1,Prefix left by splitting a hyphenated word; meaningful compounds are protected phrases in term_groups.csv
+mid,hyphen prefix fragment,1,Prefix left by splitting a hyphenated word; meaningful compounds are protected phrases in term_groups.csv
+multi,hyphen prefix fragment,1,Prefix left by splitting a hyphenated word; meaningful compounds are protected phrases in term_groups.csv
+post,hyphen prefix fragment,1,Prefix left by splitting a hyphenated word; meaningful compounds are protected phrases in term_groups.csv
+pre,hyphen prefix fragment,1,Prefix left by splitting a hyphenated word; meaningful compounds are protected phrases in term_groups.csv
+self,hyphen prefix fragment,1,Prefix left by splitting a hyphenated word; meaningful compounds are protected phrases in term_groups.csv
+sub,hyphen prefix fragment,1,Prefix left by splitting a hyphenated word; meaningful compounds are protected phrases in term_groups.csv
 socioeconomic,incomplete phrase,1,Standalone adjective has no explicit construct; complete socioeconomic phrases are protected
 status,incomplete phrase,1,Ambiguous without a qualifier; health and smoking status are protected phrases
 all rights reserved,method or boilerplate phrase,1,Match the whole phrase before counting
@@ -597,6 +656,9 @@ hazard ratios,method or boilerplate phrase,1,Match the whole phrase before count
 odds ratio,method or boilerplate phrase,1,Match the whole phrase before counting
 odds ratios,method or boilerplate phrase,1,Match the whole phrase before counting
 population based,method or boilerplate phrase,1,Match the whole phrase before counting
+self report,method or boilerplate phrase,1,Match the whole phrase before counting
+self reported,method or boilerplate phrase,1,Match the whole phrase before counting
+self reporting,method or boilerplate phrase,1,Match the whole phrase before counting
 standard deviation,method or boilerplate phrase,1,Match the whole phrase before counting
 standard deviations,method or boilerplate phrase,1,Match the whole phrase before counting
 study participants,method or boilerplate phrase,1,Match the whole phrase before counting
@@ -658,13 +720,16 @@ modeling,statistical wording,1,Statistical wording; remove from topic-focused cl
 modelling,statistical wording,1,Statistical wording; remove from topic-focused clouds
 models,statistical wording,1,Statistical wording; remove from topic-focused clouds
 n,statistical wording,1,Statistical wording; remove from topic-focused clouds
+odds,statistical wording,1,Statistical wording; remove from topic-focused clouds
 ors,statistical wording,1,Statistical wording; remove from topic-focused clouds
 p,statistical wording,1,Statistical wording; remove from topic-focused clouds
 percent,statistical wording,1,Statistical wording; remove from topic-focused clouds
 percentage,statistical wording,1,Statistical wording; remove from topic-focused clouds
 percentages,statistical wording,1,Statistical wording; remove from topic-focused clouds
+predicted,statistical wording,1,Statistical wording; remove from topic-focused clouds
 proportion,statistical wording,1,Statistical wording; remove from topic-focused clouds
 proportions,statistical wording,1,Statistical wording; remove from topic-focused clouds
+prospectively,statistical wording,1,Statistical wording; remove from topic-focused clouds
 quartile,statistical wording,1,Statistical wording; remove from topic-focused clouds
 quartiles,statistical wording,1,Statistical wording; remove from topic-focused clouds
 quintile,statistical wording,1,Statistical wording; remove from topic-focused clouds
@@ -683,8 +748,10 @@ se,statistical wording,1,Statistical wording; remove from topic-focused clouds
 significance,statistical wording,1,Statistical wording; remove from topic-focused clouds
 significant,statistical wording,1,Statistical wording; remove from topic-focused clouds
 significantly,statistical wording,1,Statistical wording; remove from topic-focused clouds
+standardised,statistical wording,1,Statistical wording; remove from topic-focused clouds
 statistical,statistical wording,1,Statistical wording; remove from topic-focused clouds
 statistically,statistical wording,1,Statistical wording; remove from topic-focused clouds
+stratified,statistical wording,1,Statistical wording; remove from topic-focused clouds
 tertile,statistical wording,1,Statistical wording; remove from topic-focused clouds
 tertiles,statistical wording,1,Statistical wording; remove from topic-focused clouds
 trend,statistical wording,1,Statistical wording; remove from topic-focused clouds
