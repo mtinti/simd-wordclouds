@@ -10,6 +10,16 @@ The same method applied to the full abstracts gives a richer picture: 68 phrases
 
 ![Phrases in the abstracts of 263 SIMD papers. The largest are deprived areas, socioeconomic deprivation and socioeconomic status, followed by health care, risk factors, area deprivation, health inequality, primary care and hospital admission.](wordclouds/outputs/abstracts_wordcloud.png)
 
+## Full corpus: 1,741 papers that use SIMD anywhere
+
+The clouds above cover papers with SIMD in the title or abstract, where deprivation is usually the topic. Many more papers use SIMD only in their methods, for example to adjust for deprivation. The full corpus adds 1,478 open-access PubMed papers whose full text mentions the index, for 1,741 papers in total ([`simd_papers_full.csv`](simd_papers_full.csv)). The method is the same; the minimum counts scale to 13 titles and 33 abstracts.
+
+![Phrases in the titles of 1,741 papers that use SIMD, drawn inside a cloud outline. The largest are physical activity, primary care, socioeconomic deprivation and socioeconomic status, followed by colorectal cancer, health care, type 2 diabetes and risk factors.](wordclouds/outputs_full/titles_wordcloud.png)
+
+![Phrases in the abstracts of 1,718 papers that use SIMD. The largest are health care, socioeconomic status, risk factors and deprived areas, followed by socioeconomic deprivation, hospital admission, primary care and mental health.](wordclouds/outputs_full/abstracts_wordcloud.png)
+
+With the wider corpus, deprivation is no longer the headline. SIMD becomes background to clinical and service research: primary care, physical activity, diabetes, cardiovascular disease and COVID-19. [wordclouds/README.md](wordclouds/README.md#full-corpus-papers-that-use-simd-anywhere) describes how the corpus was built.
+
 ## Reading the cloud
 
 - **Vocabulary, not findings.** The cloud shows what papers name in their titles. It does not show effect sizes, study quality or the direction of any association.
