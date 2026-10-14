@@ -28,7 +28,7 @@ public health,public health,phrase,1,Preserve the phrase
 primary care,primary care,phrase,1,Preserve the phrase
 health care,healthcare|health care,spelling,1,Spacing variants
 health service,health service|health services,inflection,1,Singular and plural
-quality of life,quality of life,phrase,1,Preserve words normally removed as stopwords inside this phrase
+quality of life,quality of life|health related quality of life,phrase,1,"Preserve words normally removed as stopwords inside this phrase; health-related quality of life is the health measure of the same outcome, so it is counted here"
 life expectancy,life expectancy,phrase,1,Preserve the phrase
 life satisfaction,life satisfaction,phrase,1,Preserve the phrase
 body mass index,body mass index|bmi,abbreviation,1,Conventional abbreviation
@@ -47,7 +47,7 @@ smoking,smoking|tobacco smoking,terminology,1,Smoking wording
 emergency department,emergency department|emergency departments|accident and emergency,terminology,1,Alternative service terminology
 hospital admission,hospital admission|hospital admissions,inflection,1,Singular and plural
 hospitalisation,hospitalisation|hospitalisations|hospitalization|hospitalizations,spelling,1,British and American spelling plus number
-length of stay,length of stay,phrase,1,Preserve the phrase
+length of stay,length of stay|lengths of stay|length of hospital stay|hospital stay|hospital stays,phrase,1,"Preserve the phrase; hospital stay is mostly written as length of hospital stay, so both name the same outcome"
 hip fracture,hip fracture|hip fractures,inflection,1,Preserve the anatomical site
 hip replacement,hip replacement|hip replacements|total hip replacement|total hip replacements|total hip arthroplasty,terminology,0,Optional broader grouping; total procedures should not silently absorb all replacements
 total hip arthroplasty,total hip arthroplasty|total hip replacement|total hip replacements,terminology,1,Equivalent names for the total procedure
@@ -88,7 +88,7 @@ Socioeconomic conditions,deprivation|socioeconomic status|socioeconomic|social d
 head injury,head injury|head injuries,inflection,1,Preserve the anatomical phrase
 primary hyperparathyroidism,primary hyperparathyroidism,phrase,1,Preserve the disease qualifier
 oral health,oral health,phrase,1,Preserve the phrase
-general practice,general practice|general practices,inflection,1,Preserve the service phrase
+general practice,general practice|general practices|general practitioner|general practitioners,inflection,1,Preserve the service phrase; general practitioner names the clinician of the same GP care and is used interchangeably
 dental care,dental care,phrase,1,Preserve the service phrase
 secondary care,secondary care,phrase,1,Preserve the service phrase
 glycaemic control,glycaemic control|glycemic control,spelling,1,Preserve the clinical phrase before excluding generic control
@@ -99,7 +99,7 @@ predictor,predictor|predictors,inflection,1,Singular and plural
 infection,infection|infections,inflection,1,Singular and plural
 paediatric,paediatric|pediatric,spelling,1,British and American spelling
 intellectual disability,intellectual disability|intellectual disabilities,inflection,1,Preserve the clinical phrase
-dental caries,dental caries,phrase,1,Preserve the clinical phrase
+dental caries,dental caries|caries experience|dental caries experience,phrase,1,Preserve the clinical phrase; caries experience is the usual measure of dental caries
 long term condition,long term condition|long term conditions,inflection,1,Preserve the clinical phrase before excluding generic time wording
 socioeconomic factor,socioeconomic factor|socioeconomic factors|socio economic factor|socio economic factors,inflection,1,Retain the explicit noun rather than infer socioeconomic status
 socioeconomic circumstance,socioeconomic circumstance|socioeconomic circumstances|socio economic circumstance|socio economic circumstances,inflection,1,Retain the explicit noun rather than infer socioeconomic status
@@ -128,3 +128,5 @@ self-harm,self harm,phrase,1,Preserve the hyphenated construct
 non-smoker,non smoker|non smokers|nonsmoker|nonsmokers,inflection,1,Preserve the hyphenated group; standalone 'non' is excluded
 all-cause mortality,all cause mortality,phrase,1,Preserve the qualifier; otherwise read as "cause mortality" after the grammar word "all"
 chronic obstructive pulmonary disease,chronic obstructive pulmonary diseases|copd,abbreviation,1,Full clinical phrase and conventional abbreviation
+area deprivation,area deprivation|area based deprivation|area level deprivation,phrase variant,1,Phrase mode: the same area-level measure written with or without the based/level qualifier. Deprived areas stays separate: it names places or groups rather than the measure
+head and neck cancer,head and neck cancers,phrase,1,"Preserve the clinical phrase; otherwise split at the grammar word ""and"" into neck cancer"

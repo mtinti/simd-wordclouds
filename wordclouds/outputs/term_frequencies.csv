@@ -2,7 +2,7 @@ source,term,paper_count,mention_count,paper_percent,excluded,exclusion_reason,sh
 Title,socioeconomic deprivation,33,33,12.55,no,,yes,socioeconomic deprivation
 Title,socioeconomic status,19,19,7.22,no,,yes,socioeconomic status
 Title,socioeconomic inequality,13,13,4.94,no,,yes,socioeconomic inequality
-Title,area deprivation,7,7,2.66,no,,yes,area deprivation
+Title,area deprivation,10,10,3.80,no,,yes,area deprivation
 Title,risk factor,7,7,2.66,no,,yes,risk factor
 Title,social deprivation,7,7,2.66,no,,yes,social deprivation
 Title,colorectal cancer,6,6,2.28,no,,yes,colorectal cancer
@@ -10,6 +10,7 @@ Title,hospital admission,6,6,2.28,no,,yes,hospital admission
 Title,primary care,6,6,2.28,no,,yes,primary care
 Title,type 1 diabetes,6,6,2.28,no,,yes,type 1 diabetes
 Title,health care,5,5,1.90,no,,yes,health care
+Title,dental caries,4,4,1.52,no,,yes,dental caries
 Title,general practice,4,6,1.52,no,,yes,general practice
 Title,hip fracture,4,4,1.52,no,,yes,hip fracture
 Title,intellectual disability,4,4,1.52,no,,yes,intellectual disability
@@ -18,9 +19,8 @@ Title,preterm birth,4,4,1.52,no,,yes,preterm birth
 Title,type 2 diabetes,4,4,1.52,no,,yes,type 2 diabetes
 Title,all-cause mortality,3,3,1.14,no,,yes,all-cause mortality
 Title,COVID-19 pandemic,3,3,1.14,no,,yes,COVID-19 pandemic
-Title,dental caries,3,3,1.14,no,,yes,dental caries
+Title,head and neck cancer,3,3,1.14,no,,yes,head and neck cancer
 Title,head injury,3,3,1.14,no,,yes,head injury
-Title,neck cancer,3,3,1.14,no,,yes,neck cancer
 Title,quality of life,3,3,1.14,no,,yes,quality of life
 Title,socioeconomic difference,3,3,1.14,no,,yes,socioeconomic difference
 Title,urban rural,3,3,1.14,no,,yes,urban rural
@@ -30,7 +30,6 @@ Title,accidental head injury,2,2,0.76,yes,Mostly within the longer phrase 'non a
 Title,alcohol related,2,3,0.76,no,,no,alcohol related
 Title,breast cancer,2,2,0.76,no,,no,breast cancer
 Title,cancer incidence,2,2,0.76,no,,no,cancer incidence
-Title,cancer referral,2,2,0.76,yes,Mostly within the longer phrase 'neck cancer referral',no,cancer referral
 Title,cardiac arrest,2,2,0.76,yes,Mostly within the longer phrase 'hospital cardiac arrest',no,cardiac arrest
 Title,cardiovascular disease,2,2,0.76,no,,no,cardiovascular disease
 Title,cardiovascular risk,2,2,0.76,no,,no,cardiovascular risk
@@ -48,8 +47,8 @@ Title,ethnic variation,2,2,0.76,no,,no,ethnic variations
 Title,faecal immunochemical,2,2,0.76,yes,Mostly within the longer phrase 'faecal immunochemical test',no,faecal immunochemical
 Title,faecal immunochemical test,2,2,0.76,no,,no,faecal immunochemical test
 Title,glycaemic control,2,2,0.76,no,,no,glycaemic control
+Title,head and neck cancer referral,2,2,0.76,no,,no,head and neck cancer referral
 Title,health inequality,2,2,0.76,no,,no,health inequality
-Title,health related,2,2,0.76,no,,no,health related
 Title,hospital cardiac,2,2,0.76,yes,Mostly within the longer phrase 'hospital cardiac arrest',no,hospital cardiac
 Title,hospital cardiac arrest,2,2,0.76,no,,no,hospital cardiac arrest
 Title,hpv immunisation,2,2,0.76,no,,no,hpv immunisation
@@ -62,7 +61,6 @@ Title,laryngeal cancer,2,2,0.76,no,,no,laryngeal cancer
 Title,mental health,2,2,0.76,no,,no,mental health
 Title,mortality inequality,2,2,0.76,no,,no,mortality inequality
 Title,multiple socioeconomic deprivation,2,2,0.76,no,,no,multiple socioeconomic deprivation
-Title,neck cancer referral,2,2,0.76,no,,no,neck cancer referral
 Title,non accidental,2,2,0.76,yes,Mostly within the longer phrase 'non accidental head injury',no,non accidental
 Title,non accidental head injury,2,2,0.76,no,,no,non accidental head injury
 Title,old child,2,2,0.76,no,,no,old child
@@ -134,7 +132,10 @@ Title,antigen testing,1,1,0.38,no,,no,antigen testing
 Title,antimicrobial therapy,1,1,0.38,no,,no,antimicrobial therapy
 Title,antimicrobial therapy service,1,1,0.38,no,,no,antimicrobial therapy service
 Title,approach linking,1,1,0.38,no,,no,approach linking
+Title,area deprivation indices,1,1,0.38,no,,no,area deprivation indices
+Title,area deprivation indices identify,1,1,0.38,no,,no,area deprivation indices identify
 Title,area deprivation measure,1,1,0.38,no,,no,area deprivation measure
+Title,area deprivation measure dataset,1,1,0.38,no,,no,area deprivation measure datasets
 Title,arterial hypertension,1,1,0.38,no,,no,arterial hypertension
 Title,assessment approach,1,1,0.38,no,,no,assessment approach
 Title,assessment approach linking,1,1,0.38,no,,no,assessment approach linking
@@ -194,7 +195,6 @@ Title,breast screening invitation,1,1,0.38,no,,no,breast screening invitations
 Title,britain today,1,1,0.38,no,,no,britain today
 Title,cancer incidence following,1,1,0.38,no,,no,cancer incidence following
 Title,cancer mortality,1,1,0.38,no,,no,cancer mortality
-Title,cancer referral system,1,1,0.38,no,,no,cancer referral system
 Title,cancer screening,1,1,0.38,no,,no,cancer screening
 Title,cardio metabolic,1,1,0.38,no,,no,cardio metabolic
 Title,cardio metabolic risk,1,1,0.38,no,,no,cardio metabolic risk
@@ -209,7 +209,6 @@ Title,care testing,1,1,0.38,no,,no,care testing
 Title,care unit,1,1,0.38,no,,no,care units
 Title,carer proxy,1,1,0.38,no,,no,carer proxy
 Title,carer proxy reporting,1,1,0.38,no,,no,carer proxy reporting
-Title,caries experience,1,1,0.38,no,,no,caries experience
 Title,case tonsillectomy,1,1,0.38,no,,no,case tonsillectomy
 Title,cataract referral,1,1,0.38,no,,no,cataract referral
 Title,cataract surgery,1,1,0.38,no,,no,cataract surgery
@@ -231,7 +230,6 @@ Title,changed performance,1,1,0.38,no,,no,changed performance
 Title,changing association,1,1,0.38,no,,no,changing association
 Title,changing indication,1,1,0.38,no,,no,changing indications
 Title,cheap alcohol,1,1,0.38,no,,no,cheap alcohol
-Title,child aged,1,1,0.38,no,,no,child aged
 Title,child obesity,1,1,0.38,no,,no,child obesity
 Title,child oral health,1,1,0.38,no,,no,child oral health
 Title,childhood dental caries,1,1,0.38,no,,no,childhood dental caries
@@ -325,8 +323,6 @@ Title,deprivation explain,1,1,0.38,no,,no,deprivation explain
 Title,deprivation independently,1,1,0.38,no,,no,deprivation independently
 Title,deprivation independently predict,1,1,0.38,no,,no,deprivation independently predict
 Title,deprivation influence,1,1,0.38,no,,no,deprivation influences
-Title,deprivation measure,1,1,0.38,no,,no,deprivation measure
-Title,deprivation measure dataset,1,1,0.38,no,,no,deprivation measure datasets
 Title,deprivation status,1,1,0.38,no,,no,deprivation status
 Title,deprivation status predict,1,1,0.38,no,,no,deprivation status predicts
 Title,deprivation study,1,1,0.38,no,,no,deprivation study
@@ -436,13 +432,14 @@ Title,great britain,1,1,0.38,no,,no,great britain
 Title,great britain today,1,1,0.38,no,,no,great britain today
 Title,hallux valgus,1,1,0.38,no,,no,hallux valgus
 Title,hallux valgus surgery,1,1,0.38,no,,no,hallux valgus surgery
+Title,head and neck cancer referral system,1,1,0.38,no,,no,head and neck cancer referral system
 Title,head injury admission,1,1,0.38,no,,no,head injury admission
 Title,health care associated,1,1,0.38,no,,no,health care associated
 Title,health care associated infection,1,1,0.38,no,,no,health care associated infection
 Title,health care cost,1,1,0.38,no,,no,health care costs
 Title,health extended,1,1,0.38,no,,no,health extended
+Title,health related,1,1,0.38,no,,no,health related
 Title,health related indicator,1,1,0.38,no,,no,health related indicators
-Title,health related quality of life,1,1,0.38,no,,no,health related quality of life
 Title,health selection,1,1,0.38,no,,no,health selection
 Title,health selection theory,1,1,0.38,no,,no,health selection theory
 Title,health status,1,1,0.38,no,,no,health status
@@ -501,6 +498,7 @@ Title,independent risk,1,1,0.38,no,,no,independent risk
 Title,independent risk factor,1,1,0.38,no,,no,independent risk factor
 Title,independently predict,1,1,0.38,no,,no,independently predict
 Title,independently predict all-cause mortality,1,1,0.38,no,,no,independently predict all-cause mortality
+Title,indices identify income,1,1,0.38,no,,no,indices identify income
 Title,inequality research,1,1,0.38,no,,no,inequality research
 Title,inequality research using,1,1,0.38,no,,no,inequality research using
 Title,inequitable access,1,1,0.38,no,,no,inequitable access
@@ -779,7 +777,6 @@ Title,related indicator,1,1,0.38,no,,no,related indicators
 Title,related macular,1,1,0.38,no,,no,related macular
 Title,related macular degeneration,1,1,0.38,no,,no,related macular degeneration
 Title,related mortality,1,1,0.38,no,,no,related mortality
-Title,related quality of life,1,1,0.38,no,,no,related quality of life
 Title,remaining life expectancy,1,1,0.38,no,,no,remaining life expectancy
 Title,renal masses,1,1,0.38,no,,no,renal masses
 Title,renal transplantation,1,1,0.38,no,,no,renal transplantation
@@ -853,6 +850,7 @@ Title,single centre audit,1,1,0.38,no,,no,single centre audit
 Title,single commodity,1,1,0.38,no,,no,single commodity
 Title,singleton pregnancy,1,1,0.38,no,,no,singleton pregnancies
 Title,small area deprivation,1,1,0.38,no,,no,small area deprivation
+Title,small area deprivation measure,1,1,0.38,no,,no,small area deprivation measure
 Title,small renal,1,1,0.38,no,,no,small renal
 Title,small renal masses,1,1,0.38,no,,no,small renal masses
 Title,smoke free home,1,1,0.38,no,,no,smoke free homes
@@ -1025,6 +1023,7 @@ Abstract,deprived area,69,123,26.24,no,,yes,deprived areas
 Abstract,socioeconomic deprivation,69,124,26.24,no,,yes,socioeconomic deprivation
 Abstract,socioeconomic status,59,150,22.43,no,,yes,socioeconomic status
 Abstract,health care,37,52,14.07,no,,yes,health care
+Abstract,area deprivation,28,39,10.65,no,,yes,area deprivation
 Abstract,risk factor,28,47,10.65,no,,yes,risk factors
 Abstract,health inequality,21,40,7.98,no,,yes,health inequality
 Abstract,hospital admission,20,44,7.60,no,,yes,hospital admission
@@ -1032,67 +1031,54 @@ Abstract,primary care,20,32,7.60,no,,yes,primary care
 Abstract,public health,19,25,7.22,no,,yes,public health
 Abstract,socioeconomic inequality,19,26,7.22,no,,yes,socioeconomic inequality
 Abstract,body mass index,18,47,6.84,no,,yes,body mass index
+Abstract,general practice,17,28,6.46,no,,yes,general practice
 Abstract,social deprivation,15,32,5.70,no,,yes,social deprivation
-Abstract,area deprivation,14,17,5.32,no,,yes,area deprivation
+Abstract,length of stay,14,21,5.32,no,,yes,length of stay
 Abstract,mental health,12,22,4.56,no,,yes,mental health
 Abstract,quality of life,12,20,4.56,no,,yes,quality of life
 Abstract,socioeconomic factor,12,14,4.56,no,,yes,socioeconomic factor
 Abstract,socioeconomically deprived,12,17,4.56,yes,Mostly within the longer phrase 'socioeconomically deprived area',no,socioeconomically deprived
 Abstract,socioeconomic gradient,11,15,4.18,no,,yes,socioeconomic gradient
 Abstract,colorectal cancer,10,33,3.80,no,,yes,colorectal cancer
-Abstract,general practice,10,20,3.80,no,,yes,general practice
-Abstract,length of stay,10,12,3.80,no,,yes,length of stay
 Abstract,physical activity,10,27,3.80,no,,yes,physical activity
 Abstract,all-cause mortality,9,22,3.42,no,,yes,all-cause mortality
 Abstract,COVID-19 pandemic,9,12,3.42,no,,yes,COVID-19 pandemic
-Abstract,health related,9,17,3.42,yes,Mostly within the longer phrase 'health related quality of life',no,health related
 Abstract,socioeconomically deprived area,9,10,3.42,no,,yes,socioeconomically deprived areas
 Abstract,urban rural,9,13,3.42,no,,yes,urban rural
 Abstract,affluent area,8,9,3.04,no,,yes,affluent areas
 Abstract,cardiovascular disease,8,10,3.04,no,,yes,cardiovascular disease
 Abstract,cardiovascular risk,8,14,3.04,no,,yes,cardiovascular risk
-Abstract,general practitioner,8,8,3.04,no,,yes,general practitioner
 Abstract,health outcome,8,10,3.04,no,,yes,health outcome
 Abstract,older age,8,8,3.04,no,,yes,older age
 Abstract,socioeconomic background,8,10,3.04,no,,yes,socioeconomic background
 Abstract,urban area,8,17,3.04,no,,yes,urban areas
-Abstract,area based deprivation,7,8,2.66,no,,yes,area based deprivation
-Abstract,based deprivation,7,8,2.66,yes,Mostly within the longer phrase 'area based deprivation',no,based deprivation
 Abstract,blood pressure,7,8,2.66,no,,yes,blood pressure
 Abstract,cancer registry,7,9,2.66,no,,yes,cancer registry
-Abstract,child aged,7,9,2.66,no,,yes,child aged
-Abstract,health related quality of life,7,14,2.66,no,,yes,health related quality of life
 Abstract,heart disease,7,12,2.66,no,,yes,heart disease
-Abstract,hospital stay,7,7,2.66,no,,yes,hospital stay
 Abstract,life expectancy,7,23,2.66,no,,yes,life expectancy
 Abstract,long term condition,7,8,2.66,no,,yes,long term condition
-Abstract,related quality of life,7,14,2.66,yes,Mostly within the longer phrase 'health related quality of life',no,related quality of life
 Abstract,rural area,7,15,2.66,no,,yes,rural areas
 Abstract,screening programme,7,14,2.66,no,,yes,screening programme
 Abstract,type 1 diabetes,7,29,2.66,no,,yes,type 1 diabetes
 Abstract,adverse outcome,6,7,2.28,no,,yes,adverse outcome
 Abstract,alcohol related,6,18,2.28,no,,yes,alcohol related
 Abstract,data zone,6,14,2.28,yes,"Deprivation index naming or its geography; describes the measure, not the topic",no,data zones
+Abstract,dental caries,6,33,2.28,no,,yes,dental caries
 Abstract,deprived community,6,6,2.28,no,,yes,deprived communities
 Abstract,emergency department,6,8,2.28,no,,yes,emergency department
 Abstract,kidney disease,6,6,2.28,no,,yes,kidney disease
 Abstract,smoking status,6,8,2.28,no,,yes,smoking status
 Abstract,social care,6,9,2.28,no,,yes,social care
 Abstract,vaccination status,6,6,2.28,no,,yes,vaccination status
-Abstract,caries experience,5,23,1.90,no,,yes,caries experience
-Abstract,child living,5,5,1.90,no,,yes,child living
 Abstract,chronic obstructive pulmonary disease,5,15,1.90,no,,yes,chronic obstructive pulmonary disease
-Abstract,dental caries,5,10,1.90,no,,yes,dental caries
-Abstract,dental inspection,5,6,1.90,no,,yes,dental inspection
 Abstract,deprived neighbourhood,5,8,1.90,no,,yes,deprived neighbourhood
 Abstract,gestational age,5,10,1.90,no,,yes,gestational age
+Abstract,head and neck cancer,5,9,1.90,no,,yes,head and neck cancer
 Abstract,health service,5,5,1.90,no,,yes,health service
 Abstract,health status,5,9,1.90,no,,yes,health status
 Abstract,household income,5,6,1.90,no,,yes,household income
 Abstract,intensive care,5,5,1.90,no,,yes,intensive care
-Abstract,leading cause,5,5,1.90,no,,yes,leading cause
 Abstract,maternal age,5,6,1.90,no,,yes,maternal age
-Abstract,neck cancer,5,9,1.90,no,,yes,neck cancer
 Abstract,neighbourhood deprivation,5,12,1.90,no,,yes,neighbourhood deprivation
 Abstract,oral health,5,9,1.90,no,,yes,oral health
 Abstract,preterm birth,5,13,1.90,no,,yes,preterm birth
@@ -1130,10 +1116,8 @@ Abstract,data set,4,6,1.52,no,,no,data sets
 Abstract,decision making,4,5,1.52,no,,no,decision making
 Abstract,deprivation gradient,4,5,1.52,no,,no,deprivation gradient
 Abstract,deprivation influence,4,4,1.52,no,,no,deprivation influence
-Abstract,deprivation measure,4,9,1.52,no,,no,deprivation measures
 Abstract,deprivation ranking,4,4,1.52,no,,no,deprivation ranking
 Abstract,deprivation status,4,9,1.52,no,,no,deprivation status
-Abstract,deprivation using,4,4,1.52,no,,no,deprivation using
 Abstract,deprived compared,4,5,1.52,no,,no,deprived compared
 Abstract,electronic record,4,4,1.52,no,,no,electronic records
 Abstract,emergency admission,4,8,1.52,no,,no,emergency admission
@@ -1174,12 +1158,12 @@ Abstract,young child,4,4,1.52,no,,no,young child
 Abstract,acute hospital,3,3,1.14,no,,no,acute hospital
 Abstract,acute hospital admission,3,3,1.14,no,,no,acute hospital admission
 Abstract,alcohol purchasing,3,3,1.14,no,,no,alcohol purchasing
+Abstract,area deprivation indices,3,3,1.14,no,,no,area deprivation indices
 Abstract,asthma admission,3,5,1.14,no,,no,asthma admission
 Abstract,biopsy proven,3,4,1.14,no,,no,biopsy proven
 Abstract,bowel screening,3,3,1.14,no,,no,bowel screening
 Abstract,brain injury,3,3,1.14,no,,no,brain injury
 Abstract,call recall,3,3,1.14,no,,no,call recall
-Abstract,cancer diagnosis,3,3,1.14,no,,no,cancer diagnosis
 Abstract,cancer outcome,3,3,1.14,no,,no,cancer outcome
 Abstract,cancer registry data,3,3,1.14,no,,no,cancer registry data
 Abstract,cardiac arrest,3,3,1.14,no,,no,cardiac arrest
@@ -1202,10 +1186,9 @@ Abstract,critical illness,3,5,1.14,no,,no,critical illness
 Abstract,cumulative incidence,3,6,1.14,no,,no,cumulative incidence
 Abstract,data source,3,8,1.14,no,,no,data sources
 Abstract,dental care,3,7,1.14,no,,no,dental care
-Abstract,dental caries experience,3,4,1.14,no,,no,dental caries experience
-Abstract,dental inspection programme,3,3,1.14,no,,no,dental inspection programme
 Abstract,dental service,3,4,1.14,no,,no,dental service
 Abstract,deprivation based,3,3,1.14,no,,no,deprivation based
+Abstract,deprivation measure,3,7,1.14,no,,no,deprivation measures
 Abstract,deprived child,3,3,1.14,no,,no,deprived child
 Abstract,deprived individual,3,6,1.14,no,,no,deprived individuals
 Abstract,deprived postcode,3,3,1.14,no,,no,deprived postcodes
@@ -1243,8 +1226,8 @@ Abstract,inclusion criteria,3,3,1.14,no,,no,inclusion criteria
 Abstract,income deprivation,3,6,1.14,no,,no,income deprivation
 Abstract,inequality using,3,3,1.14,no,,no,inequality using
 Abstract,inpatient care,3,3,1.14,no,,no,inpatient care
-Abstract,inspection programme,3,3,1.14,no,,no,inspection programme
 Abstract,lesser extent,3,3,1.14,no,,no,lesser extent
+Abstract,longer length of stay,3,4,1.14,no,,no,longer length of stay
 Abstract,low birth weight,3,3,1.14,no,,no,low birth weight
 Abstract,lung cancer,3,11,1.14,no,,no,lung cancer
 Abstract,man aged,3,3,1.14,no,,no,man aged
@@ -1255,8 +1238,6 @@ Abstract,morbidity record,3,3,1.14,yes,"Named data source or register; describes
 Abstract,mortality inequality,3,3,1.14,no,,no,mortality inequality
 Abstract,mortality record,3,3,1.14,no,,no,mortality records
 Abstract,mortality risk,3,5,1.14,no,,no,mortality risk
-Abstract,national dental,3,3,1.14,no,,no,national dental
-Abstract,national dental inspection,3,3,1.14,no,,no,national dental inspection
 Abstract,national institute,3,4,1.14,no,,no,national institute
 Abstract,national statistic,3,3,1.14,no,,no,national statistics
 Abstract,nationally representative,3,4,1.14,no,,no,nationally representative
@@ -1360,6 +1341,8 @@ Abstract,analyse revealed,2,2,0.76,no,,no,analyses revealed
 Abstract,analysis revealed,2,2,0.76,no,,no,analysis revealed
 Abstract,appointment made,2,3,0.76,no,,no,appointments made
 Abstract,area based socioeconomic status,2,4,0.76,no,,no,area based socioeconomic status
+Abstract,area deprivation index,2,2,0.76,no,,no,area deprivation index
+Abstract,area deprivation measure,2,2,0.76,no,,no,area deprivation measure
 Abstract,area deprivation using,2,2,0.76,no,,no,area deprivation using
 Abstract,area ranked,2,2,0.76,no,,no,area ranked
 Abstract,arterial hypertension,2,2,0.76,no,,no,arterial hypertension
@@ -1379,6 +1362,7 @@ Abstract,breast cancer,2,3,0.76,no,,no,breast cancer
 Abstract,bus stop,2,5,0.76,no,,no,bus stops
 Abstract,calculated age,2,2,0.76,no,,no,calculated age
 Abstract,call recall system,2,2,0.76,no,,no,call recall system
+Abstract,cancer diagnosis,2,2,0.76,no,,no,cancer diagnosis
 Abstract,cancer incidence,2,3,0.76,no,,no,cancer incidence
 Abstract,cancer mortality,2,2,0.76,no,,no,cancer mortality
 Abstract,cancer network,2,5,0.76,no,,no,cancer network
@@ -1435,11 +1419,11 @@ Abstract,dental treatment,2,2,0.76,no,,no,dental treatment
 Abstract,deprivation area,2,2,0.76,no,,no,deprivation area
 Abstract,deprivation data,2,2,0.76,no,,no,deprivation data
 Abstract,deprivation gap,2,8,0.76,no,,no,deprivation gap
-Abstract,deprivation measured,2,2,0.76,no,,no,deprivation measured
 Abstract,deprivation rank,2,2,0.76,no,,no,deprivation rank
 Abstract,deprivation related,2,2,0.76,no,,no,deprivation related
 Abstract,deprivation showed,2,2,0.76,no,,no,deprivation showed
 Abstract,deprivation threshold,2,5,0.76,no,,no,deprivation thresholds
+Abstract,deprivation using,2,2,0.76,no,,no,deprivation using
 Abstract,deprived area compared,2,2,0.76,no,,no,deprived areas compared
 Abstract,deprived socioeconomic,2,3,0.76,no,,no,deprived socioeconomic
 Abstract,descriptive statistic,2,2,0.76,no,,no,descriptive statistics
@@ -1523,6 +1507,7 @@ Abstract,health plan indicator,2,2,0.76,no,,no,health plan indicator
 Abstract,health promotion,2,2,0.76,no,,no,health promotion
 Abstract,health promotion intervention,2,2,0.76,no,,no,health promotion intervention
 Abstract,health questionnaire,2,2,0.76,no,,no,health questionnaire
+Abstract,health related,2,3,0.76,no,,no,health related
 Abstract,health system,2,2,0.76,no,,no,health systems
 Abstract,healthy weight,2,2,0.76,no,,no,healthy weight
 Abstract,heart health,2,2,0.76,no,,no,heart health
@@ -1591,8 +1576,6 @@ Abstract,liver disease,2,7,0.76,no,,no,liver disease
 Abstract,living environment,2,4,0.76,no,,no,living environment
 Abstract,lockdown measure,2,2,0.76,no,,no,lockdown measures
 Abstract,log rank,2,2,0.76,no,,no,log rank
-Abstract,longer hospital,2,2,0.76,no,,no,longer hospital
-Abstract,longer hospital stay,2,2,0.76,no,,no,longer hospital stays
 Abstract,lung function,2,3,0.76,no,,no,lung function
 Abstract,male gender,2,2,0.76,no,,no,male gender
 Abstract,malignant neoplasm,2,2,0.76,no,,no,malignant neoplasm
@@ -1825,7 +1808,6 @@ Abstract,wide data,2,2,0.76,no,,no,wide data
 Abstract,wide health,2,2,0.76,no,,no,wide health
 Abstract,widening health inequality,2,2,0.76,no,,no,widening health inequality
 Abstract,woman included,2,2,0.76,no,,no,woman included
-Abstract,worse health,2,2,0.76,no,,no,worse health
 Abstract,younger adult,2,5,0.76,no,,no,younger adult
 Abstract,zero inflated,2,2,0.76,no,,no,zero inflated
 Abstract,aav incidence,1,1,0.38,no,,no,aav incidence
@@ -2085,7 +2067,6 @@ Abstract,age standardized incidence,1,1,0.38,no,,no,age standardized incidence
 Abstract,age standardized mortality,1,3,0.38,no,,no,age standardized mortality
 Abstract,age using,1,1,0.38,no,,no,age using
 Abstract,age using arriaga,1,1,0.38,no,,no,age using arriaga
-Abstract,aged younger,1,1,0.38,no,,no,aged younger
 Abstract,aggregate measure,1,2,0.38,no,,no,aggregate measure
 Abstract,aggregate measure fail,1,1,0.38,no,,no,aggregate measures fail
 Abstract,aggregated scpes,1,1,0.38,no,,no,aggregated scpes
@@ -2257,7 +2238,7 @@ Abstract,area benefit,1,1,0.38,no,,no,areas benefit
 Abstract,area consistently,1,1,0.38,no,,no,areas consistently
 Abstract,area contrasted,1,1,0.38,no,,no,areas contrasted
 Abstract,area delivered,1,1,0.38,no,,no,areas delivered
-Abstract,area deprivation measure,1,1,0.38,no,,no,area deprivation measure
+Abstract,area deprivation analysis,1,1,0.38,no,,no,area deprivation analysis
 Abstract,area deprivation measured,1,1,0.38,no,,no,area deprivation measured
 Abstract,area engaged,1,1,0.38,no,,no,areas engaged
 Abstract,area exhibited,1,1,0.38,no,,no,areas exhibited
@@ -2320,7 +2301,6 @@ Abstract,assessing antenatal service,1,1,0.38,no,,no,assessing antenatal service
 Abstract,assessing cardiovascular,1,1,0.38,no,,no,assessing cardiovascular
 Abstract,assessing cardiovascular risk,1,1,0.38,no,,no,assessing cardiovascular risk
 Abstract,assessing dental caries,1,1,0.38,no,,no,assessing dental caries
-Abstract,assessing dental caries experience,1,1,0.38,no,,no,assessing dental caries experience
 Abstract,assessing inequality,1,1,0.38,no,,no,assessing inequality
 Abstract,assessment point,1,1,0.38,no,,no,assessment points
 Abstract,assessor blinded,1,1,0.38,no,,no,assessor blinded
@@ -2444,7 +2424,6 @@ Abstract,based approaches,1,1,0.38,no,,no,based approaches
 Abstract,based care,1,1,0.38,no,,no,based care
 Abstract,based dental,1,1,0.38,no,,no,based dental
 Abstract,based dental health,1,1,0.38,no,,no,based dental health
-Abstract,based deprivation measure,1,1,0.38,no,,no,based deprivation measures
 Abstract,based entertainment,1,4,0.38,no,,no,based entertainment
 Abstract,based financial,1,1,0.38,no,,no,based financial
 Abstract,based financial incentive,1,1,0.38,no,,no,based financial incentive
@@ -2677,7 +2656,6 @@ Abstract,canadian study,1,1,0.38,no,,no,canadian study
 Abstract,cancer aftercare,1,1,0.38,no,,no,cancer aftercare
 Abstract,cancer care,1,1,0.38,no,,no,cancer care
 Abstract,cancer care pathway,1,1,0.38,no,,no,cancer care pathway
-Abstract,cancer conducted,1,1,0.38,no,,no,cancer conducted
 Abstract,cancer death,1,1,0.38,no,,no,cancer death
 Abstract,cancer location,1,1,0.38,no,,no,cancer location
 Abstract,cancer mibc,1,1,0.38,no,,no,cancer mibc
@@ -2685,7 +2663,7 @@ Abstract,cancer national,1,1,0.38,no,,no,cancer national
 Abstract,cancer national referral,1,1,0.38,no,,no,cancer national referral
 Abstract,cancer network colorectal,1,1,0.38,no,,no,cancer network colorectal
 Abstract,cancer policy,1,1,0.38,no,,no,cancer policy
-Abstract,cancer referral,1,2,0.38,no,,no,cancer referrals
+Abstract,cancer referral,1,1,0.38,no,,no,cancer referrals
 Abstract,cancer registry covering,1,1,0.38,no,,no,cancer registry covering
 Abstract,cancer related,1,1,0.38,no,,no,cancer related
 Abstract,cancer related death,1,1,0.38,no,,no,cancer related death
@@ -2790,12 +2768,12 @@ Abstract,carer proxy reported,1,2,0.38,no,,no,carer proxy reported
 Abstract,carer proxy reporting,1,2,0.38,no,,no,carer proxy reporting
 Abstract,carer reported,1,1,0.38,no,,no,carers reported
 Abstract,caribbean female,1,1,0.38,no,,no,caribbean female
-Abstract,caries experience risk,1,1,0.38,no,,no,caries experience risk
 Abstract,caries free,1,2,0.38,no,,no,caries free
 Abstract,carotid intima,1,2,0.38,no,,no,carotid intima
 Abstract,carotid intima media,1,2,0.38,no,,no,carotid intima media
 Abstract,carotid plaque,1,1,0.38,no,,no,carotid plaque
-Abstract,carstairs area,1,1,0.38,no,,no,carstairs area
+Abstract,carstairs area deprivation,1,1,0.38,no,,no,carstairs area deprivation
+Abstract,carstairs area deprivation index,1,1,0.38,no,,no,carstairs area deprivation index
 Abstract,carstairs index,1,2,0.38,no,,no,carstairs index
 Abstract,cartilage graft,1,1,0.38,no,,no,cartilage grafts
 Abstract,case continue,1,1,0.38,no,,no,cases continue
@@ -2921,7 +2899,6 @@ Abstract,chicken dishes,1,1,0.38,no,,no,chicken dishes
 Abstract,chief medical,1,1,0.38,no,,no,chief medical
 Abstract,chief medical officer,1,1,0.38,no,,no,chief medical officer
 Abstract,child age,1,1,0.38,no,,no,child age
-Abstract,child aged younger,1,1,0.38,no,,no,child aged younger
 Abstract,child bearing,1,1,0.38,no,,no,child bearing
 Abstract,child bearing age,1,1,0.38,no,,no,child bearing age
 Abstract,child behaviour,1,1,0.38,no,,no,child behaviour
@@ -3075,7 +3052,7 @@ Abstract,clinician appointment use,1,1,0.38,no,,no,clinician appointment use
 Abstract,clinician contact,1,1,0.38,no,,no,clinician contact
 Abstract,clinician examination,1,2,0.38,no,,no,clinician examination
 Abstract,clinician measured,1,1,0.38,no,,no,clinician measured
-Abstract,clinician measured caries,1,1,0.38,no,,no,clinician measured caries
+Abstract,clinician measured dental caries,1,1,0.38,no,,no,clinician measured dental caries
 Abstract,clinician preference,1,1,0.38,no,,no,clinician preference
 Abstract,clinician workload,1,1,0.38,no,,no,clinician workload
 Abstract,clinicopathological features,1,1,0.38,no,,no,clinicopathological features
@@ -3609,10 +3586,12 @@ Abstract,density lipoprotein,1,1,0.38,no,,no,density lipoprotein
 Abstract,dental attendance,1,4,0.38,no,,no,dental attendance
 Abstract,dental care availability,1,1,0.38,no,,no,dental care availability
 Abstract,dental care law,1,3,0.38,no,,no,dental care law
-Abstract,dental caries experience data,1,1,0.38,no,,no,dental caries experience data
+Abstract,dental caries data,1,1,0.38,no,,no,dental caries data
 Abstract,dental caries outcome,1,1,0.38,no,,no,dental caries outcome
 Abstract,dental caries prevalence,1,1,0.38,no,,no,dental caries prevalence
 Abstract,dental caries remain,1,1,0.38,no,,no,dental caries remains
+Abstract,dental caries risk,1,1,0.38,no,,no,dental caries risk
+Abstract,dental caries risk compared,1,1,0.38,no,,no,dental caries risk compared
 Abstract,dental contact,1,3,0.38,no,,no,dental contacts
 Abstract,dental contact derived,1,1,0.38,no,,no,dental contacts derived
 Abstract,dental decay,1,3,0.38,no,,no,dental decay
@@ -3620,8 +3599,6 @@ Abstract,dental decay remain,1,1,0.38,no,,no,dental decay remains
 Abstract,dental disease,1,1,0.38,no,,no,dental disease
 Abstract,dental extractions,1,1,0.38,no,,no,dental extractions
 Abstract,dental health support,1,1,0.38,no,,no,dental health support
-Abstract,dental inspection data,1,1,0.38,no,,no,dental inspection data
-Abstract,dental inspection survey,1,1,0.38,no,,no,dental inspection survey
 Abstract,dental practice,1,4,0.38,no,,no,dental practice
 Abstract,dental practice visits,1,3,0.38,no,,no,dental practice visits
 Abstract,dental practitioner,1,1,0.38,no,,no,dental practitioners
@@ -3645,7 +3622,6 @@ Abstract,depressive symptom,1,2,0.38,no,,no,depressive symptoms
 Abstract,deprivation according,1,1,0.38,no,,no,deprivation according
 Abstract,deprivation accounted,1,1,0.38,no,,no,deprivation accounted
 Abstract,deprivation alone,1,1,0.38,no,,no,deprivation alone
-Abstract,deprivation analysis,1,1,0.38,no,,no,deprivation analysis
 Abstract,deprivation appeared,1,1,0.38,no,,no,deprivation appeared
 Abstract,deprivation contribute,1,1,0.38,no,,no,deprivation contributes
 Abstract,deprivation deemed,1,1,0.38,no,,no,deprivation deemed
@@ -3666,6 +3642,7 @@ Abstract,deprivation interaction,1,1,0.38,no,,no,deprivation interaction
 Abstract,deprivation measure provide,1,1,0.38,no,,no,deprivation measures provide
 Abstract,deprivation measure used,1,1,0.38,no,,no,deprivation measures used
 Abstract,deprivation measure using,1,1,0.38,no,,no,deprivation measure using
+Abstract,deprivation measured,1,1,0.38,no,,no,deprivation measured
 Abstract,deprivation mobility,1,1,0.38,no,,no,deprivation mobility
 Abstract,deprivation particularly,1,1,0.38,no,,no,deprivation particularly
 Abstract,deprivation particularly associated,1,1,0.38,no,,no,deprivation particularly associated
@@ -4294,8 +4271,6 @@ Abstract,exacerbation requiring,1,1,0.38,no,,no,exacerbations requiring
 Abstract,exacerbation requiring hospital admission,1,1,0.38,no,,no,exacerbations requiring hospital admission
 Abstract,examination uptake,1,1,0.38,no,,no,examination uptake
 Abstract,examine current incidence,1,1,0.38,no,,no,examine current incidence
-Abstract,examine dental,1,1,0.38,no,,no,examine dental
-Abstract,examine dental inspection,1,1,0.38,no,,no,examine dental inspection
 Abstract,examine deprivation,1,1,0.38,no,,no,examine deprivation
 Abstract,examine deprivation measured,1,1,0.38,no,,no,examine deprivation measured
 Abstract,examine neurotrauma,1,1,0.38,no,,no,examines neurotrauma
@@ -4380,8 +4355,6 @@ Abstract,experience faster accumulation,1,1,0.38,no,,no,experience faster accumu
 Abstract,experience irregular,1,1,0.38,no,,no,experience irregular
 Abstract,experience irregular discharge,1,1,0.38,no,,no,experience irregular discharge
 Abstract,experience response,1,1,0.38,no,,no,experience responses
-Abstract,experience risk,1,1,0.38,no,,no,experience risk
-Abstract,experience risk compared,1,1,0.38,no,,no,experience risk compared
 Abstract,experience social,1,1,0.38,no,,no,experience social
 Abstract,experience social drift,1,1,0.38,no,,no,experience social drift
 Abstract,experience survey,1,1,0.38,no,,no,experience survey
@@ -4397,8 +4370,8 @@ Abstract,exploratory descriptive,1,1,0.38,no,,no,exploratory descriptive
 Abstract,exploratory descriptive analysis,1,1,0.38,no,,no,exploratory descriptive analysis
 Abstract,exploratory study add,1,1,0.38,no,,no,exploratory study adds
 Abstract,explore cause,1,1,0.38,no,,no,explore causes
-Abstract,explore health,1,1,0.38,no,,no,explore health
-Abstract,explore health related,1,1,0.38,no,,no,explore health related
+Abstract,explore quality of life,1,1,0.38,no,,no,explore quality of life
+Abstract,explore quality of life trajectory,1,1,0.38,no,,no,explore quality of life trajectories
 Abstract,explore usage,1,1,0.38,no,,no,explore usage
 Abstract,explore usage trajectory,1,1,0.38,no,,no,explore usage trajectories
 Abstract,explored ethnic,1,1,0.38,no,,no,explored ethnic
@@ -4732,11 +4705,11 @@ Abstract,general practice data,1,1,0.38,no,,no,general practice data
 Abstract,general practice pharmacy,1,2,0.38,no,,no,general practice pharmacy
 Abstract,general practice pharmacy collaboration,1,1,0.38,no,,no,general practice pharmacy collaboration
 Abstract,general practice pharmacy technician,1,1,0.38,no,,no,general practice pharmacy technician
+Abstract,general practice practice,1,1,0.38,no,,no,general practice practices
+Abstract,general practice recruitment,1,1,0.38,no,,no,general practice recruitment
+Abstract,general practice register,1,1,0.38,no,,no,general practice registers
 Abstract,general practice website,1,2,0.38,no,,no,general practice website
 Abstract,general practice website readability,1,1,0.38,no,,no,general practice website readability
-Abstract,general practitioner practice,1,1,0.38,no,,no,general practitioner practices
-Abstract,general practitioner recruitment,1,1,0.38,no,,no,general practitioner recruitment
-Abstract,general practitioner register,1,1,0.38,no,,no,general practitioner registers
 Abstract,general registrar,1,1,0.38,no,,no,general registrar
 Abstract,general registrar office,1,1,0.38,no,,no,general registrar office
 Abstract,general surgery,1,1,0.38,no,,no,general surgery
@@ -4903,6 +4876,9 @@ Abstract,hba1c testing,1,3,0.38,no,,no,hba1c testing
 Abstract,hcai prevalence,1,4,0.38,no,,no,hcai prevalence
 Abstract,hcai rarely,1,1,0.38,no,,no,hcai rarely
 Abstract,hcai rarely address,1,1,0.38,no,,no,hcai rarely address
+Abstract,head and neck cancer conducted,1,1,0.38,no,,no,head and neck cancer conducted
+Abstract,head and neck cancer diagnosis,1,1,0.38,no,,no,head and neck cancer diagnosis
+Abstract,head and neck cancer referral,1,1,0.38,no,,no,head and neck cancer referrals
 Abstract,head injury admitted,1,2,0.38,no,,no,head injury admitted
 Abstract,head injury guideline,1,1,0.38,no,,no,head injury guidelines
 Abstract,health behaviour,1,1,0.38,no,,no,health behaviour
@@ -5029,8 +5005,8 @@ Abstract,her2 enriched,1,1,0.38,no,,no,her2 enriched
 Abstract,her2 enriched tumour,1,1,0.38,no,,no,her2 enriched tumour
 Abstract,herd immunity,1,1,0.38,no,,no,herd immunity
 Abstract,hereditary pah,1,1,0.38,no,,no,hereditary pah
-Abstract,highest caries,1,1,0.38,no,,no,highest caries
-Abstract,highest caries experience,1,1,0.38,no,,no,highest caries experience
+Abstract,highest dental caries,1,1,0.38,no,,no,highest dental caries
+Abstract,highest dental caries risk,1,1,0.38,no,,no,highest dental caries risk
 Abstract,highest educational,1,1,0.38,no,,no,highest educational
 Abstract,highest educational qualification,1,1,0.38,no,,no,highest educational qualification
 Abstract,highest insertion,1,1,0.38,no,,no,highest insertion
@@ -5115,7 +5091,7 @@ Abstract,hospital general,1,1,0.38,no,,no,hospital general
 Abstract,hospital general medical,1,1,0.38,no,,no,hospital general medical
 Abstract,hospital inpatient,1,2,0.38,no,,no,hospital inpatient
 Abstract,hospital inpatient data,1,1,0.38,no,,no,hospital inpatient data
-Abstract,hospital length,1,1,0.38,no,,no,hospital lengths
+Abstract,hospital length of stay,1,1,0.38,no,,no,hospital length of stay
 Abstract,hospital missingness,1,1,0.38,no,,no,hospital missingness
 Abstract,hospital mortality,1,1,0.38,no,,no,hospital mortality
 Abstract,hospital received,1,1,0.38,no,,no,hospital received
@@ -5466,7 +5442,7 @@ Abstract,individual family,1,1,0.38,no,,no,individual family
 Abstract,individual fell,1,1,0.38,no,,no,individual fell
 Abstract,individual indicator,1,1,0.38,no,,no,individual indicators
 Abstract,individual initial,1,1,0.38,no,,no,individual initial
-Abstract,individual initial area,1,1,0.38,no,,no,individual initial area
+Abstract,individual initial area deprivation,1,1,0.38,no,,no,individual initial area deprivation
 Abstract,individual newly,1,1,0.38,no,,no,individuals newly
 Abstract,individual newly diagnosed,1,1,0.38,no,,no,individuals newly diagnosed
 Abstract,individual older,1,1,0.38,no,,no,individuals older
@@ -5551,7 +5527,6 @@ Abstract,information diabetes collaboration,1,1,0.38,no,,no,information diabetes
 Abstract,information resource,1,1,0.38,no,,no,information resources
 Abstract,informing intervention,1,1,0.38,no,,no,informing intervention
 Abstract,inhaled corticosteroid,1,1,0.38,no,,no,inhaled corticosteroid
-Abstract,initial area,1,1,0.38,no,,no,initial area
 Abstract,initial area deprivation,1,1,0.38,no,,no,initial area deprivation
 Abstract,initial assessment,1,1,0.38,no,,no,initial assessment
 Abstract,initial cesarean,1,2,0.38,no,,no,initial cesarean
@@ -5592,9 +5567,6 @@ Abstract,inpatient mortality,1,2,0.38,no,,no,inpatient mortality
 Abstract,inpatient outcome,1,1,0.38,no,,no,inpatient outcome
 Abstract,inpatient rehabilitation,1,1,0.38,no,,no,inpatient rehabilitation
 Abstract,insertion procedure,1,1,0.38,no,,no,insertion procedure
-Abstract,inspection data,1,1,0.38,no,,no,inspection data
-Abstract,inspection survey,1,1,0.38,no,,no,inspection survey
-Abstract,inspection survey data,1,1,0.38,no,,no,inspection survey data
 Abstract,instead used,1,1,0.38,no,,no,instead used
 Abstract,instead used drug,1,1,0.38,no,,no,instead used drug
 Abstract,instead using,1,1,0.38,no,,no,instead using
@@ -5649,8 +5621,6 @@ Abstract,internet daily,1,1,0.38,no,,no,internet daily
 Abstract,internet enabled,1,2,0.38,no,,no,internet enabled
 Abstract,internet enabled device,1,2,0.38,no,,no,internet enabled device
 Abstract,internet usage,1,1,0.38,no,,no,internet usage
-Abstract,interpretation child,1,1,0.38,no,,no,interpretation child
-Abstract,interpretation child living,1,1,0.38,no,,no,interpretation child living
 Abstract,interpretation policy,1,1,0.38,no,,no,interpretation policies
 Abstract,interpretation socioeconomic deprivation,1,1,0.38,no,,no,interpretation socioeconomic deprivation
 Abstract,intersecting social,1,1,0.38,no,,no,intersecting social
@@ -5986,7 +5956,6 @@ Abstract,long term survival,1,1,0.38,no,,no,long term survival
 Abstract,long term visual,1,1,0.38,no,,no,long term visual
 Abstract,longer critical,1,1,0.38,no,,no,longer critical
 Abstract,longer critical care,1,1,0.38,no,,no,longer critical care
-Abstract,longer length of stay,1,2,0.38,no,,no,longer length of stay
 Abstract,longer los,1,1,0.38,no,,no,longer los
 Abstract,longer term gain,1,1,0.38,no,,no,longer term gains
 Abstract,longer term societal,1,1,0.38,no,,no,longer term societal
@@ -6084,7 +6053,6 @@ Abstract,match dietary carbohydrate,1,1,0.38,no,,no,match dietary carbohydrates
 Abstract,material deprivation,1,1,0.38,no,,no,material deprivation
 Abstract,material deprivation contribute,1,1,0.38,no,,no,material deprivation contributes
 Abstract,material resource,1,1,0.38,no,,no,material resources
-Abstract,maternal area,1,1,0.38,no,,no,maternal area
 Abstract,maternal area deprivation,1,1,0.38,no,,no,maternal area deprivation
 Abstract,maternal behaviour,1,1,0.38,no,,no,maternal behaviour
 Abstract,maternal ethnicity,1,1,0.38,no,,no,maternal ethnicity
@@ -6141,8 +6109,7 @@ Abstract,measure smoking status validated,1,1,0.38,no,,no,measure smoking status
 Abstract,measure socioeconomic status,1,1,0.38,no,,no,measure socioeconomic status
 Abstract,measure speech,1,1,0.38,no,,no,measures speech
 Abstract,measure subscales,1,1,0.38,no,,no,measure subscales
-Abstract,measured caries,1,1,0.38,no,,no,measured caries
-Abstract,measured caries experience,1,1,0.38,no,,no,measured caries experience
+Abstract,measured dental caries,1,1,0.38,no,,no,measured dental caries
 Abstract,measured inequality,1,1,0.38,no,,no,measured inequality
 Abstract,measured inequality using,1,1,0.38,no,,no,measured inequality using
 Abstract,measurement burden,1,1,0.38,no,,no,measurement burden
@@ -6471,8 +6438,7 @@ Abstract,near zero,1,1,0.38,no,,no,near zero
 Abstract,near zero dental,1,1,0.38,no,,no,near zero dental
 Abstract,nearest food,1,1,0.38,no,,no,nearest food
 Abstract,nearest food retailer,1,1,0.38,no,,no,nearest food retailer
-Abstract,nearest general,1,1,0.38,no,,no,nearest general
-Abstract,nearest general practitioner,1,1,0.38,no,,no,nearest general practitioner
+Abstract,nearest general practice,1,1,0.38,no,,no,nearest general practice
 Abstract,nearest outlet,1,1,0.38,no,,no,nearest outlet
 Abstract,nearest resource,1,1,0.38,no,,no,nearest resource
 Abstract,nearly doubled,1,1,0.38,no,,no,nearly doubled
@@ -6481,9 +6447,6 @@ Abstract,necessarily reflect need,1,1,0.38,no,,no,necessarily reflect need
 Abstract,necessary condition,1,1,0.38,no,,no,necessary conditions
 Abstract,necessitating admission,1,1,0.38,no,,no,necessitating admission
 Abstract,neck abscesses,1,1,0.38,no,,no,neck abscesses
-Abstract,neck cancer conducted,1,1,0.38,no,,no,neck cancer conducted
-Abstract,neck cancer diagnosis,1,1,0.38,no,,no,neck cancer diagnosis
-Abstract,neck cancer referral,1,1,0.38,no,,no,neck cancer referrals
 Abstract,neck infection,1,2,0.38,no,,no,neck infection
 Abstract,neck lump,1,2,0.38,no,,no,neck lump
 Abstract,necrosis scoring,1,1,0.38,no,,no,necrosis scoring
@@ -6534,6 +6497,7 @@ Abstract,new legislation,1,1,0.38,no,,no,new legislation
 Abstract,new legislation produced,1,1,0.38,no,,no,new legislation produced
 Abstract,new phenomenon,1,1,0.38,no,,no,new phenomenon
 Abstract,new policy,1,1,0.38,no,,no,new policies
+Abstract,new small area deprivation,1,1,0.38,no,,no,new small area deprivation
 Abstract,newborn intensive,1,1,0.38,no,,no,newborn intensive
 Abstract,newborn intensive care,1,1,0.38,no,,no,newborn intensive care
 Abstract,newly diagnosed exudative,1,1,0.38,no,,no,newly diagnosed exudative
@@ -6686,7 +6650,6 @@ Abstract,obtaining evidence,1,1,0.38,no,,no,obtaining evidence
 Abstract,obvious decay,1,1,0.38,no,,no,obvious decay
 Abstract,obvious decay experience,1,1,0.38,no,,no,obvious decay experience
 Abstract,obvious dental caries,1,1,0.38,no,,no,obvious dental caries
-Abstract,obvious dental caries experience,1,1,0.38,no,,no,obvious dental caries experience
 Abstract,occipital circumference,1,1,0.38,no,,no,occipital circumference
 Abstract,occipital frontal,1,1,0.38,no,,no,occipital frontal
 Abstract,occipital frontal circumference,1,1,0.38,no,,no,occipital frontal circumference
@@ -7252,9 +7215,6 @@ Abstract,practice visits,1,3,0.38,no,,no,practice visits
 Abstract,practice visits delivered,1,1,0.38,no,,no,practice visits delivered
 Abstract,practice website,1,1,0.38,no,,no,practice websites
 Abstract,practice working,1,1,0.38,no,,no,practices working
-Abstract,practitioner practice,1,1,0.38,no,,no,practitioner practices
-Abstract,practitioner recruitment,1,1,0.38,no,,no,practitioner recruitment
-Abstract,practitioner register,1,1,0.38,no,,no,practitioner registers
 Abstract,practitioner service,1,1,0.38,no,,no,practitioner service
 Abstract,practitioner service board,1,1,0.38,no,,no,practitioner service board
 Abstract,preceding tendinitis,1,1,0.38,no,,no,preceding tendinitis
@@ -7391,7 +7351,8 @@ Abstract,primary cutaneous melanoma,1,1,0.38,no,,no,primary cutaneous melanoma
 Abstract,primary dental care availability,1,1,0.38,no,,no,primary dental care availability
 Abstract,primary driver,1,1,0.38,no,,no,primary driver
 Abstract,primary glomerulonephritis,1,1,0.38,no,,no,primary glomerulonephritis
-Abstract,primary head,1,2,0.38,no,,no,primary head
+Abstract,primary head and neck cancer,1,2,0.38,no,,no,primary head and neck cancer
+Abstract,primary head and neck cancer diagnosis,1,1,0.38,no,,no,primary head and neck cancer diagnosis
 Abstract,primary hip,1,1,0.38,no,,no,primary hip
 Abstract,primary hyperparathyroidism,1,1,0.38,no,,no,primary hyperparathyroidism
 Abstract,primary invasive,1,1,0.38,no,,no,primary invasive
@@ -7557,10 +7518,9 @@ Abstract,providing primary care dentistry,1,1,0.38,no,,no,providing primary care
 Abstract,provision differed,1,1,0.38,no,,no,provision differed
 Abstract,proximity measure,1,1,0.38,no,,no,proximity measures
 Abstract,proxy reported,1,2,0.38,no,,no,proxy reported
-Abstract,proxy reported caries,1,1,0.38,no,,no,proxy reported caries
-Abstract,proxy reported dental caries,1,1,0.38,no,,no,proxy reported dental caries
+Abstract,proxy reported dental caries,1,2,0.38,no,,no,proxy reported dental caries
 Abstract,proxy reporting,1,3,0.38,no,,no,proxy reporting
-Abstract,proxy reporting caries,1,1,0.38,no,,no,proxy reporting caries
+Abstract,proxy reporting dental caries,1,1,0.38,no,,no,proxy reporting dental caries
 Abstract,psobid study,1,1,0.38,no,,no,psobid study
 Abstract,psychiatric illness,1,1,0.38,no,,no,psychiatric illness
 Abstract,psychiatric morbidity,1,1,0.38,no,,no,psychiatric morbidity
@@ -7880,7 +7840,6 @@ Abstract,related macular,1,1,0.38,no,,no,related macular
 Abstract,related macular degeneration,1,1,0.38,no,,no,related macular degeneration
 Abstract,related pattern revealed,1,1,0.38,no,,no,related patterns revealed
 Abstract,related prescription,1,3,0.38,no,,no,related prescription
-Abstract,related quality of life trajectory,1,1,0.38,no,,no,related quality of life trajectories
 Abstract,related social,1,1,0.38,no,,no,related social
 Abstract,related social security,1,1,0.38,no,,no,related social security
 Abstract,relationship questionnaire,1,1,0.38,no,,no,relationships questionnaire
@@ -7943,12 +7902,9 @@ Abstract,replacing area,1,2,0.38,no,,no,replacing area
 Abstract,replacing area based,1,2,0.38,no,,no,replacing area based
 Abstract,replication analysis,1,1,0.38,no,,no,replication analysis
 Abstract,report incidence,1,1,0.38,no,,no,report incidence
-Abstract,reported caries,1,1,0.38,no,,no,reported caries
-Abstract,reported caries experience,1,1,0.38,no,,no,reported caries experience
 Abstract,reported current e-cigarette,1,1,0.38,no,,no,reported current e-cigarette
 Abstract,reported death,1,1,0.38,no,,no,reported death
-Abstract,reported dental caries,1,1,0.38,no,,no,reported dental caries
-Abstract,reported dental caries experience,1,1,0.38,no,,no,reported dental caries experience
+Abstract,reported dental caries,1,2,0.38,no,,no,reported dental caries
 Abstract,reported distance,1,1,0.38,no,,no,reported distance
 Abstract,reported revision,1,1,0.38,no,,no,reported revision
 Abstract,reported treatment,1,1,0.38,no,,no,reported treatment
@@ -7957,8 +7913,7 @@ Abstract,reported urban,1,1,0.38,no,,no,reported urban
 Abstract,reported urban rural,1,1,0.38,no,,no,reported urban rural
 Abstract,reporting better,1,3,0.38,no,,no,reporting better
 Abstract,reporting better self-rated health,1,3,0.38,no,,no,reporting better self-rated health
-Abstract,reporting caries,1,1,0.38,no,,no,reporting caries
-Abstract,reporting caries experience,1,1,0.38,no,,no,reporting caries experience
+Abstract,reporting dental caries,1,1,0.38,no,,no,reporting dental caries
 Abstract,reporting scheme,1,1,0.38,no,,no,reporting scheme
 Abstract,represent improvement,1,1,0.38,no,,no,represent improvements
 Abstract,representative data,1,1,0.38,no,,no,representative data
@@ -8495,6 +8450,7 @@ Abstract,slight decline,1,1,0.38,no,,no,slight decline
 Abstract,slight rise,1,1,0.38,no,,no,slight rise
 Abstract,slightly overall,1,1,0.38,no,,no,slightly overall
 Abstract,slow recovery,1,1,0.38,no,,no,slow recovery
+Abstract,small area deprivation measure,1,1,0.38,no,,no,small area deprivation measure
 Abstract,small body,1,1,0.38,no,,no,small body
 Abstract,small renal,1,6,0.38,no,,no,small renal
 Abstract,small renal masses,1,6,0.38,no,,no,small renal masses
@@ -8852,8 +8808,6 @@ Abstract,subglottic stenosis undergoing,1,1,0.38,no,,no,subglottic stenosis unde
 Abstract,subindex containing,1,1,0.38,no,,no,subindex containing
 Abstract,subindex using,1,1,0.38,no,,no,subindex using
 Abstract,subindex using data,1,1,0.38,no,,no,subindex using data
-Abstract,subject child,1,1,0.38,no,,no,subjects child
-Abstract,subject child aged,1,1,0.38,no,,no,subjects child aged
 Abstract,subjective experience,1,1,0.38,no,,no,subjective experience
 Abstract,subjective nature,1,1,0.38,no,,no,subjective nature
 Abstract,subjective socioeconomic status,1,1,0.38,no,,no,subjective socioeconomic status
@@ -9809,10 +9763,11 @@ Abstract,world setting,1,1,0.38,no,,no,world setting
 Abstract,worse eye,1,2,0.38,no,,no,worse eye
 Abstract,worse glaucoma,1,1,0.38,no,,no,worse glaucoma
 Abstract,worse glaucoma severity,1,1,0.38,no,,no,worse glaucoma severity
+Abstract,worse health,1,1,0.38,no,,no,worse health
 Abstract,worse health outcome,1,1,0.38,no,,no,worse health outcome
-Abstract,worse health related,1,1,0.38,no,,no,worse health related
 Abstract,worse outcome following,1,1,0.38,no,,no,worse outcome following
 Abstract,worse pain,1,1,0.38,no,,no,worse pain
+Abstract,worse quality of life,1,1,0.38,no,,no,worse quality of life
 Abstract,worse severity,1,1,0.38,no,,no,worse severity
 Abstract,worsen health inequality,1,1,0.38,no,,no,worsen health inequality
 Abstract,worsening deprivation,1,1,0.38,no,,no,worsening deprivation

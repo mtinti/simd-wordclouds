@@ -62,7 +62,8 @@ class Rules:
         self.exclusion_phrases = {}
         skip = set(phrases["skip_group_canonicals"]) if phrases else set()
         for row in groups:
-            if row["enabled"] != "1" or row["canonical"] in skip:
+            # "phrase variant" rows refine wording that the concept families already merge in word mode.
+            if row["enabled"] != "1" or row["canonical"] in skip or (row["kind"] == "phrase variant" and not phrases):
                 continue
             canonical = row["canonical"]
             for alias in [canonical, *row["variants"].split("|")]:

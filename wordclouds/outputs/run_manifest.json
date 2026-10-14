@@ -3,22 +3,22 @@
   "input_sha256": {
     "assets/AtkinsonHyperlegible-Regular.ttf": "7fb917c89019896d0b52ee84b7cbb3304c18cb90b19a62f5e32712bd23e97669",
     "corpus": "62d2fe78ab7479bb886d59a82c49de9b2a43b76c0c76b0f41e97ec69a4568766",
-    "exclusions.csv": "2bc01890494d4cbdcbbd6e43c4d3b7df858f470e14170bc59353a01a8637fd21",
-    "generate.py": "17e7d6d33637aac1398b68a259fc49b6b5924f0f1e26f17c3fe8238719b519e6",
+    "exclusions.csv": "88f633e33a77a4a5a212baf224557184652c72c4d2021056c6d86011e6a8692a",
+    "generate.py": "d37aaa692f6880c464fe6d7566b562254ce7ebfd3481c17cf7bf9cb08d2d9165",
     "settings.json": "e859a89341b69173079dd72fb6b56624ee7322c56ad3077701020bde45bd1d07",
-    "term_groups.csv": "958935b8aac1108028b2229e9b6b3ff140e3659f5acec4aabe18730f49126d58"
+    "term_groups.csv": "75710fee52e7869904e0814c40d95787e1d1a68e66b050abdb8e835b97caaa1b"
   },
   "output_sha256": {
-    "abstracts_wordcloud.png": "c72acef162a7b65b203b641e1acbc014acab44e1e771294e8f46cd413bc40945",
-    "abstracts_wordcloud.svg": "f68b99239a63fb931730beb9e2ea85e8f180ec70ebb9e912f9f2f5e4df14fa77",
+    "abstracts_wordcloud.png": "fe360fea90d78a7993065dfefaa20504f250071e0dab41df5f705ddebee898d7",
+    "abstracts_wordcloud.svg": "4f67934b71fc046ddf30745b9f58b7751d4f0bb4df712d085a9372509afef2a5",
     "index.html": "97cf844858117c55e5d63418cb23869accdf9e5fee6a4dfaf72906c5d9603c5b",
-    "observed_term_variants.csv": "5b3437aa80f12dadd51684750e8795a021b1823bc41b2da863d534f8bf491ea7",
+    "observed_term_variants.csv": "60dffb35161d5ca33f8c3a103c8b1c8a22f210d2ec8263a3f53c7c3286946b24",
     "plural_merges.csv": "ed4d9409715b8dc1f064236a621a54bd27e0f4cefe04f77ab885f22f42113c50",
-    "review_terms.html": "fa6665a5b8672d8b739d63a4c14bf6e557f0aa97092d3323977029f64ea5cad2",
-    "term_frequencies.csv": "f323670171592e421591c1dd0d229382649c65d1f1d78f2fe391f0a9911c0b41",
-    "terms_by_paper.csv": "e792e10bb6a64a3b80957837ee70b3bbf855b1886a2855cc2e8035d4c0b06924",
-    "titles_wordcloud.png": "3c85a5d20dcd5f1de592438420673567b45d218dc22b68945258df9025de5618",
-    "titles_wordcloud.svg": "43ebd29661777c0e828964cff2998828aec18f804ab3ae89a5f66669974f240b"
+    "review_terms.html": "a5bc919e1c17f2fca05e30170afc103b0ef20a40240248313dd9057d1f248f21",
+    "term_frequencies.csv": "1669e030b3700bdbe76789056cd4f26e7b83d67866d6f7e32db1f50e96b831d3",
+    "terms_by_paper.csv": "9c34dfe11054ed3869950f4dd69f0f7dfdfef63c90b2098129f05b7d56e65d41",
+    "titles_wordcloud.png": "da700fee7a47e754a501ce3c2db9b702236213b78c605947c13146d8e6b946c5",
+    "titles_wordcloud.svg": "b982cd42eb7e8a75477206610fc86369decc7447b0a8327a417dee7e7d82cfa7"
   },
   "packages": {
     "Pillow": "12.2.0",
@@ -31,8 +31,8 @@
   "seed": 20261004,
   "summary": {
     "Abstract": {
-      "displayed_terms": 77,
-      "eligible_terms": 77,
+      "displayed_terms": 68,
+      "eligible_terms": 68,
       "lowest_displayed_count": 5,
       "papers_with_text": 263,
       "top_terms": [
@@ -51,6 +51,10 @@
         {
           "papers": 37,
           "term": "health care"
+        },
+        {
+          "papers": 28,
+          "term": "area deprivation"
         },
         {
           "papers": 28,
@@ -81,26 +85,22 @@
           "term": "body mass index"
         },
         {
+          "papers": 17,
+          "term": "general practice"
+        },
+        {
           "papers": 15,
           "term": "social deprivation"
         },
         {
           "papers": 14,
-          "term": "area deprivation"
-        },
-        {
-          "papers": 12,
-          "term": "mental health"
-        },
-        {
-          "papers": 12,
-          "term": "quality of life"
+          "term": "length of stay"
         }
       ]
     },
     "Title": {
       "displayed_terms": 25,
-      "eligible_terms": 80,
+      "eligible_terms": 79,
       "lowest_displayed_count": 3,
       "papers_with_text": 263,
       "top_terms": [
@@ -117,7 +117,7 @@
           "term": "socioeconomic inequality"
         },
         {
-          "papers": 7,
+          "papers": 10,
           "term": "area deprivation"
         },
         {
@@ -150,6 +150,10 @@
         },
         {
           "papers": 4,
+          "term": "dental caries"
+        },
+        {
+          "papers": 4,
           "term": "general practice"
         },
         {
@@ -159,10 +163,6 @@
         {
           "papers": 4,
           "term": "intellectual disability"
-        },
-        {
-          "papers": 4,
-          "term": "life expectancy"
         }
       ]
     }

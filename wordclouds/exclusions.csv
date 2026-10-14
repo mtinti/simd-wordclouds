@@ -844,3 +844,11 @@ socioeconomic status,substantive term: retain,0,Retain by default: scientificall
 survival,substantive term: retain,0,Retain by default: scientifically meaningful; enable exclusion only for an explicitly narrower question
 urban,substantive term: retain,0,Retain by default: scientifically meaningful; enable exclusion only for an explicitly narrower question
 woman,substantive term: retain,0,Retain by default: scientifically meaningful; enable exclusion only for an explicitly narrower question
+children aged,generic sample wording,1,Generic sample description (children aged X years; children living in Y); the age or deprivation context is counted separately
+child aged,generic sample wording,1,Generic sample description (children aged X years; children living in Y); the age or deprivation context is counted separately
+children living,generic sample wording,1,Generic sample description (children aged X years; children living in Y); the age or deprivation context is counted separately
+child living,generic sample wording,1,Generic sample description (children aged X years; children living in Y); the age or deprivation context is counted separately
+leading cause,publication boilerplate,1,"Background boilerplate (""X is a leading cause of death""); not a study topic"
+leading causes,publication boilerplate,1,"Background boilerplate (""X is a leading cause of death""); not a study topic"
+dental inspection,data source,1,"Named data source (National Dental Inspection Programme); describes where data came from, not the topic"
+dental inspections,data source,1,"Named data source (National Dental Inspection Programme); describes where data came from, not the topic"

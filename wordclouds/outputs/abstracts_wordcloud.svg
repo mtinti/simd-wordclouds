@@ -5,77 +5,68 @@
 <text transform="translate(376,1429)" font-size="200" style="fill:#0D366B">socioeconomic deprivation</text>
 <text transform="translate(154,363)" font-size="186" style="fill:#0D366B">socioeconomic status</text>
 <text transform="translate(1388,690)" font-size="152" style="fill:#0D366B">health care</text>
-<text transform="translate(1106,491)" font-size="134" style="fill:#0D366B">risk factors</text>
-<text transform="translate(854,1031)" font-size="118" style="fill:#0D366B">health inequality</text>
-<text transform="translate(1780,498)" font-size="116" style="fill:#0D366B">hospital admission</text>
-<text transform="translate(402,540)" font-size="116" style="fill:#0D366B">primary care</text>
-<text transform="translate(2222,908)" font-size="114" style="fill:#0D366B">public health</text>
-<text transform="translate(1166,180)" font-size="114" style="fill:#0D366B">socioeconomic inequality</text>
-<text transform="translate(930,1145)" font-size="110" style="fill:#0D366B">body mass index</text>
-<text transform="translate(2080,328)" font-size="100" style="fill:#0D366B">social deprivation</text>
-<text transform="translate(782,1649)" font-size="96" style="fill:#0D366B">area deprivation</text>
-<text transform="translate(676,1268)" font-size="90" style="fill:#0D366B">mental health</text>
-<text transform="translate(1474,1638)" font-size="90" style="fill:#0D366B">quality of life</text>
-<text transform="translate(388,1506)" font-size="90" style="fill:#0D366B">socioeconomic factor</text>
-<text transform="translate(2070,1577)" font-size="86" style="fill:#0D366B">socioeconomic gradient</text>
-<text transform="translate(2168,68)" font-size="82" style="fill:#0D366B">colorectal cancer</text>
-<text transform="translate(768,704)" font-size="82" style="fill:#0D366B">general practice</text>
-<text transform="translate(2388,1211)" font-size="82" style="fill:#0D366B">length of stay</text>
-<text transform="translate(1656,1252)" font-size="82" style="fill:#0D366B">physical activity</text>
-<text transform="translate(2300,595)" font-size="78" style="fill:#0D366B">all-cause mortality</text>
-<text transform="translate(1810,991)" font-size="78" style="fill:#0D366B">COVID-19 pandemic</text>
-<text transform="translate(1732,769)" font-size="78" style="fill:#0D366B">socioeconomically deprived areas</text>
-<text transform="translate(2182,1652)" font-size="78" style="fill:#0D366B">urban rural</text>
-<text transform="translate(84,102)" font-size="74" style="fill:#184F95">affluent areas</text>
-<text transform="translate(176,1162)" font-size="74" style="fill:#184F95">cardiovascular disease</text>
-<text transform="translate(128,1590)" font-size="74" style="fill:#184F95">cardiovascular risk</text>
-<text transform="translate(1778,1108)" font-size="74" style="fill:#184F95">general practitioner</text>
-<text transform="translate(54,1095)" font-size="74" style="fill:#184F95">health outcome</text>
-<text transform="translate(354,1291)" font-size="74" style="fill:#184F95">older age</text>
-<text transform="translate(118,200)" font-size="74" style="fill:#184F95">socioeconomic background</text>
-<text transform="translate(2426,693)" font-size="74" style="fill:#184F95">urban areas</text>
-<text transform="translate(184,628)" font-size="70" style="fill:#184F95">area based deprivation</text>
-<text transform="translate(102,836)" font-size="70" style="fill:#184F95">blood pressure</text>
-<text transform="translate(1398,70)" font-size="70" style="fill:#184F95">cancer registry</text>
-<text transform="translate(1282,1258)" font-size="70" style="fill:#184F95">child aged</text>
-<text transform="translate(28,430)" font-size="70" style="fill:#184F95">health related quality of life</text>
-<text transform="translate(28,702)" font-size="70" style="fill:#184F95">heart disease</text>
-<text transform="translate(744,64)" font-size="70" style="fill:#184F95">hospital stay</text>
-<text transform="translate(1422,1510)" font-size="70" style="fill:#184F95">life expectancy</text>
-<text transform="translate(64,970)" font-size="70" style="fill:#184F95">long term condition</text>
-<text transform="translate(2612,1072)" font-size="70" style="fill:#184F95">rural areas</text>
-<text transform="translate(1126,562)" font-size="70" style="fill:#184F95">screening programme</text>
-<text transform="translate(2468,1488)" font-size="70" style="fill:#184F95">type 1 diabetes</text>
-<text transform="translate(2050,396)" font-size="64" style="fill:#256ABF">adverse outcome</text>
-<text transform="translate(954,612)" font-size="64" style="fill:#256ABF">alcohol related</text>
-<text transform="translate(142,1663)" font-size="64" style="fill:#256ABF">deprived communities</text>
-<text transform="translate(92,758)" font-size="64" style="fill:#256ABF">emergency department</text>
-<text transform="translate(2514,155)" font-size="64" style="fill:#256ABF">kidney disease</text>
-<text transform="translate(2530,223)" font-size="64" style="fill:#256ABF">smoking status</text>
-<text transform="translate(430,1045)" font-size="64" style="fill:#256ABF">social care</text>
-<text transform="translate(1396,233)" font-size="64" style="fill:#256ABF">vaccination status</text>
-<text transform="translate(68,1217)" font-size="58" style="fill:#256ABF">caries experience</text>
-<text transform="translate(146,899)" font-size="58" style="fill:#256ABF">child living</text>
-<text transform="translate(740,1555)" font-size="50" style="fill:#256ABF">chronic obstructive pulmonary disease</text>
-<text transform="translate(2008,825)" font-size="50" style="fill:#256ABF">dental caries</text>
-<text transform="translate(1318,749)" font-size="50" style="fill:#256ABF">dental inspection</text>
-<text transform="translate(612,129)" font-size="50" style="fill:#256ABF">deprived neighbourhood</text>
-<text transform="translate(2620,1123)" font-size="50" style="fill:#256ABF">gestational age</text>
-<text transform="translate(2588,1685)" font-size="50" style="fill:#256ABF">health service</text>
-<text transform="translate(1918,563)" font-size="50" style="fill:#256ABF">health status</text>
-<text transform="translate(2560,811)" font-size="50" style="fill:#256ABF">household income</text>
-<text transform="translate(24,245)" font-size="50" style="fill:#256ABF">intensive care</text>
-<text transform="translate(12,1505)" font-size="50" style="fill:#256ABF">leading cause</text>
-<text transform="translate(2694,1281)" font-size="50" style="fill:#256ABF">maternal age</text>
-<text transform="translate(2026,1161)" font-size="50" style="fill:#256ABF">neck cancer</text>
-<text transform="translate(1156,1185)" font-size="44" style="fill:#256ABF">neighbourhood deprivation</text>
-<text transform="translate(508,251)" font-size="44" style="fill:#256ABF">oral health</text>
-<text transform="translate(2634,397)" font-size="44" style="fill:#256ABF">preterm birth</text>
-<text transform="translate(72,1387)" font-size="44" style="fill:#256ABF">secondary care</text>
-<text transform="translate(24,1319)" font-size="44" style="fill:#256ABF">service planning</text>
-<text transform="translate(1990,1503)" font-size="44" style="fill:#256ABF">social class</text>
-<text transform="translate(2272,1031)" font-size="44" style="fill:#256ABF">socially deprived</text>
-<text transform="translate(52,551)" font-size="44" style="fill:#256ABF">survival analysis</text>
-<text transform="translate(2584,965)" font-size="44" style="fill:#256ABF">targeted intervention</text>
-<text transform="translate(956,1307)" font-size="44" style="fill:#256ABF">type 2 diabetes</text>
-</svg><line x1="72" y1="1029" x2="1572" y2="1029" stroke="#D6DEDB" /><text x="72" y="1063" fill="#52646A" font-size="16">Size and shade reflect paper prevalence. Adjacent multi-word phrases; phrases do not cross grammar words or punctuation.</text><text x="72" y="1088" fill="#52646A" font-size="14">77 phrases shown  /  Full counts and editable rules accompany these images</text></svg>
+<text transform="translate(148,611)" font-size="134" style="fill:#0D366B">area deprivation</text>
+<text transform="translate(1920,547)" font-size="134" style="fill:#0D366B">risk factors</text>
+<text transform="translate(1354,1107)" font-size="118" style="fill:#0D366B">health inequality</text>
+<text transform="translate(644,190)" font-size="116" style="fill:#0D366B">hospital admission</text>
+<text transform="translate(668,708)" font-size="116" style="fill:#0D366B">primary care</text>
+<text transform="translate(1990,354)" font-size="114" style="fill:#0D366B">public health</text>
+<text transform="translate(1472,1248)" font-size="114" style="fill:#0D366B">socioeconomic inequality</text>
+<text transform="translate(1786,195)" font-size="110" style="fill:#0D366B">body mass index</text>
+<text transform="translate(2196,1588)" font-size="106" style="fill:#0D366B">general practice</text>
+<text transform="translate(562,1574)" font-size="100" style="fill:#0D366B">social deprivation</text>
+<text transform="translate(144,1001)" font-size="96" style="fill:#0D366B">length of stay</text>
+<text transform="translate(2188,844)" font-size="90" style="fill:#0D366B">mental health</text>
+<text transform="translate(2452,82)" font-size="90" style="fill:#0D366B">quality of life</text>
+<text transform="translate(294,1132)" font-size="90" style="fill:#0D366B">socioeconomic factor</text>
+<text transform="translate(898,451)" font-size="86" style="fill:#0D366B">socioeconomic gradient</text>
+<text transform="translate(1152,1658)" font-size="82" style="fill:#0D366B">colorectal cancer</text>
+<text transform="translate(2296,1074)" font-size="82" style="fill:#0D366B">physical activity</text>
+<text transform="translate(1266,559)" font-size="78" style="fill:#184F95">all-cause mortality</text>
+<text transform="translate(504,1235)" font-size="78" style="fill:#184F95">COVID-19 pandemic</text>
+<text transform="translate(976,971)" font-size="78" style="fill:#184F95">socioeconomically deprived areas</text>
+<text transform="translate(2386,924)" font-size="78" style="fill:#184F95">urban rural</text>
+<text transform="translate(1674,1530)" font-size="74" style="fill:#184F95">affluent areas</text>
+<text transform="translate(594,68)" font-size="74" style="fill:#184F95">cardiovascular disease</text>
+<text transform="translate(60,1672)" font-size="74" style="fill:#184F95">cardiovascular risk</text>
+<text transform="translate(1700,745)" font-size="74" style="fill:#184F95">health outcome</text>
+<text transform="translate(68,1275)" font-size="74" style="fill:#184F95">older age</text>
+<text transform="translate(1404,72)" font-size="74" style="fill:#184F95">socioeconomic background</text>
+<text transform="translate(2398,747)" font-size="74" style="fill:#184F95">urban areas</text>
+<text transform="translate(166,854)" font-size="70" style="fill:#184F95">blood pressure</text>
+<text transform="translate(2378,632)" font-size="70" style="fill:#184F95">cancer registry</text>
+<text transform="translate(408,502)" font-size="70" style="fill:#184F95">heart disease</text>
+<text transform="translate(2202,1490)" font-size="70" style="fill:#184F95">life expectancy</text>
+<text transform="translate(60,734)" font-size="70" style="fill:#184F95">long term condition</text>
+<text transform="translate(112,164)" font-size="70" style="fill:#184F95">rural areas</text>
+<text transform="translate(2278,984)" font-size="70" style="fill:#184F95">screening programme</text>
+<text transform="translate(2486,434)" font-size="70" style="fill:#184F95">type 1 diabetes</text>
+<text transform="translate(772,1024)" font-size="64" style="fill:#256ABF">adverse outcome</text>
+<text transform="translate(42,70)" font-size="64" style="fill:#256ABF">alcohol related</text>
+<text transform="translate(2046,1681)" font-size="64" style="fill:#256ABF">dental caries</text>
+<text transform="translate(2206,1143)" font-size="64" style="fill:#256ABF">deprived communities</text>
+<text transform="translate(24,426)" font-size="64" style="fill:#256ABF">emergency department</text>
+<text transform="translate(96,1505)" font-size="64" style="fill:#256ABF">kidney disease</text>
+<text transform="translate(696,1653)" font-size="64" style="fill:#256ABF">smoking status</text>
+<text transform="translate(1314,1165)" font-size="64" style="fill:#256ABF">social care</text>
+<text transform="translate(874,1301)" font-size="64" style="fill:#256ABF">vaccination status</text>
+<text transform="translate(638,1479)" font-size="58" style="fill:#256ABF">chronic obstructive pulmonary disease</text>
+<text transform="translate(1390,1579)" font-size="58" style="fill:#256ABF">deprived neighbourhood</text>
+<text transform="translate(2060,403)" font-size="58" style="fill:#256ABF">gestational age</text>
+<text transform="translate(60,918)" font-size="58" style="fill:#256ABF">head and neck cancer</text>
+<text transform="translate(42,527)" font-size="58" style="fill:#256ABF">health service</text>
+<text transform="translate(2468,246)" font-size="58" style="fill:#256ABF">health status</text>
+<text transform="translate(86,215)" font-size="58" style="fill:#256ABF">household income</text>
+<text transform="translate(50,673)" font-size="58" style="fill:#256ABF">intensive care</text>
+<text transform="translate(34,1338)" font-size="58" style="fill:#256ABF">maternal age</text>
+<text transform="translate(586,249)" font-size="52" style="fill:#256ABF">neighbourhood deprivation</text>
+<text transform="translate(390,808)" font-size="52" style="fill:#256ABF">oral health</text>
+<text transform="translate(2680,531)" font-size="52" style="fill:#256ABF">preterm birth</text>
+<text transform="translate(126,1582)" font-size="52" style="fill:#256ABF">secondary care</text>
+<text transform="translate(2470,1669)" font-size="52" style="fill:#256ABF">service planning</text>
+<text transform="translate(2166,689)" font-size="52" style="fill:#256ABF">social class</text>
+<text transform="translate(2010,247)" font-size="52" style="fill:#256ABF">socially deprived</text>
+<text transform="translate(2608,155)" font-size="52" style="fill:#256ABF">survival analysis</text>
+<text transform="translate(1150,751)" font-size="52" style="fill:#256ABF">targeted intervention</text>
+<text transform="translate(106,1191)" font-size="52" style="fill:#256ABF">type 2 diabetes</text>
+</svg><line x1="72" y1="1029" x2="1572" y2="1029" stroke="#D6DEDB" /><text x="72" y="1063" fill="#52646A" font-size="16">Size and shade reflect paper prevalence. Adjacent multi-word phrases; phrases do not cross grammar words or punctuation.</text><text x="72" y="1088" fill="#52646A" font-size="14">68 phrases shown  /  Full counts and editable rules accompany these images</text></svg>

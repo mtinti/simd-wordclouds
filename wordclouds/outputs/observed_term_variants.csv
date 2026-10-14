@@ -65,8 +65,11 @@ Title,antigen testing,antigen testing,1
 Title,antimicrobial therapy,antimicrobial therapy,1
 Title,antimicrobial therapy service,antimicrobial therapy service,1
 Title,approach linking,approach linking,1
-Title,area deprivation,area deprivation,7
+Title,area deprivation,area deprivation,10
+Title,area deprivation indices,area deprivation indices,1
+Title,area deprivation indices identify,area deprivation indices identify,1
 Title,area deprivation measure,area deprivation measure,1
+Title,area deprivation measure datasets,area deprivation measure dataset,1
 Title,arterial hypertension,arterial hypertension,1
 Title,assessment approach,assessment approach,1
 Title,assessment approach linking,assessment approach linking,1
@@ -128,9 +131,6 @@ Title,britain today,britain today,1
 Title,cancer incidence,cancer incidence,2
 Title,cancer incidence following,cancer incidence following,1
 Title,cancer mortality,cancer mortality,1
-Title,cancer referral,cancer referral,1
-Title,cancer referral system,cancer referral system,1
-Title,cancer referrals,cancer referral,1
 Title,cancer screening,cancer screening,1
 Title,cardiac arrest,cardiac arrest,2
 Title,cardio metabolic,cardio metabolic,1
@@ -148,7 +148,6 @@ Title,care testing,care testing,1
 Title,care units,care unit,1
 Title,carer proxy,carer proxy,1
 Title,carer proxy reporting,carer proxy reporting,1
-Title,caries experience,caries experience,1
 Title,case tonsillectomy,case tonsillectomy,1
 Title,cataract referral,cataract referral,1
 Title,cataract surgery,cataract surgery,1
@@ -171,7 +170,6 @@ Title,changed performance,changed performance,1
 Title,changing association,changing association,1
 Title,changing indications,changing indication,1
 Title,cheap alcohol,cheap alcohol,1
-Title,child aged,child aged,1
 Title,child obesity,child obesity,1
 Title,child oral health,child oral health,1
 Title,childhood admission,childhood admission,2
@@ -253,7 +251,7 @@ Title,demographic predictor,demographic predictor,1
 Title,dental attendance,dental attendance,1
 Title,dental care,dental care,1
 Title,dental care law,dental care law,1
-Title,dental caries,dental caries,3
+Title,dental caries,dental caries,4
 Title,dental decay,dental decay,1
 Title,dental service,dental service,2
 Title,deprivation associated,deprivation associated,1
@@ -263,8 +261,6 @@ Title,deprivation explain,deprivation explain,1
 Title,deprivation independently,deprivation independently,1
 Title,deprivation independently predict,deprivation independently predict,1
 Title,deprivation influences,deprivation influence,1
-Title,deprivation measure,deprivation measure,1
-Title,deprivation measure datasets,deprivation measure dataset,1
 Title,deprivation status,deprivation status,1
 Title,deprivation status predicts,deprivation status predict,1
 Title,deprivation study,deprivation study,1
@@ -385,6 +381,10 @@ Title,great britain,great britain,1
 Title,great britain today,great britain today,1
 Title,hallux valgus,hallux valgus,1
 Title,hallux valgus surgery,hallux valgus surgery,1
+Title,head and neck cancer,head and neck cancer,3
+Title,head and neck cancer referral,head and neck cancer referral,1
+Title,head and neck cancer referral system,head and neck cancer referral system,1
+Title,head and neck cancer referrals,head and neck cancer referral,1
 Title,head injury,head injury,3
 Title,head injury admission,head injury admission,1
 Title,health care,health care,5
@@ -393,9 +393,8 @@ Title,health care associated infection,health care associated infection,1
 Title,health care costs,health care cost,1
 Title,health extended,health extended,1
 Title,health inequality,health inequality,2
-Title,health related,health related,2
+Title,health related,health related,1
 Title,health related indicators,health related indicator,1
-Title,health related quality of life,health related quality of life,1
 Title,health selection,health selection,1
 Title,health selection theory,health selection theory,1
 Title,health status,health status,1
@@ -463,6 +462,7 @@ Title,independent risk,independent risk,1
 Title,independent risk factor,independent risk factor,1
 Title,independently predict,independently predict,1
 Title,independently predict all-cause mortality,independently predict all-cause mortality,1
+Title,indices identify income,indices identify income,1
 Title,inequality research,inequality research,1
 Title,inequality research using,inequality research using,1
 Title,inequitable access,inequitable access,1
@@ -574,9 +574,6 @@ Title,national transplantation programme,national transplantation programme,1
 Title,nationally representative,nationally representative,1
 Title,nationally representative analysis,nationally representative analysis,1
 Title,nationwide linked,nationwide linked,1
-Title,neck cancer,neck cancer,3
-Title,neck cancer referral,neck cancer referral,1
-Title,neck cancer referrals,neck cancer referral,1
 Title,neck infection,neck infection,1
 Title,neglecting deprivation,neglecting deprivation,1
 Title,neighbourhood deprivation,neighbourhood deprivation,1
@@ -755,7 +752,6 @@ Title,related indicators,related indicator,1
 Title,related macular,related macular,1
 Title,related macular degeneration,related macular degeneration,1
 Title,related mortality,related mortality,1
-Title,related quality of life,related quality of life,1
 Title,remaining life expectancy,remaining life expectancy,1
 Title,renal masses,renal masses,1
 Title,renal transplantation,renal transplantation,1
@@ -836,6 +832,7 @@ Title,single centre audit,single centre audit,1
 Title,single commodity,single commodity,1
 Title,singleton pregnancies,singleton pregnancy,1
 Title,small area deprivation,small area deprivation,1
+Title,small area deprivation measure,small area deprivation measure,1
 Title,small renal,small renal,1
 Title,small renal masses,small renal masses,1
 Title,smoke free,smoke free,2
@@ -1361,7 +1358,6 @@ Abstract,age standardized incidence,age standardized incidence,1
 Abstract,age standardized mortality,age standardized mortality,3
 Abstract,age using,age using,1
 Abstract,age using arriaga,age using arriaga,1
-Abstract,aged younger,aged younger,1
 Abstract,ages living,age living,1
 Abstract,aggregate measure,aggregate measure,1
 Abstract,aggregate measures,aggregate measure,1
@@ -1547,11 +1543,14 @@ Abstract,appropriate proportionate support,appropriate proportionate support,1
 Abstract,appropriate surgical,appropriate surgical,1
 Abstract,appropriate surgical expertise,appropriate surgical expertise,1
 Abstract,ard existed,ard existed,1
-Abstract,area based deprivation,area based deprivation,8
 Abstract,area based socioeconomic status,area based socioeconomic status,4
-Abstract,area deprivation,area deprivation,17
+Abstract,area deprivation,area deprivation,39
+Abstract,area deprivation analysis,area deprivation analysis,1
+Abstract,area deprivation index,area deprivation index,2
+Abstract,area deprivation indices,area deprivation indices,3
 Abstract,area deprivation measure,area deprivation measure,1
 Abstract,area deprivation measured,area deprivation measured,1
+Abstract,area deprivation measures,area deprivation measure,1
 Abstract,area deprivation using,area deprivation using,2
 Abstract,area ranked,area ranked,1
 Abstract,area socioeconomic status,area socioeconomic status,1
@@ -1621,7 +1620,6 @@ Abstract,assessing antenatal service,assessing antenatal service,1
 Abstract,assessing cardiovascular,assessing cardiovascular,1
 Abstract,assessing cardiovascular risk,assessing cardiovascular risk,1
 Abstract,assessing dental caries,assessing dental caries,1
-Abstract,assessing dental caries experience,assessing dental caries experience,1
 Abstract,assessing inequality,assessing inequality,1
 Abstract,assessment points,assessment point,1
 Abstract,assessor blinded,assessor blinded,1
@@ -1749,8 +1747,6 @@ Abstract,based approaches,based approaches,1
 Abstract,based care,based care,1
 Abstract,based dental,based dental,1
 Abstract,based dental health,based dental health,1
-Abstract,based deprivation,based deprivation,8
-Abstract,based deprivation measures,based deprivation measure,1
 Abstract,based entertainment,based entertainment,4
 Abstract,based financial,based financial,1
 Abstract,based financial incentive,based financial incentive,1
@@ -2010,9 +2006,8 @@ Abstract,canadian study,canadian study,1
 Abstract,cancer aftercare,cancer aftercare,1
 Abstract,cancer care,cancer care,1
 Abstract,cancer care pathway,cancer care pathway,1
-Abstract,cancer conducted,cancer conducted,1
 Abstract,cancer death,cancer death,1
-Abstract,cancer diagnosis,cancer diagnosis,3
+Abstract,cancer diagnosis,cancer diagnosis,2
 Abstract,cancer incidence,cancer incidence,3
 Abstract,cancer location,cancer location,1
 Abstract,cancer mibc,cancer mibc,1
@@ -2023,7 +2018,7 @@ Abstract,cancer network,cancer network,5
 Abstract,cancer network colorectal,cancer network colorectal,1
 Abstract,cancer outcome,cancer outcome,3
 Abstract,cancer policy,cancer policy,1
-Abstract,cancer referrals,cancer referral,2
+Abstract,cancer referrals,cancer referral,1
 Abstract,cancer registry,cancer registry,9
 Abstract,cancer registry covering,cancer registry covering,1
 Abstract,cancer registry data,cancer registry data,3
@@ -2144,14 +2139,13 @@ Abstract,carer proxy reported,carer proxy reported,2
 Abstract,carer proxy reporting,carer proxy reporting,2
 Abstract,carers reported,carer reported,1
 Abstract,caribbean female,caribbean female,1
-Abstract,caries experience,caries experience,23
-Abstract,caries experience risk,caries experience risk,1
 Abstract,caries free,caries free,2
 Abstract,caries risk,caries risk,5
 Abstract,carotid intima,carotid intima,2
 Abstract,carotid intima media,carotid intima media,2
 Abstract,carotid plaque,carotid plaque,1
-Abstract,carstairs area,carstairs area,1
+Abstract,carstairs area deprivation,carstairs area deprivation,1
+Abstract,carstairs area deprivation index,carstairs area deprivation index,1
 Abstract,carstairs index,carstairs index,2
 Abstract,cartilage grafts,cartilage graft,1
 Abstract,case definition,case definition,3
@@ -2299,8 +2293,6 @@ Abstract,chief medical officer,chief medical officer,1
 Abstract,chief scientist,chief scientist,4
 Abstract,chief scientist office,chief scientist office,4
 Abstract,child age,child age,1
-Abstract,child aged,child aged,9
-Abstract,child aged younger,child aged younger,1
 Abstract,child attending,child attending,2
 Abstract,child bearing,child bearing,1
 Abstract,child bearing age,child bearing age,1
@@ -2328,7 +2320,6 @@ Abstract,child home,child home,2
 Abstract,child home address,child home address,1
 Abstract,child home postal,child home postal,1
 Abstract,child hospital,child hospital,1
-Abstract,child living,child living,5
 Abstract,child moving,child moving,1
 Abstract,child oral health,child oral health,3
 Abstract,child overall,child overall,1
@@ -2489,7 +2480,7 @@ Abstract,clinician appointment use,clinician appointment use,1
 Abstract,clinician contact,clinician contact,1
 Abstract,clinician examination,clinician examination,2
 Abstract,clinician measured,clinician measured,1
-Abstract,clinician measured caries,clinician measured caries,1
+Abstract,clinician measured dental caries,clinician measured dental caries,1
 Abstract,clinician preference,clinician preference,1
 Abstract,clinician workload,clinician workload,1
 Abstract,clinicopathological features,clinicopathological features,1
@@ -3059,12 +3050,13 @@ Abstract,dental attendance,dental attendance,4
 Abstract,dental care,dental care,7
 Abstract,dental care availability,dental care availability,1
 Abstract,dental care law,dental care law,3
-Abstract,dental caries,dental caries,10
-Abstract,dental caries experience,dental caries experience,4
-Abstract,dental caries experience data,dental caries experience data,1
+Abstract,dental caries,dental caries,33
+Abstract,dental caries data,dental caries data,1
 Abstract,dental caries outcome,dental caries outcome,1
 Abstract,dental caries prevalence,dental caries prevalence,1
 Abstract,dental caries remains,dental caries remain,1
+Abstract,dental caries risk,dental caries risk,1
+Abstract,dental caries risk compared,dental caries risk compared,1
 Abstract,dental contacts,dental contact,3
 Abstract,dental contacts derived,dental contact derived,1
 Abstract,dental decay,dental decay,3
@@ -3073,11 +3065,6 @@ Abstract,dental disease,dental disease,1
 Abstract,dental extractions,dental extractions,1
 Abstract,dental health,dental health,3
 Abstract,dental health support,dental health support,1
-Abstract,dental inspection,dental inspection,5
-Abstract,dental inspection data,dental inspection data,1
-Abstract,dental inspection programme,dental inspection programme,3
-Abstract,dental inspection survey,dental inspection survey,1
-Abstract,dental inspections,dental inspection,1
 Abstract,dental practice,dental practice,4
 Abstract,dental practice visits,dental practice visits,3
 Abstract,dental practitioners,dental practitioner,1
@@ -3104,7 +3091,6 @@ Abstract,depressive symptoms,depressive symptom,2
 Abstract,deprivation according,deprivation according,1
 Abstract,deprivation accounted,deprivation accounted,1
 Abstract,deprivation alone,deprivation alone,1
-Abstract,deprivation analysis,deprivation analysis,1
 Abstract,deprivation appeared,deprivation appeared,1
 Abstract,deprivation area,deprivation area,1
 Abstract,deprivation areas,deprivation area,1
@@ -3131,10 +3117,10 @@ Abstract,deprivation influences,deprivation influence,2
 Abstract,deprivation influences illness,deprivation influence illness,1
 Abstract,deprivation influences injury,deprivation influence injury,1
 Abstract,deprivation interaction,deprivation interaction,1
-Abstract,deprivation measure,deprivation measure,4
+Abstract,deprivation measure,deprivation measure,3
 Abstract,deprivation measure using,deprivation measure using,1
-Abstract,deprivation measured,deprivation measured,2
-Abstract,deprivation measures,deprivation measure,5
+Abstract,deprivation measured,deprivation measured,1
+Abstract,deprivation measures,deprivation measure,4
 Abstract,deprivation measures provide,deprivation measure provide,1
 Abstract,deprivation measures used,deprivation measure used,1
 Abstract,deprivation mobility,deprivation mobility,1
@@ -3166,7 +3152,7 @@ Abstract,deprivation thresholds,deprivation threshold,4
 Abstract,deprivation transmitted,deprivation transmitted,1
 Abstract,deprivation used,deprivation used,1
 Abstract,deprivation used demonstrates,deprivation used demonstrate,1
-Abstract,deprivation using,deprivation using,4
+Abstract,deprivation using,deprivation using,2
 Abstract,deprived area,deprived area,4
 Abstract,deprived areas,deprived area,119
 Abstract,deprived areas benefit,deprived area benefit,1
@@ -3832,8 +3818,6 @@ Abstract,exact test,exact test,5
 Abstract,exact tests,exact test,1
 Abstract,examination uptake,examination uptake,1
 Abstract,examine current incidence,examine current incidence,1
-Abstract,examine dental,examine dental,1
-Abstract,examine dental inspection,examine dental inspection,1
 Abstract,examine deprivation,examine deprivation,1
 Abstract,examine deprivation measured,examine deprivation measured,1
 Abstract,examine sociodemographic,examine sociodemographic,1
@@ -3922,8 +3906,6 @@ Abstract,experience faster accumulation,experience faster accumulation,1
 Abstract,experience irregular,experience irregular,1
 Abstract,experience irregular discharge,experience irregular discharge,1
 Abstract,experience responses,experience response,1
-Abstract,experience risk,experience risk,1
-Abstract,experience risk compared,experience risk compared,1
 Abstract,experience social,experience social,1
 Abstract,experience social drift,experience social drift,1
 Abstract,experience survey,experience survey,1
@@ -3940,8 +3922,8 @@ Abstract,exploratory descriptive analysis,exploratory descriptive analysis,1
 Abstract,exploratory study,exploratory study,2
 Abstract,exploratory study adds,exploratory study add,1
 Abstract,explore causes,explore cause,1
-Abstract,explore health,explore health,1
-Abstract,explore health related,explore health related,1
+Abstract,explore quality of life,explore quality of life,1
+Abstract,explore quality of life trajectories,explore quality of life trajectory,1
 Abstract,explore usage,explore usage,1
 Abstract,explore usage trajectories,explore usage trajectory,1
 Abstract,explored ethnic,explored ethnic,1
@@ -4297,7 +4279,7 @@ Abstract,general medical practices,general medical practice,1
 Abstract,general ophthalmic,general ophthalmic,2
 Abstract,general ophthalmic service,general ophthalmic service,2
 Abstract,general pain,general pain,1
-Abstract,general practice,general practice,20
+Abstract,general practice,general practice,28
 Abstract,general practice appointment,general practice appointment,1
 Abstract,general practice appointment using,general practice appointment using,1
 Abstract,general practice appointments,general practice appointment,3
@@ -4309,15 +4291,13 @@ Abstract,general practice data,general practice data,1
 Abstract,general practice pharmacy,general practice pharmacy,2
 Abstract,general practice pharmacy collaboration,general practice pharmacy collaboration,1
 Abstract,general practice pharmacy technician,general practice pharmacy technician,1
+Abstract,general practice practices,general practice practice,1
+Abstract,general practice recruitment,general practice recruitment,1
+Abstract,general practice registers,general practice register,1
 Abstract,general practice serving,general practice serving,2
 Abstract,general practice website,general practice website,1
 Abstract,general practice website readability,general practice website readability,1
 Abstract,general practice websites,general practice website,1
-Abstract,general practitioner,general practitioner,5
-Abstract,general practitioner practices,general practitioner practice,1
-Abstract,general practitioner recruitment,general practitioner recruitment,1
-Abstract,general practitioner registers,general practitioner register,1
-Abstract,general practitioners,general practitioner,3
 Abstract,general register,general register,4
 Abstract,general register office,general register office,4
 Abstract,general registrar,general registrar,1
@@ -4502,6 +4482,10 @@ Abstract,hba1c testing,hba1c testing,3
 Abstract,hcai prevalence,hcai prevalence,4
 Abstract,hcai rarely,hcai rarely,1
 Abstract,hcai rarely address,hcai rarely address,1
+Abstract,head and neck cancer,head and neck cancer,9
+Abstract,head and neck cancer conducted,head and neck cancer conducted,1
+Abstract,head and neck cancer diagnosis,head and neck cancer diagnosis,1
+Abstract,head and neck cancer referrals,head and neck cancer referral,1
 Abstract,head injury,head injury,8
 Abstract,head injury admitted,head injury admitted,2
 Abstract,head injury guidelines,head injury guideline,1
@@ -4592,10 +4576,9 @@ Abstract,health programme datasets,health programme dataset,1
 Abstract,health promotion,health promotion,2
 Abstract,health promotion intervention,health promotion intervention,2
 Abstract,health questionnaire,health questionnaire,2
-Abstract,health related,health related,17
+Abstract,health related,health related,3
 Abstract,health related behaviour,health related behaviour,1
 Abstract,health related indicators,health related indicator,2
-Abstract,health related quality of life,health related quality of life,14
 Abstract,health research,health research,2
 Abstract,health resource,health resource,1
 Abstract,health resource mapping,health resource mapping,1
@@ -4666,8 +4649,8 @@ Abstract,her2 enriched tumour,her2 enriched tumour,1
 Abstract,herd immunity,herd immunity,1
 Abstract,hereditary pah,hereditary pah,1
 Abstract,highest age,highest age,2
-Abstract,highest caries,highest caries,1
-Abstract,highest caries experience,highest caries experience,1
+Abstract,highest dental caries,highest dental caries,1
+Abstract,highest dental caries risk,highest dental caries risk,1
 Abstract,highest deprivation,highest deprivation,2
 Abstract,highest educational,highest educational,1
 Abstract,highest educational qualification,highest educational qualification,1
@@ -4765,7 +4748,7 @@ Abstract,hospital general,hospital general,1
 Abstract,hospital general medical,hospital general medical,1
 Abstract,hospital inpatient,hospital inpatient,2
 Abstract,hospital inpatient data,hospital inpatient data,1
-Abstract,hospital lengths,hospital length,1
+Abstract,hospital length of stay,hospital length of stay,1
 Abstract,hospital missingness,hospital missingness,1
 Abstract,hospital mortality,hospital mortality,1
 Abstract,hospital readmission,hospital readmission,2
@@ -4780,8 +4763,6 @@ Abstract,hospital signage,hospital signage,1
 Abstract,hospital sites,hospital site,1
 Abstract,hospital sites running,hospital site running,1
 Abstract,hospital staff,hospital staff,1
-Abstract,hospital stay,hospital stay,5
-Abstract,hospital stays,hospital stay,2
 Abstract,hospital travel,hospital travel,1
 Abstract,hospitalisation admission,hospitalisation admission,1
 Abstract,hospitalisation admission code,hospitalisation admission code,1
@@ -5146,7 +5127,7 @@ Abstract,individual family,individual family,1
 Abstract,individual fell,individual fell,1
 Abstract,individual indicators,individual indicator,1
 Abstract,individual initial,individual initial,1
-Abstract,individual initial area,individual initial area,1
+Abstract,individual initial area deprivation,individual initial area deprivation,1
 Abstract,individual lived,individual lived,1
 Abstract,individual privacy,individual privacy,1
 Abstract,individual privacy concerns,individual privacy concern,1
@@ -5247,7 +5228,6 @@ Abstract,information diabetes collaboration,information diabetes collaboration,1
 Abstract,information resources,information resource,1
 Abstract,informing intervention,informing intervention,1
 Abstract,inhaled corticosteroid,inhaled corticosteroid,1
-Abstract,initial area,initial area,1
 Abstract,initial area deprivation,initial area deprivation,1
 Abstract,initial assessment,initial assessment,1
 Abstract,initial cesarean,initial cesarean,2
@@ -5291,10 +5271,6 @@ Abstract,inpatient mortality,inpatient mortality,2
 Abstract,inpatient outcome,inpatient outcome,1
 Abstract,inpatient rehabilitation,inpatient rehabilitation,1
 Abstract,insertion procedure,insertion procedure,1
-Abstract,inspection data,inspection data,1
-Abstract,inspection programme,inspection programme,3
-Abstract,inspection survey,inspection survey,1
-Abstract,inspection survey data,inspection survey data,1
 Abstract,instead used,instead used,1
 Abstract,instead used drug,instead used drug,1
 Abstract,instead using,instead using,1
@@ -5358,8 +5334,6 @@ Abstract,internet enabled,internet enabled,2
 Abstract,internet enabled device,internet enabled device,1
 Abstract,internet enabled devices,internet enabled device,1
 Abstract,internet usage,internet usage,1
-Abstract,interpretation child,interpretation child,1
-Abstract,interpretation child living,interpretation child living,1
 Abstract,interpretation policies,interpretation policy,1
 Abstract,interpretation socioeconomic deprivation,interpretation socioeconomic deprivation,1
 Abstract,intersecting social,intersecting social,1
@@ -5577,8 +5551,6 @@ Abstract,later ages,later age,1
 Abstract,later life,later life,2
 Abstract,lateral radiograph,lateral radiograph,1
 Abstract,latitude band,latitude band,1
-Abstract,leading cause,leading cause,4
-Abstract,leading causes,leading cause,1
 Abstract,leading drivers,leading driver,1
 Abstract,learning disabilities,learning disability,1
 Abstract,learning disabilities questionnaire,learning disability questionnaire,1
@@ -5604,7 +5576,7 @@ Abstract,leisure centres,leisure centre,3
 Abstract,leith community,leith community,1
 Abstract,leith community treatment,leith community treatment,1
 Abstract,length height,length height,1
-Abstract,length of stay,length of stay,12
+Abstract,length of stay,length of stay,21
 Abstract,lens helped,lens helped,1
 Abstract,lens helped illuminate,lens helped illuminate,1
 Abstract,lens status,lens status,1
@@ -5735,9 +5707,7 @@ Abstract,long term survival,long term survival,1
 Abstract,long term visual,long term visual,1
 Abstract,longer critical,longer critical,1
 Abstract,longer critical care,longer critical care,1
-Abstract,longer hospital,longer hospital,2
-Abstract,longer hospital stays,longer hospital stay,2
-Abstract,longer length of stay,longer length of stay,2
+Abstract,longer length of stay,longer length of stay,4
 Abstract,longer los,longer los,1
 Abstract,longer term,longer term,4
 Abstract,longer term gains,longer term gain,1
@@ -5846,7 +5816,6 @@ Abstract,material deprivation,material deprivation,1
 Abstract,material deprivation contributes,material deprivation contribute,1
 Abstract,material resources,material resource,1
 Abstract,maternal age,maternal age,6
-Abstract,maternal area,maternal area,1
 Abstract,maternal area deprivation,maternal area deprivation,1
 Abstract,maternal behaviour,maternal behaviour,1
 Abstract,maternal body mass index,maternal body mass index,5
@@ -5888,8 +5857,7 @@ Abstract,measure smoking status,measure smoking status,1
 Abstract,measure smoking status validated,measure smoking status validated,1
 Abstract,measure socioeconomic status,measure socioeconomic status,1
 Abstract,measure subscales,measure subscales,1
-Abstract,measured caries,measured caries,1
-Abstract,measured caries experience,measured caries experience,1
+Abstract,measured dental caries,measured dental caries,1
 Abstract,measured inequality,measured inequality,1
 Abstract,measured inequality using,measured inequality using,1
 Abstract,measurement burden,measurement burden,1
@@ -6216,8 +6184,6 @@ Abstract,national call recall,national call recall,1
 Abstract,national catch,national catch,3
 Abstract,national complex,national complex,1
 Abstract,national complex airway,national complex airway,1
-Abstract,national dental,national dental,3
-Abstract,national dental inspection,national dental inspection,3
 Abstract,national diabetes,national diabetes,2
 Abstract,national diabetes database,national diabetes database,1
 Abstract,national electronic,national electronic,1
@@ -6279,8 +6245,7 @@ Abstract,near zero,near zero,1
 Abstract,near zero dental,near zero dental,1
 Abstract,nearest food,nearest food,1
 Abstract,nearest food retailer,nearest food retailer,1
-Abstract,nearest general,nearest general,1
-Abstract,nearest general practitioner,nearest general practitioner,1
+Abstract,nearest general practice,nearest general practice,1
 Abstract,nearest outlet,nearest outlet,1
 Abstract,nearest resource,nearest resource,1
 Abstract,nearly doubled,nearly doubled,1
@@ -6290,10 +6255,6 @@ Abstract,necessarily reflect need,necessarily reflect need,1
 Abstract,necessary conditions,necessary condition,1
 Abstract,necessitating admission,necessitating admission,1
 Abstract,neck abscesses,neck abscesses,1
-Abstract,neck cancer,neck cancer,9
-Abstract,neck cancer conducted,neck cancer conducted,1
-Abstract,neck cancer diagnosis,neck cancer diagnosis,1
-Abstract,neck cancer referrals,neck cancer referral,1
 Abstract,neck infection,neck infection,2
 Abstract,neck lump,neck lump,2
 Abstract,necrosis scoring,necrosis scoring,1
@@ -6352,6 +6313,7 @@ Abstract,new legislation,new legislation,1
 Abstract,new legislation produced,new legislation produced,1
 Abstract,new phenomenon,new phenomenon,1
 Abstract,new policies,new policy,1
+Abstract,new small area deprivation,new small area deprivation,1
 Abstract,newborn intensive,newborn intensive,1
 Abstract,newborn intensive care,newborn intensive care,1
 Abstract,newly diagnosed,newly diagnosed,4
@@ -6483,7 +6445,6 @@ Abstract,obtaining evidence,obtaining evidence,1
 Abstract,obvious decay,obvious decay,1
 Abstract,obvious decay experience,obvious decay experience,1
 Abstract,obvious dental caries,obvious dental caries,1
-Abstract,obvious dental caries experience,obvious dental caries experience,1
 Abstract,occipital circumference,occipital circumference,1
 Abstract,occipital frontal,occipital frontal,1
 Abstract,occipital frontal circumference,occipital frontal circumference,1
@@ -7106,9 +7067,6 @@ Abstract,practices adapted,practice adapted,1
 Abstract,practices enrolled,practice enrolled,1
 Abstract,practices remained,practice remained,1
 Abstract,practices working,practice working,1
-Abstract,practitioner practices,practitioner practice,1
-Abstract,practitioner recruitment,practitioner recruitment,1
-Abstract,practitioner registers,practitioner register,1
 Abstract,practitioner service,practitioner service,1
 Abstract,practitioner service board,practitioner service board,1
 Abstract,preceding tendinitis,preceding tendinitis,1
@@ -7262,7 +7220,8 @@ Abstract,primary dental care availability,primary dental care availability,1
 Abstract,primary diagnosis,primary diagnosis,2
 Abstract,primary driver,primary driver,1
 Abstract,primary glomerulonephritis,primary glomerulonephritis,1
-Abstract,primary head,primary head,2
+Abstract,primary head and neck cancer,primary head and neck cancer,2
+Abstract,primary head and neck cancer diagnosis,primary head and neck cancer diagnosis,1
 Abstract,primary hip,primary hip,1
 Abstract,primary hyperparathyroidism,primary hyperparathyroidism,1
 Abstract,primary invasive,primary invasive,1
@@ -7444,10 +7403,9 @@ Abstract,providing primary care dentistry,providing primary care dentistry,1
 Abstract,provision differed,provision differed,1
 Abstract,proximity measures,proximity measure,1
 Abstract,proxy reported,proxy reported,2
-Abstract,proxy reported caries,proxy reported caries,1
-Abstract,proxy reported dental caries,proxy reported dental caries,1
+Abstract,proxy reported dental caries,proxy reported dental caries,2
 Abstract,proxy reporting,proxy reporting,3
-Abstract,proxy reporting caries,proxy reporting caries,1
+Abstract,proxy reporting dental caries,proxy reporting dental caries,1
 Abstract,psobid study,psobid study,1
 Abstract,psychiatric illness,psychiatric illness,1
 Abstract,psychiatric morbidity,psychiatric morbidity,1
@@ -7804,8 +7762,6 @@ Abstract,related macular degeneration,related macular degeneration,1
 Abstract,related mortality,related mortality,4
 Abstract,related patterns revealed,related pattern revealed,1
 Abstract,related prescription,related prescription,3
-Abstract,related quality of life,related quality of life,14
-Abstract,related quality of life trajectories,related quality of life trajectory,1
 Abstract,related risk,related risk,3
 Abstract,related risk factors,related risk factor,3
 Abstract,related social,related social,1
@@ -7879,12 +7835,9 @@ Abstract,replacing area,replacing area,2
 Abstract,replacing area based,replacing area based,2
 Abstract,replication analysis,replication analysis,1
 Abstract,report incidence,report incidence,1
-Abstract,reported caries,reported caries,1
-Abstract,reported caries experience,reported caries experience,1
 Abstract,reported current e-cigarette,reported current e-cigarette,1
 Abstract,reported death,reported death,1
-Abstract,reported dental caries,reported dental caries,1
-Abstract,reported dental caries experience,reported dental caries experience,1
+Abstract,reported dental caries,reported dental caries,2
 Abstract,reported distance,reported distance,1
 Abstract,reported revision,reported revision,1
 Abstract,reported symptoms,reported symptom,3
@@ -7894,8 +7847,7 @@ Abstract,reported urban,reported urban,1
 Abstract,reported urban rural,reported urban rural,1
 Abstract,reporting better,reporting better,3
 Abstract,reporting better self-rated health,reporting better self-rated health,3
-Abstract,reporting caries,reporting caries,1
-Abstract,reporting caries experience,reporting caries experience,1
+Abstract,reporting dental caries,reporting dental caries,1
 Abstract,reporting scheme,reporting scheme,1
 Abstract,represent improvements,represent improvement,1
 Abstract,representative data,representative data,1
@@ -8507,6 +8459,7 @@ Abstract,slight rise,slight rise,1
 Abstract,slightly overall,slightly overall,1
 Abstract,slow recovery,slow recovery,1
 Abstract,small area deprivation,small area deprivation,2
+Abstract,small area deprivation measure,small area deprivation measure,1
 Abstract,small body,small body,1
 Abstract,small renal,small renal,6
 Abstract,small renal masses,small renal masses,6
@@ -8935,8 +8888,6 @@ Abstract,subjective nature,subjective nature,1
 Abstract,subjective socioeconomic status,subjective socioeconomic status,1
 Abstract,subjective socioeconomic status measures,subjective socioeconomic status measure,1
 Abstract,subjective wellbeing,subjective wellbeing,2
-Abstract,subjects child,subject child,1
-Abstract,subjects child aged,subject child aged,1
 Abstract,suboptimal coverage,suboptimal coverage,1
 Abstract,suboptimal immunisation,suboptimal immunisation,1
 Abstract,suboptimally immunised,suboptimally immunised,1
@@ -9981,12 +9932,12 @@ Abstract,world setting,world setting,1
 Abstract,worse eye,worse eye,2
 Abstract,worse glaucoma,worse glaucoma,1
 Abstract,worse glaucoma severity,worse glaucoma severity,1
-Abstract,worse health,worse health,2
+Abstract,worse health,worse health,1
 Abstract,worse health outcome,worse health outcome,1
-Abstract,worse health related,worse health related,1
 Abstract,worse outcome,worse outcome,3
 Abstract,worse outcome following,worse outcome following,1
 Abstract,worse pain,worse pain,1
+Abstract,worse quality of life,worse quality of life,1
 Abstract,worse severity,worse severity,1
 Abstract,worsen health inequality,worsen health inequality,1
 Abstract,worsening deprivation,worsening deprivation,1
