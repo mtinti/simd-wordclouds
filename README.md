@@ -42,7 +42,7 @@ The abstracts are not stored in this repository (see [Data and licences](#data-a
 | --- | --- |
 | [`simd_papers.csv`](simd_papers.csv) | The 263 papers: year, PMID, DOI, title, PDF status, Europe PMC link, and fingerprints of the title and abstract |
 | [`simd_252_papers_year_pmid_abstract.csv`](simd_252_papers_year_pmid_abstract.csv) | The original paper list, kept unchanged. Its abstracts are title-based template sentences, so it is not used for counting |
-| [`simd_pmids_not_downloaded.txt`](simd_pmids_not_downloaded.txt) | The 11 papers without a PDF, which are included in the corpus (`Added_from_missing_list` in simd_papers.csv) |
+| [`simd_pmids_not_downloaded.txt`](simd_pmids_not_downloaded.txt) | The 4 papers that still have no PDF (updated 14 October 2026). They are included in the corpus. The 11 papers flagged by `Added_from_missing_list` in simd_papers.csv were the missing-PDF list on 4 October |
 | [`wordclouds/fetch_corpus.py`](wordclouds/fetch_corpus.py), [`prepare_corpus.py`](wordclouds/prepare_corpus.py) | Download the records by PMID and build the checked corpus |
 | [`wordclouds/generate.py`](wordclouds/generate.py) | Counting and rendering |
 | [`wordclouds/term_groups.csv`](wordclouds/term_groups.csv), [`exclusions.csv`](wordclouds/exclusions.csv), [`settings.json`](wordclouds/settings.json) | Editable rules: phrases and spelling variants, excluded wording, thresholds, cloud shape, font and colours |
