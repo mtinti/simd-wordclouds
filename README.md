@@ -18,7 +18,7 @@ The clouds above cover papers with SIMD in the title or abstract, where deprivat
 
 ![Phrases in the abstracts of 1,718 papers that use SIMD. The largest are health care, socioeconomic status, risk factors and deprived areas, followed by socioeconomic deprivation, hospital admission, primary care and mental health.](wordclouds/outputs_full/abstracts_wordcloud.png)
 
-With the wider corpus, deprivation is no longer the headline. SIMD becomes background to clinical and service research: primary care, physical activity, diabetes, cardiovascular disease and COVID-19. [wordclouds/README.md](wordclouds/README.md#full-corpus-papers-that-use-simd-anywhere) describes how the corpus was built.
+Deprivation stays prominent: socioeconomic deprivation and socioeconomic status are among the largest phrases in both clouds, and deprived areas in the abstracts. It now sits alongside the clinical and service topics these papers study, such as primary care, physical activity, diabetes, cardiovascular disease and COVID-19. [wordclouds/README.md](wordclouds/README.md#full-corpus-papers-that-use-simd-anywhere) describes how the corpus was built.
 
 ## Reading the cloud
 
