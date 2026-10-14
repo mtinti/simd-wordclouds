@@ -5,6 +5,7 @@
 !/README.md
 !/LICENSE
 !/simd_papers.csv
+!/simd_papers_full.csv
 !/simd_252_papers_year_pmid_abstract.csv
 !/simd_pmids_not_downloaded.txt
 !/wordclouds/

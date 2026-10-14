@@ -1,0 +1,170 @@
+{
+  "frequency": "papers",
+  "input_sha256": {
+    "assets/AtkinsonHyperlegible-Regular.ttf": "7fb917c89019896d0b52ee84b7cbb3304c18cb90b19a62f5e32712bd23e97669",
+    "corpus": "14c1091bb980199d3178d4e82de21181a15c89dc626a4fb1cb6cac2b9ddd8bdc",
+    "exclusions.csv": "62bff59048ba803c8651e34b1b596c43475ebdd2e845936b43f9a002773012f1",
+    "generate.py": "de93e8d0e6ae6367befd0906b072b6b715dea9d2716e253e5e7be8c85afadde2",
+    "settings.json": "e859a89341b69173079dd72fb6b56624ee7322c56ad3077701020bde45bd1d07",
+    "term_groups.csv": "54994924652fed707174f30888a5fe3e69f41853dc2bff19d25d15339d4088e4"
+  },
+  "output_sha256": {
+    "abstracts_wordcloud.png": "c915f5f47b2d367c9eadbe6cdb2ebc261cfa7e598895a58f83eedb3b7a092334",
+    "abstracts_wordcloud.svg": "652839038b282170f6486f87ae36a291886c00fe3df549458225340bb6b00e9d",
+    "index.html": "1357ce6da807ecb664693d7ba5986831a4b5a29f7913bb1953b0684f595706e8",
+    "observed_term_variants.csv": "21beb73815930fc641b45081fc26e3495099644ba1fc0a6a46aedcb7ea0d5ab1",
+    "plural_merges.csv": "1006c8d2ee5daf3c83d3bd06d6600b3f87e114a03868d06f7f99948a3560825e",
+    "review_terms.html": "90816b5f42a3c192b03a0b24d2e39e1085ed5765c62e82050e3c70ad1c88487e",
+    "term_frequencies.csv": "8e187ac7094ccd35eb1819f655f432884465bcf3483176e559012b0cd823ee57",
+    "terms_by_paper.csv": "7f39f669b0a2b41b48fd0e30773d9562698ddaf658e304b6b21cf655a4d91bab",
+    "titles_wordcloud.png": "ba1d2a85904f80ac60f2687049f435318386017cb3cf764a1d4de96c607e54f5",
+    "titles_wordcloud.svg": "732c2c972bdd4526f3e6d513218ba7eac39db10485d5c41419fe2e831be1bf1a"
+  },
+  "packages": {
+    "Pillow": "12.2.0",
+    "matplotlib": "3.11.0",
+    "numpy": "2.4.6",
+    "wordcloud": "1.9.6"
+  },
+  "papers": 1741,
+  "python": "3.12.11",
+  "seed": 20261004,
+  "summary": {
+    "Abstract": {
+      "displayed_terms": 50,
+      "eligible_terms": 50,
+      "lowest_displayed_count": 33,
+      "papers_with_text": 1718,
+      "top_terms": [
+        {
+          "papers": 235,
+          "term": "health care"
+        },
+        {
+          "papers": 193,
+          "term": "socioeconomic status"
+        },
+        {
+          "papers": 190,
+          "term": "risk factors"
+        },
+        {
+          "papers": 185,
+          "term": "deprived areas"
+        },
+        {
+          "papers": 146,
+          "term": "socioeconomic deprivation"
+        },
+        {
+          "papers": 143,
+          "term": "hospital admission"
+        },
+        {
+          "papers": 133,
+          "term": "primary care"
+        },
+        {
+          "papers": 125,
+          "term": "mental health"
+        },
+        {
+          "papers": 120,
+          "term": "public health"
+        },
+        {
+          "papers": 119,
+          "term": "physical activity"
+        },
+        {
+          "papers": 110,
+          "term": "body mass index"
+        },
+        {
+          "papers": 109,
+          "term": "general practice"
+        },
+        {
+          "papers": 90,
+          "term": "area deprivation"
+        },
+        {
+          "papers": 90,
+          "term": "quality of life"
+        },
+        {
+          "papers": 85,
+          "term": "health outcome"
+        }
+      ]
+    },
+    "Title": {
+      "displayed_terms": 26,
+      "eligible_terms": 26,
+      "lowest_displayed_count": 13,
+      "papers_with_text": 1741,
+      "top_terms": [
+        {
+          "papers": 54,
+          "term": "physical activity"
+        },
+        {
+          "papers": 50,
+          "term": "primary care"
+        },
+        {
+          "papers": 45,
+          "term": "socioeconomic deprivation"
+        },
+        {
+          "papers": 43,
+          "term": "socioeconomic status"
+        },
+        {
+          "papers": 39,
+          "term": "colorectal cancer"
+        },
+        {
+          "papers": 39,
+          "term": "health care"
+        },
+        {
+          "papers": 38,
+          "term": "type 2 diabetes"
+        },
+        {
+          "papers": 37,
+          "term": "risk factors"
+        },
+        {
+          "papers": 28,
+          "term": "hospital admission"
+        },
+        {
+          "papers": 28,
+          "term": "mental health"
+        },
+        {
+          "papers": 27,
+          "term": "socioeconomic inequality"
+        },
+        {
+          "papers": 26,
+          "term": "cardiovascular disease"
+        },
+        {
+          "papers": 22,
+          "term": "breast cancer"
+        },
+        {
+          "papers": 22,
+          "term": "older adult"
+        },
+        {
+          "papers": 22,
+          "term": "quality of life"
+        }
+      ]
+    }
+  }
+}

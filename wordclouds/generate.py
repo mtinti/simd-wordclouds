@@ -342,10 +342,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=ROOT / "data" / "simd_263_papers_year_pmid_abstract.csv")
     parser.add_argument("--output-dir", type=Path, default=HERE / "outputs")
+    parser.add_argument("--settings", type=Path, default=HERE / "settings.json")
     args = parser.parse_args()
     out = args.output_dir
     out.mkdir(parents=True, exist_ok=True)
-    settings = json.loads((HERE / "settings.json").read_text())
+    settings = json.loads(args.settings.read_text())
     if settings["frequency"] not in ("papers", "mentions"):
         raise ValueError('frequency must be "papers" or "mentions"')
     rows = read_csv(args.input)

@@ -130,3 +130,4 @@ all-cause mortality,all cause mortality,phrase,1,Preserve the qualifier; otherwi
 chronic obstructive pulmonary disease,chronic obstructive pulmonary diseases|copd,abbreviation,1,Full clinical phrase and conventional abbreviation
 area deprivation,area deprivation|area based deprivation|area level deprivation,phrase variant,1,Phrase mode: the same area-level measure written with or without the based/level qualifier. Deprived areas stays separate: it names places or groups rather than the measure
 head and neck cancer,head and neck cancers,phrase,1,"Preserve the clinical phrase; otherwise split at the grammar word ""and"" into neck cancer"
+SARS-CoV-2,sars cov 2|sars cov2|sarscov2,spelling,1,Hyphenation and spacing variants; keeps the number so it is not cut to sars cov

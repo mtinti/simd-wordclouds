@@ -890,7 +890,6 @@ Title,status predicts,status predict,1
 Title,stone disease,stone disease,1
 Title,stone management,stone management,1
 Title,study analysing,study analysing,1
-Title,study protocol,study protocol,2
 Title,subglottic stenosis,subglottic stenosis,1
 Title,suffer hip fracture,suffer hip fracture,1
 Title,suicidal ideation,suicidal ideation,1
@@ -1450,7 +1449,7 @@ Abstract,analysing text,analysing text,1
 Abstract,analysis examined attendance,analysis examined attendance,1
 Abstract,analysis identified trajectories,analysis identified trajectory,1
 Abstract,analysis including tumour,analysis including tumour,1
-Abstract,analysis revealed,analysis revealed,2
+Abstract,analysis revealed,analysis revealed,1
 Abstract,analysis revealed good,analysis revealed good,1
 Abstract,analysis using anonymized,analysis using anonymized,1
 Abstract,analysis using city,analysis using city,1
@@ -5966,8 +5965,6 @@ Abstract,met research,met research,1
 Abstract,met research standards,met research standard,1
 Abstract,met weight,met weight,1
 Abstract,met weight loss,met weight loss,1
-Abstract,meta analysis,meta analysis,1
-Abstract,meta analysis found,meta analysis found,1
 Abstract,metabolic factors,metabolic factor,1
 Abstract,metabolic risk,metabolic risk,3
 Abstract,metabolic risk factors,metabolic risk factor,2
@@ -7483,7 +7480,6 @@ Abstract,qualitative comparative analysis,qualitative comparative analysis,1
 Abstract,qualitative data,qualitative data,3
 Abstract,qualitative process,qualitative process,1
 Abstract,qualitative process evaluation,qualitative process evaluation,1
-Abstract,qualitative study,qualitative study,1
 Abstract,quality of life,quality of life,20
 Abstract,quality of life measure,quality of life measure,1
 Abstract,quality of life questionnaire,quality of life questionnaire,1
@@ -8145,7 +8141,6 @@ Abstract,sales data,sale data,1
 Abstract,salty snacks,salty snacks,1
 Abstract,sampling frame,sampling frame,1
 Abstract,sandwich shops,sandwich shops,1
-Abstract,sars cov,sars cov,1
 Abstract,saturated fat,saturated fat,1
 Abstract,savoury snacks,savoury snacks,2
 Abstract,scalable opportunity,scalable opportunity,1
@@ -9191,8 +9186,6 @@ Abstract,text messages,text message,3
 Abstract,text messages plus,text message plus,1
 Abstract,text readability,text readability,1
 Abstract,text readability factors,text readability factor,1
-Abstract,thematic analysis,thematic analysis,1
-Abstract,thematic analysis revealed,thematic analysis revealed,1
 Abstract,thematically analysed,thematically analysed,1
 Abstract,theoretical implementation,theoretical implementation,1
 Abstract,therapeutic intervention,therapeutic intervention,1

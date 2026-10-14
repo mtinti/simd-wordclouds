@@ -1,0 +1,36 @@
+{
+  "seed": 20261004,
+  "frequency": "papers",
+  "merge_plurals": true,
+  "phrases": {
+    "enabled": true,
+    "max_units": 3,
+    "skip_group_canonicals": ["deprivation"],
+    "break_categories": ["grammar", "abstract headings", "publication boilerplate", "calendar wording",
+                         "comparative or generic qualifier", "hyphen prefix fragment", "ambiguous abbreviation",
+                         "statistical wording", "study design wording", "method or boilerplate phrase",
+                         "generic sample wording", "generic time wording", "corpus geography or index",
+                         "geographic qualifier", "data source"],
+    "fold_into_longer": 0.75
+  },
+  "shape": {
+    "fields": ["Title"],
+    "fill": "#EDF1EE",
+    "padding": 22,
+    "ellipses": [[340, 465, 200, 200], [610, 330, 255, 255], [935, 345, 235, 235], [1165, 470, 195, 195]],
+    "rounded_rects": [[120, 430, 1260, 370, 185]]
+  },
+  "plural_exceptions": ["falls", "hads", "highlands", "spectacles"],
+  "minimum_papers": {"Title": 13, "Abstract": 33},
+  "maximum_terms": {"Title": 75, "Abstract": 95},
+  "width": 1500,
+  "height": 850,
+  "scale": 2,
+  "min_font_size": 17,
+  "max_font_size": 100,
+  "relative_scaling": 0.5,
+  "background": "#FAF9F6",
+  "palette": ["#256ABF", "#184F95", "#0D366B"],
+  "font_file": "assets/AtkinsonHyperlegible-Regular.ttf",
+  "font_name": "Atkinson Hyperlegible"
+}

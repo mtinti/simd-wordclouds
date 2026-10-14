@@ -81,7 +81,6 @@ Title,social inequality,2,2,0.76,no,,no,social inequality
 Title,socioeconomic circumstance,2,2,0.76,no,,no,socioeconomic circumstance
 Title,socioeconomic disadvantage,2,2,0.76,no,,no,socioeconomic disadvantage
 Title,socioeconomically deprived,2,2,0.76,no,,no,socioeconomically deprived
-Title,study protocol,2,2,0.76,no,,no,study protocol
 Title,total hip arthroplasty,2,2,0.76,no,,no,total hip arthroplasty
 Title,tumour subtype,2,2,0.76,no,,no,tumour subtype
 Title,urban environment,2,2,0.76,no,,no,urban environment
@@ -1338,7 +1337,6 @@ Abstract,alexandra eye,2,2,0.76,no,,no,alexandra eye
 Abstract,alexandra eye pavilion,2,2,0.76,no,,no,alexandra eye pavilion
 Abstract,ambulance service,2,2,0.76,no,,no,ambulance service
 Abstract,analyse revealed,2,2,0.76,no,,no,analyses revealed
-Abstract,analysis revealed,2,2,0.76,no,,no,analysis revealed
 Abstract,appointment made,2,3,0.76,no,,no,appointments made
 Abstract,area based socioeconomic status,2,4,0.76,no,,no,area based socioeconomic status
 Abstract,area deprivation index,2,2,0.76,no,,no,area deprivation index
@@ -2144,6 +2142,7 @@ Abstract,analysing text,1,1,0.38,no,,no,analysing text
 Abstract,analysis examined attendance,1,1,0.38,no,,no,analysis examined attendance
 Abstract,analysis identified trajectory,1,1,0.38,no,,no,analysis identified trajectories
 Abstract,analysis including tumour,1,1,0.38,no,,no,analysis including tumour
+Abstract,analysis revealed,1,1,0.38,no,,no,analysis revealed
 Abstract,analysis revealed good,1,1,0.38,no,,no,analysis revealed good
 Abstract,analysis using anonymized,1,1,0.38,no,,no,analysis using anonymized
 Abstract,analysis using city,1,1,0.38,no,,no,analysis using city
@@ -6186,8 +6185,6 @@ Abstract,met research,1,1,0.38,no,,no,met research
 Abstract,met research standard,1,1,0.38,no,,no,met research standards
 Abstract,met weight,1,1,0.38,no,,no,met weight
 Abstract,met weight loss,1,1,0.38,no,,no,met weight loss
-Abstract,meta analysis,1,1,0.38,no,,no,meta analysis
-Abstract,meta analysis found,1,1,0.38,no,,no,meta analysis found
 Abstract,metabolic factor,1,1,0.38,no,,no,metabolic factors
 Abstract,metabolic risk,1,3,0.38,no,,no,metabolic risk
 Abstract,metabolic risk factor,1,2,0.38,no,,no,metabolic risk factors
@@ -7585,7 +7582,6 @@ Abstract,qualitative comparative,1,1,0.38,no,,no,qualitative comparative
 Abstract,qualitative comparative analysis,1,1,0.38,no,,no,qualitative comparative analysis
 Abstract,qualitative process,1,1,0.38,no,,no,qualitative process
 Abstract,qualitative process evaluation,1,1,0.38,no,,no,qualitative process evaluation
-Abstract,qualitative study,1,1,0.38,no,,no,qualitative study
 Abstract,quality of life measure,1,1,0.38,no,,no,quality of life measure
 Abstract,quality of life questionnaire,1,1,0.38,no,,no,quality of life questionnaire
 Abstract,quality of life trajectory,1,1,0.38,no,,no,quality of life trajectories
@@ -8170,7 +8166,6 @@ Abstract,sale setting seeking,1,1,0.38,no,,no,sale settings seeking
 Abstract,salty snacks,1,1,0.38,no,,no,salty snacks
 Abstract,sampling frame,1,1,0.38,no,,no,sampling frame
 Abstract,sandwich shops,1,1,0.38,no,,no,sandwich shops
-Abstract,sars cov,1,1,0.38,no,,no,sars cov
 Abstract,saturated fat,1,1,0.38,no,,no,saturated fat
 Abstract,savoury snacks,1,2,0.38,no,,no,savoury snacks
 Abstract,scalable opportunity,1,1,0.38,no,,no,scalable opportunity
@@ -9098,8 +9093,6 @@ Abstract,text message,1,3,0.38,no,,no,text messages
 Abstract,text message plus,1,1,0.38,no,,no,text messages plus
 Abstract,text readability,1,1,0.38,no,,no,text readability
 Abstract,text readability factor,1,1,0.38,no,,no,text readability factors
-Abstract,thematic analysis,1,1,0.38,no,,no,thematic analysis
-Abstract,thematic analysis revealed,1,1,0.38,no,,no,thematic analysis revealed
 Abstract,thematically analysed,1,1,0.38,no,,no,thematically analysed
 Abstract,theoretical implementation,1,1,0.38,no,,no,theoretical implementation
 Abstract,therapeutic intervention,1,1,0.38,no,,no,therapeutic intervention

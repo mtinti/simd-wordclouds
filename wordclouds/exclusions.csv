@@ -852,3 +852,18 @@ leading cause,publication boilerplate,1,"Background boilerplate (""X is a leadin
 leading causes,publication boilerplate,1,"Background boilerplate (""X is a leading cause of death""); not a study topic"
 dental inspection,data source,1,"Named data source (National Dental Inspection Programme); describes where data came from, not the topic"
 dental inspections,data source,1,"Named data source (National Dental Inspection Programme); describes where data came from, not the topic"
+systematic review,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+systematic reviews,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+scoping review,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+scoping reviews,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+meta analysis,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+meta analyses,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+qualitative study,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+qualitative studies,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+study protocol,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+study protocols,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+semi structured,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+semi structured interview,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+semi structured interviews,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+thematic analysis,study design wording,1,Study design or methods label; describes how a study was done, not its topic
+peer reviewed,publication boilerplate,1,"Publication boilerplate (""disseminated in peer-reviewed journals""); not a study topic"

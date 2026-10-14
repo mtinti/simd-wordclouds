@@ -74,6 +74,20 @@ The current choices distinguish exact variants, concept families and ambiguous f
 
 The proposed all-in-one “Socioeconomic conditions” umbrella is disabled in `term_groups.csv`. A topic grouping is not necessarily a synonym. To enable it, first disable any conflicting existing mappings; the script refuses ambiguous enabled aliases rather than silently choosing one. Count and review the revised frequencies before interpreting the result. A merged family is counted only once per paper, even when that paper uses several of its aliases.
 
+## Full corpus: papers that use SIMD anywhere
+
+The main clouds cover 263 papers with SIMD in the title or abstract. Many more health papers use SIMD only in their methods, for example as an adjustment variable. The full corpus adds them: **1,741 papers** in [`simd_papers_full.csv`](../simd_papers_full.csv), where `Found_by` is `title_abstract` (the 263) or `full_text` (1,478 open-access PubMed papers whose full text mentions "Scottish Index of Multiple Deprivation", from Europe PMC on 14 October 2026).
+
+The full-text set leaves out conference abstract books, papers that cite SIMD only in their references, and records without body text. 23 papers have no abstract, so the abstract cloud covers 1,718 papers.
+
+```sh
+.venv-wordcloud/bin/python wordclouds/build_full_corpus.py      # fetch, check fingerprints, write data/simd_full_corpus.csv
+.venv-wordcloud/bin/python wordclouds/generate.py --settings wordclouds/settings_full.json \
+    --input data/simd_full_corpus.csv --output-dir wordclouds/outputs_full
+```
+
+The rules are the same as for the main clouds. [`settings_full.json`](settings_full.json) differs only in the minimum counts, scaled to the larger corpus: 13 titles and 33 abstracts, the same share of papers as 2 and 5 of 263. The full-text papers bring study-design and methods labels into the counts (*systematic review*, *qualitative study*, *study protocol*, *semi-structured interviews*, *thematic analysis*, *peer reviewed*), so these are listed in `exclusions.csv`; the main clouds are unchanged by them. `build_full_corpus.py --init` recreates the paper list from `epmc_text/_manifest.csv`.
+
 ## Reproduce the images
 
 Python 3.12 is recommended. From the project root, create a local environment once:
